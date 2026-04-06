@@ -30,6 +30,7 @@ If any detail below is not reliably available from primary/official sources at a
   - [Frameworks, libraries, and tools](#frameworks-libraries-and-tools)
   - [Competitions and challenges](#competitions-and-challenges)
   - [Tutorials and how-to guides](#tutorials-and-how-to-guides)
+  - [Agent interoperability protocols](#agent-interoperability-protocols)
 - [Reproducibility and community](#reproducibility-and-community)
   - [Reproducibility resources and code](#reproducibility-resources-and-code)
   - [Community resources](#community-resources)
@@ -72,6 +73,11 @@ graph TD
   Learning --> Comm[Emergent communication / coordination learning]
   Learning --> LLM[LLM-based agents & multi-agent teams]
 
+  MAS --> Protocols[Agent Interoperability Protocols]
+  Protocols --> ToolProto[Tool/context protocols - MCP]
+  Protocols --> A2AProto[Agent-to-agent protocols - A2A]
+  Protocols --> UIProto[Agent-to-user protocols - AG-UI]
+
   Eval --> Bench[Benchmarks & task suites]
   Eval --> Artifacts[Artifacts, checklists, code release norms]
   Simulation --> ABM[ABM toolchains - social/eco/epi]
@@ -97,6 +103,9 @@ timeline
   2023 : MARLlib (standardised MARL training library)
   2024 : BenchMARL (reproducible benchmarking pipeline)
   2024 : Magentic-One (generalist multi-agent LLM system)
+  2024 : MCP - Model Context Protocol (tool/context interop standard)
+  2025 : A2A - Agent2Agent Protocol (agent-to-agent interop standard)
+  2025 : OpenAI Agents SDK / Google ADK (production multi-agent frameworks)
   2025 : Survey on evaluating/benchmarking LLM agents
   2026 : General AgentBench (unified LLM-agent evaluation)
 ```
@@ -158,6 +167,9 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 | General AgentBench | — | 2026 | Introduces a unified benchmark framework for evaluating general LLM agents across search/coding/reasoning/tool-use; relevant for assessing generality claims. | [arXiv](https://arxiv.org/html/2602.18998v1) | `LLM-agents`, `benchmark`, `evaluation` |
 | Multi-Agent Path Finding: A Survey | Surynek et al. | 2022 | A survey view of MAPF research directions and problem formulations; useful for MAS planning/coordination beyond learning-based methods. | [IJCAI survey PDF](https://www.ijcai.org/proceedings/2022/0772.pdf) | `planning`, `MAPF`, `survey` |
 | Multi-Agent Reinforcement Learning: Foundations and Modern Approaches | Wang et al. | 2023 | A broad MARL survey spanning foundations, algorithms, and challenges; good for "state of the field" grounding alongside textbooks. | [arXiv](https://arxiv.org/abs/2306.08502) | `MARL`, `survey`, `foundations` |
+| A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP | Ehtesham et al. | 2025 | Comparative survey of four emerging agent communication/interoperability protocols across architecture, transport, security, and deployment dimensions. | [arXiv](https://arxiv.org/abs/2505.02279) | `protocols`, `interoperability`, `survey` |
+| Advancing Multi-Agent Systems Through Model Context Protocol | — | 2025 | Examines MCP's role in MAS with case studies in enterprise knowledge management, collaborative research, and distributed problem-solving. | [arXiv](https://arxiv.org/abs/2504.21030) | `MCP`, `multi-agent`, `protocols` |
+| The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption | — | 2026 | Discusses MCP and A2A as emerging standards for structured, interoperable multi-agent communication in enterprise settings. | [arXiv](https://arxiv.org/abs/2601.13671) | `protocols`, `orchestration`, `survey` |
 
 ### Datasets and benchmarks
 
@@ -201,10 +213,13 @@ Framework selection is often the biggest "time sink" decision in MAS work. The t
 | [Jadex](https://github.com/actoron/jadex) | Java | GPL-3.0 | BDI agent platform | Niche/low activity | 45 |
 | [pyDCOP](https://github.com/Orange-OpenSource/pyDCOP) | Python | BSD-3-Clause | DCOP algorithms + experimentation tooling | Archived (2022-10-20) | 39 |
 | [NegMAS](https://github.com/yasserfarouk/negmas) | Python | BSD-3-Clause | Automated negotiation library + ecosystem (ANL/SCML agents, bridges) | Active (niche) | 85 |
-| [AutoGen](https://github.com/microsoft/autogen) | Python | MIT (code) + CC-BY-4.0 (docs) | Multi-agent LLM application framework | Active (strategic shift noted) | 56.7k |
+| [AutoGen](https://github.com/microsoft/autogen) | Python | MIT (code) + CC-BY-4.0 (docs) | Multi-agent LLM application framework | Maintenance mode (succeeded by Agent Framework) | 56.7k |
+| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | Python/.NET | MIT | Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry | Active | 9k |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Python | MIT | Production multi-agent orchestration with handoffs, guardrails, tracing; successor to Swarm | Active | 20.6k |
+| [Google ADK](https://github.com/google/adk-python) | Python/Go/TS/Java | Apache-2.0 | Code-first toolkit for building, evaluating, and deploying AI agents; MCP tool support | Active | 18.8k |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | Python | MIT | Graph-based orchestration for long-running/stateful agents | Mature/active | 28.5k |
 | [Swarm](https://github.com/openai/swarm) | Python | MIT | Lightweight educational framework for multi-agent orchestration (handoffs/tools) | Experimental/educational | 21.3k |
-| [CrewAI](https://github.com/crewAIInc/crewAI) | Python | MIT | Multi-agent workflow orchestration | Mature/active (industry-oriented) | 48.2k |
+| [CrewAI](https://github.com/crewAIInc/crewAI) | Python | MIT | Multi-agent workflow orchestration; native MCP and A2A support | Mature/active (industry-oriented) | 48.2k |
 
 ### Competitions and challenges
 
@@ -229,6 +244,18 @@ Framework selection is often the biggest "time sink" decision in MAS work. The t
 | NegMAS tutorials | NegMAS maintainers | 2026 | The repo links to tutorials and API references; also documents an ecosystem of competition frameworks and agents. | [Tutorials](https://negmas.readthedocs.io/en/latest/tutorials.html) | `negotiation`, `how-to`, `simulation` |
 | pyDCOP documentation | Orange Open Source (archived) | 2022 | Despite archival status, the repo points to hosted documentation and provides a practical entry to DCOP modelling and algorithm experimentation. | [Docs](https://pydcop.readthedocs.io/) | `DCOP`, `coordination`, `how-to` |
 
+### Agent interoperability protocols
+
+A fast-emerging layer in LLM-based multi-agent systems: open protocols standardising how agents connect to tools, communicate with each other, and interact with users. Governance is converging under the **Agentic AI Foundation (AAIF)**, a Linux Foundation directed fund co-founded by Anthropic, Block, Google, Microsoft, and OpenAI (formed December 2025).
+
+| Layer | Protocol | Maintainer | Year | License | ★ Stars | Annotation | Link |
+|---|---|---|---|---|---:|---|---|
+| **Tool/context access** | Model Context Protocol (MCP) | Anthropic / AAIF | 2024 | MIT | 83.1k (servers repo) | An open standard providing a universal JSON-RPC interface for AI applications to connect to external tools, data sources, and services — "USB-C for AI." Adopted by OpenAI, Google, Microsoft, and 10,000+ production servers. Donated to the Linux Foundation (AAIF) in Dec 2025. | [Spec](https://modelcontextprotocol.io) · [GitHub](https://github.com/modelcontextprotocol) |
+| **Agent-to-agent** | Agent2Agent Protocol (A2A) | Google / AAIF | 2025 | Apache-2.0 | 23k | An open protocol for cross-framework agent-to-agent communication: discovery via Agent Cards, task negotiation, and multimodal collaboration without exposing internal logic. 150+ partner organisations; donated to Linux Foundation in June 2025. Absorbed IBM's ACP. | [Spec](https://a2a-protocol.org/latest/) · [GitHub](https://github.com/a2aproject/A2A) |
+| **Agent-to-user** | AG-UI (Agent-User Interaction Protocol) | CopilotKit | 2025 | MIT | 12.8k | An open, event-based protocol standardising real-time bidirectional communication between AI agent backends and frontend applications; enables generative UI, state synchronisation, and human-in-the-loop collaboration. | [GitHub](https://github.com/ag-ui-protocol/ag-ui) |
+| **Decentralised networking** | Agent Network Protocol (ANP) | ANP community | 2024 | MIT | 1.3k | A W3C-aligned protocol for decentralised agent identity, discovery, and communication using a three-layer architecture built on DIDs and Verifiable Credentials; aims to be the networking layer for the "Agentic Web." | [GitHub](https://github.com/agent-network-protocol/AgentNetworkProtocol) |
+| **Agent instructions** | AGENTS.md | OpenAI / AAIF | 2025 | MIT | 19.8k | A simple, open markdown convention providing AI coding agents with project-specific instructions (build commands, code style, testing rules); adopted by 60,000+ repositories and supported by all major AI coding tools. | [GitHub](https://github.com/agentsmd/agents.md) |
+
 ## Reproducibility and community
 
 ### Reproducibility resources and code
@@ -246,6 +273,7 @@ Framework selection is often the biggest "time sink" decision in MAS work. The t
 
 | Title | Authors/Maintainers | Year | Annotation | Link | Tags |
 |---|---:|---:|---|---|---|
+| Agentic AI Foundation (AAIF) | Linux Foundation | 2025 | Industry governance body for open agentic standards (stewards MCP, A2A, AGENTS.md); platinum members include AWS, Anthropic, Block, Google, Microsoft, and OpenAI. | [AAIF](https://aaif.io/) | `standards`, `governance`, `LLM-agents` |
 | AAMAS conference | AAMAS organisers | 2026 | Flagship MAS venue; AAMAS 2026 dates are 25–29 May 2026 in Paphos, Cyprus. | [AAMAS 2026](https://cyprusconferences.org/aamas2026/) | `conference`, `MAS`, `community` |
 | IFAAMAS (organising association) | IFAAMAS | ongoing | Association representing autonomous agents and MAS, distributing knowledge through conferences and related activities. | [IFAAMAS](https://www.ifaamas.org/) | `community`, `MAS` |
 | EURAMAS | European Association for Multi-Agent Systems | ongoing | Community hub for European MAS activities (EASSS, EUMAS, etc.). | [EURAMAS](https://sites.google.com/view/euramas/) | `community`, `Europe`, `MAS` |

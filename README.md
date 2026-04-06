@@ -22,7 +22,8 @@ If any detail below is not reliably available from primary/official sources at a
 - [How this repo is organised](#how-this-repo-is-organised)
 - [MAS taxonomy and milestone timeline](#mas-taxonomy-and-milestone-timeline)
 - [Curated resources](#curated-resources)
-  - [Books](#books)
+  - [Recent books (2024–)](#recent-books-2024)
+  - [Classic books (pre-2024)](#classic-books-pre-2024)
   - [Tutorials and courses](#tutorials-and-courses)
   - [Seminal papers and milestone work](#seminal-papers-and-milestone-work)
   - [Recent high-impact papers and surveys](#recent-high-impact-papers-and-surveys)
@@ -112,7 +113,7 @@ timeline
 
 ## Curated resources
 
-### Books
+### Recent books (2024–)
 
 | Title | Authors/Maintainers | Year | Annotation | Link | Tags |
 |---|---:|---:|---|---|---|
@@ -122,10 +123,15 @@ timeline
 | *Building Applications with AI Agents* | Michael Albada | 2025 | A practical, research-based approach to designing and implementing single- and multi-agent systems, covering coordination techniques and communication methods for agent systems. | [O'Reilly](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) | `LLM-agents`, `multi-agent`, `practice` |
 | *Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents* | Victor Dibia | 2025 | A first-principles guide to designing multi-agent applications, walking through building a feature-complete framework from scratch; by a core AutoGen contributor at Microsoft Research. Companion code on GitHub. | [Book site](https://multiagentbook.com/) | `LLM-agents`, `multi-agent`, `practice` |
 | *Multi-Agent Reinforcement Learning: Foundations and Modern Approaches* | Stefano V. Albrecht, Filippos Christianos, Lukas Schäfer | 2024 | A modern MARL textbook focusing on models, solution concepts, algorithms, and practical challenges; associated with a companion website and learning materials (slides/code). | [MIT Press page](https://mitpress.mit.edu/9780262049375/multi-agent-reinforcement-learning/) | `MARL`, `RL`, `game-theory` |
+| Companion materials for the MARL textbook | marl-book maintainers | unspecified | The book website highlights an accompanying codebase (and related GitHub resources such as lecture slides), supporting hands-on study and reproducible experimentation. | [Book site](https://www.marl-book.com/) | `MARL`, `reproducibility`, `code` |
+
+### Classic books (pre-2024)
+
+| Title | Authors/Maintainers | Year | Annotation | Link | Tags |
+|---|---:|---:|---|---|---|
 | *An Introduction to MultiAgent Systems* (2nd ed.) | Michael Wooldridge | 2009 | A widely used MAS textbook covering agent concepts, interaction, coordination, and foundational theory; a solid "first principles" entry point for the broader MAS canon beyond MARL. | [Wiley page](https://www.wiley.com/en-us/An+Introduction+to+MultiAgent+Systems%2C+2nd+Edition-p-9780470519462) | `foundations`, `agents`, `coordination` |
 | *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations* | Yoav Shoham, Kevin Leyton-Brown | 2009 | Core reference connecting MAS with game theory, mechanism design, and computational foundations; also supported by a freely accessible "rough version" linked from a canonical course page. | [Book site (free PDF)](http://www.masfoundations.org/) | `game-theory`, `mechanism-design`, `foundations` |
 | *Multi-Agent Systems: A Modern Approach to Distributed Artificial Intelligence* | Gerhard Weiss (editor) | 1999 | Classic edited volume spanning early MAS themes (coordination, communication, architectures) from distributed AI roots; useful for historical depth and breadth. | [MIT Press page](https://mitpress.mit.edu/9780262731317/multi-agent-systems/) | `distributed-ai`, `foundations`, `architectures` |
-| Companion materials for the MARL textbook | marl-book maintainers | unspecified | The book website highlights an accompanying codebase (and related GitHub resources such as lecture slides), supporting hands-on study and reproducible experimentation. | [Book site](https://www.marl-book.com/) | `MARL`, `reproducibility`, `code` |
 
 ### Tutorials and courses
 

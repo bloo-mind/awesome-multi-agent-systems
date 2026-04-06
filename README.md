@@ -22,15 +22,15 @@ If any detail below is not reliably available from primary/official sources at a
 - [How this repo is organised](#how-this-repo-is-organised)
 - [MAS taxonomy and milestone timeline](#mas-taxonomy-and-milestone-timeline)
 - [Curated resources](#curated-resources)
-  - [Recent books (2024–)](#recent-books-2024)
   - [Classic books (pre-2024)](#classic-books-pre-2024)
+  - [Recent books (2024–)](#recent-books-2024)
   - [Tutorials and courses](#tutorials-and-courses)
+  - [Tutorials and how-to guides](#tutorials-and-how-to-guides)
   - [Seminal papers and milestone work](#seminal-papers-and-milestone-work)
   - [Recent high-impact papers and surveys](#recent-high-impact-papers-and-surveys)
   - [Datasets and benchmarks](#datasets-and-benchmarks)
   - [Frameworks, libraries, and tools](#frameworks-libraries-and-tools)
   - [Competitions and challenges](#competitions-and-challenges)
-  - [Tutorials and how-to guides](#tutorials-and-how-to-guides)
   - [Agent interoperability protocols](#agent-interoperability-protocols)
 - [Reproducibility and community](#reproducibility-and-community)
   - [Reproducibility resources and code](#reproducibility-resources-and-code)
@@ -113,18 +113,6 @@ timeline
 
 ## Curated resources
 
-### Recent books (2024–)
-
-| Title | Authors/Maintainers | Year | Annotation | Link | Tags |
-|---|---:|---:|---|---|---|
-| *Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies* | R. Collier, V. Mascardi, A. Ricci (editors) | 2026 | A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." | [Springer](https://link.springer.com/book/10.1007/978-3-032-01082-7) | `MAS-engineering`, `platforms`, `toolkits` |
-| *Agentic AI: Theories and Practices* | Ken Huang (editor) | 2025 | Analyses the rise of generative AI agents (agentic AI) across industries, covering development, applications, and implications from finance to healthcare. | [Springer](https://link.springer.com/book/10.1007/978-3-031-90026-6) | `agentic-ai`, `LLM-agents`, `applications` |
-| *AI Agents in Action* | Micheal Lanham | 2025 | Practitioner guide to building multi-agent AI systems using modern frameworks (LangChain, AutoGen, CrewAI); covers knowledge management, memory systems, and collaborative multi-agent architectures. | [Manning](https://www.manning.com/books/ai-agents-in-action) | `LLM-agents`, `multi-agent`, `practice` |
-| *Building Applications with AI Agents* | Michael Albada | 2025 | A practical, research-based approach to designing and implementing single- and multi-agent systems, covering coordination techniques and communication methods for agent systems. | [O'Reilly](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) | `LLM-agents`, `multi-agent`, `practice` |
-| *Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents* | Victor Dibia | 2025 | A first-principles guide to designing multi-agent applications, walking through building a feature-complete framework from scratch; by a core AutoGen contributor at Microsoft Research. Companion code on GitHub. | [Book site](https://multiagentbook.com/) | `LLM-agents`, `multi-agent`, `practice` |
-| *Multi-Agent Reinforcement Learning: Foundations and Modern Approaches* | Stefano V. Albrecht, Filippos Christianos, Lukas Schäfer | 2024 | A modern MARL textbook focusing on models, solution concepts, algorithms, and practical challenges; associated with a companion website and learning materials (slides/code). | [MIT Press page](https://mitpress.mit.edu/9780262049375/multi-agent-reinforcement-learning/) | `MARL`, `RL`, `game-theory` |
-| Companion materials for the MARL textbook | marl-book maintainers | unspecified | The book website highlights an accompanying codebase (and related GitHub resources such as lecture slides), supporting hands-on study and reproducible experimentation. | [Book site](https://www.marl-book.com/) | `MARL`, `reproducibility`, `code` |
-
 ### Classic books (pre-2024)
 
 | Title | Authors/Maintainers | Year | Annotation | Link | Tags |
@@ -132,6 +120,19 @@ timeline
 | *An Introduction to MultiAgent Systems* (2nd ed.) | Michael Wooldridge | 2009 | A widely used MAS textbook covering agent concepts, interaction, coordination, and foundational theory; a solid "first principles" entry point for the broader MAS canon beyond MARL. | [Wiley page](https://www.wiley.com/en-us/An+Introduction+to+MultiAgent+Systems%2C+2nd+Edition-p-9780470519462) | `foundations`, `agents`, `coordination` |
 | *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations* | Yoav Shoham, Kevin Leyton-Brown | 2009 | Core reference connecting MAS with game theory, mechanism design, and computational foundations; also supported by a freely accessible "rough version" linked from a canonical course page. | [Book site (free PDF)](http://www.masfoundations.org/) | `game-theory`, `mechanism-design`, `foundations` |
 | *Multi-Agent Systems: A Modern Approach to Distributed Artificial Intelligence* | Gerhard Weiss (editor) | 1999 | Classic edited volume spanning early MAS themes (coordination, communication, architectures) from distributed AI roots; useful for historical depth and breadth. | [MIT Press page](https://mitpress.mit.edu/9780262731317/multi-agent-systems/) | `distributed-ai`, `foundations`, `architectures` |
+
+### Recent books (2024–)
+
+| Title | Authors/Maintainers | Year | Annotation | Link | Tags |
+|---|---:|---:|---|---|---|
+| *Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies* | R. Collier, V. Mascardi, A. Ricci (editors) | 2026 | A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." | [Springer](https://link.springer.com/book/10.1007/978-3-032-01082-7) | `MAS-engineering`, `platforms`, `toolkits` |
+| *Design Multi-Agent AI Systems Using MCP and A2A* | Gigi Sayfan | 2026 | Hands-on guide to building a production-ready multi-agent AI framework from scratch in Python; covers tool use, memory via MCP, collaborative agent workflows with A2A, observability, and human-in-the-loop patterns. Companion code on GitHub. | [Packt](https://www.packtpub.com/en-sg/product/design-multi-agent-ai-systems-using-mcp-and-a2a-9781806116461) | `LLM-agents`, `MCP`, `A2A`, `practice` |
+| *Agentic AI: Theories and Practices* | Ken Huang (editor) | 2025 | Analyses the rise of generative AI agents (agentic AI) across industries, covering development, applications, and implications from finance to healthcare. | [Springer](https://link.springer.com/book/10.1007/978-3-031-90026-6) | `agentic-ai`, `LLM-agents`, `applications` |
+| *AI Agents in Action* | Micheal Lanham | 2025 | Practitioner guide to building multi-agent AI systems using modern frameworks (LangChain, AutoGen, CrewAI); covers knowledge management, memory systems, and collaborative multi-agent architectures. | [Manning](https://www.manning.com/books/ai-agents-in-action) | `LLM-agents`, `multi-agent`, `practice` |
+| *Building Applications with AI Agents* | Michael Albada | 2025 | A practical, research-based approach to designing and implementing single- and multi-agent systems, covering coordination techniques and communication methods for agent systems. | [O'Reilly](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) | `LLM-agents`, `multi-agent`, `practice` |
+| *Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents* | Victor Dibia | 2025 | A first-principles guide to designing multi-agent applications, walking through building a feature-complete framework from scratch; by a core AutoGen contributor at Microsoft Research. Companion code on GitHub. | [Book site](https://multiagentbook.com/) | `LLM-agents`, `multi-agent`, `practice` |
+| *Multi-Agent Reinforcement Learning: Foundations and Modern Approaches* | Stefano V. Albrecht, Filippos Christianos, Lukas Schäfer | 2024 | A modern MARL textbook focusing on models, solution concepts, algorithms, and practical challenges; associated with a companion website and learning materials (slides/code). | [MIT Press page](https://mitpress.mit.edu/9780262049375/multi-agent-reinforcement-learning/) | `MARL`, `RL`, `game-theory` |
+| Companion materials for the MARL textbook | marl-book maintainers | unspecified | The book website highlights an accompanying codebase (and related GitHub resources such as lecture slides), supporting hands-on study and reproducible experimentation. | [Book site](https://www.marl-book.com/) | `MARL`, `reproducibility`, `code` |
 
 ### Tutorials and courses
 
@@ -142,6 +143,16 @@ timeline
 | **Cooperative AI Summer School** | Cooperative AI community | 2025 | A summer school aimed at grounding participants in cooperative AI (overlapping with MAS/MARL, incentives, and human/agent cooperation). | [Summer School 2025](https://www.cooperativeai.com/summer-school/summer-school-2025) | `cooperative-ai`, `MARL`, `incentives` |
 | AAMAS 2025 tutorial: **RL in Automated Negotiation (T1)** | Yasser Farouk | 2025 | A concrete tutorial artefact (slides/code) framing negotiation as a multi-agent RL problem; useful for bridging MAS negotiation and learning-based approaches. | [GitHub repo](https://github.com/yasserfarouk/aamas2025rlneg) | `negotiation`, `MARL`, `tutorial` |
 | Stanford **CS 224M: Multi Agent Systems** | Stanford course staff; Instructor: Yoav Shoham | 2014 | A game-theory-and-mechanism-design-heavy MAS course page with structured readings, lecture materials via edX links, and a direct tie-in to the Shoham & Leyton-Brown textbook. | [Course page](https://web.stanford.edu/class/cs224m/) | `game-theory`, `mechanism-design`, `foundations` |
+
+### Tutorials and how-to guides
+
+| Title | Authors/Maintainers | Year | Annotation | Link | Tags |
+|---|---:|---:|---|---|---|
+| LangGraph documentation pointers | LangChain/LangGraph maintainers | 2026 | README positions LangGraph for durable execution, memory, and human-in-the-loop agent workflows—useful for building multi-agent graphs. | [GitHub](https://github.com/langchain-ai/langgraph) | `LLM-agents`, `orchestration`, `graphs` |
+| NegMAS tutorials | NegMAS maintainers | 2026 | The repo links to tutorials and API references; also documents an ecosystem of competition frameworks and agents. | [Tutorials](https://negmas.readthedocs.io/en/latest/tutorials.html) | `negotiation`, `how-to`, `simulation` |
+| AutoGen README (multi-agent orchestration examples) | Microsoft | 2025 | Includes code examples for multi-agent orchestration and notes on maintenance mode considerations for new users. | [GitHub](https://github.com/microsoft/autogen) | `LLM-agents`, `orchestration`, `framework` |
+| pyDCOP documentation | Orange Open Source (archived) | 2022 | Despite archival status, the repo points to hosted documentation and provides a practical entry to DCOP modelling and algorithm experimentation. | [Docs](https://pydcop.readthedocs.io/) | `DCOP`, `coordination`, `how-to` |
+| Swarm README and examples | OpenAI | unspecified | The README describes the two primitives (agents + handoffs), provides examples, and frames Swarm as a lightweight, testable educational resource for multi-agent orchestration. | [GitHub](https://github.com/openai/swarm) | `LLM-agents`, `orchestration`, `tutorial` |
 
 ### Seminal papers and milestone work
 
@@ -244,16 +255,6 @@ Framework selection is often the biggest "time sink" decision in MAS work. The t
 | RoboCup Rescue Simulation "Agent Simulation" | RoboCup Rescue Simulation | ongoing | "Agent Simulation" competition track with publications list curated by organisers; useful for multi-agent disaster response and coordination research context. | [Agent Simulation](https://rescuesim.robocup.org/research/publications/agent-competition/) | `robotics`, `simulation`, `coordination` |
 | Supply Chain Management League (SCML) | SCML organisers | unspecified | A negotiation-centric simulation: build an agent negotiating trades for a factory manager in a supply chain setting. | [SCML](https://scml.cs.brown.edu/scml) | `negotiation`, `simulation`, `markets` |
 | Multi-Agent Programming Contest (MAPC) | MAPC organisers | unspecified | Long-running contest emphasising engineering of MAS that coordinate in a shared environment (often used in agent programming education/research). | [MAPC site](https://multiagentcontest.org/) | `MAS-engineering`, `coordination`, `competition` |
-
-### Tutorials and how-to guides
-
-| Title | Authors/Maintainers | Year | Annotation | Link | Tags |
-|---|---:|---:|---|---|---|
-| LangGraph documentation pointers | LangChain/LangGraph maintainers | 2026 | README positions LangGraph for durable execution, memory, and human-in-the-loop agent workflows—useful for building multi-agent graphs. | [GitHub](https://github.com/langchain-ai/langgraph) | `LLM-agents`, `orchestration`, `graphs` |
-| NegMAS tutorials | NegMAS maintainers | 2026 | The repo links to tutorials and API references; also documents an ecosystem of competition frameworks and agents. | [Tutorials](https://negmas.readthedocs.io/en/latest/tutorials.html) | `negotiation`, `how-to`, `simulation` |
-| AutoGen README (multi-agent orchestration examples) | Microsoft | 2025 | Includes code examples for multi-agent orchestration and notes on maintenance mode considerations for new users. | [GitHub](https://github.com/microsoft/autogen) | `LLM-agents`, `orchestration`, `framework` |
-| pyDCOP documentation | Orange Open Source (archived) | 2022 | Despite archival status, the repo points to hosted documentation and provides a practical entry to DCOP modelling and algorithm experimentation. | [Docs](https://pydcop.readthedocs.io/) | `DCOP`, `coordination`, `how-to` |
-| Swarm README and examples | OpenAI | unspecified | The README describes the two primitives (agents + handoffs), provides examples, and frames Swarm as a lightweight, testable educational resource for multi-agent orchestration. | [GitHub](https://github.com/openai/swarm) | `LLM-agents`, `orchestration`, `tutorial` |
 
 ### Agent interoperability protocols
 

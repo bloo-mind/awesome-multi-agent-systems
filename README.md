@@ -116,7 +116,7 @@ timeline
 
 ### Classic books (pre-2024)
 
-- [*An Introduction to MultiAgent Systems* (2nd ed.)](https://www.wiley.com/en-us/An+Introduction+to+MultiAgent+Systems%2C+2nd+Edition-p-9780470519462) (2009) by Michael Wooldridge
+- [**An Introduction to MultiAgent Systems** (2nd ed.)](https://www.cs.ox.ac.uk/people/michael.wooldridge/pubs/imas//IMAS2e.html) (2009) by Michael Wooldridge
   A widely used MAS textbook covering agent concepts, interaction, coordination, and foundational theory; a solid "first principles" entry point for the broader MAS canon beyond MARL. `foundations`, `agents`, `coordination`
 
 - [**Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations**](http://www.masfoundations.org/) (2009) by Yoav Shoham, Kevin Leyton-Brown

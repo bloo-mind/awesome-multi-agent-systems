@@ -48,8 +48,8 @@ This repository treats MAS as a **family of research problems** rather than a si
 Entry format used below:
 
 ```
-- **Title** (Year) by Authors/Maintainers
-  Annotation. Link · Tags
+- [**Title**](Link) (Year) by Authors/Maintainers
+  Annotation. Tags
 ```
 
 ## MAS taxonomy and milestone timeline
@@ -116,205 +116,205 @@ timeline
 
 ### Classic books (pre-2024)
 
-- *An Introduction to MultiAgent Systems* (2nd ed.) (2009) by Michael Wooldridge
-  A widely used MAS textbook covering agent concepts, interaction, coordination, and foundational theory; a solid "first principles" entry point for the broader MAS canon beyond MARL. [Wiley page](https://www.wiley.com/en-us/An+Introduction+to+MultiAgent+Systems%2C+2nd+Edition-p-9780470519462) · `foundations`, `agents`, `coordination`
+- [*An Introduction to MultiAgent Systems* (2nd ed.)](https://www.wiley.com/en-us/An+Introduction+to+MultiAgent+Systems%2C+2nd+Edition-p-9780470519462) (2009) by Michael Wooldridge
+  A widely used MAS textbook covering agent concepts, interaction, coordination, and foundational theory; a solid "first principles" entry point for the broader MAS canon beyond MARL. `foundations`, `agents`, `coordination`
 
-- *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations* (2009) by Yoav Shoham, Kevin Leyton-Brown
-  Core reference connecting MAS with game theory, mechanism design, and computational foundations; also supported by a freely accessible "rough version" linked from a canonical course page. [Book site (free PDF)](http://www.masfoundations.org/) · `game-theory`, `mechanism-design`, `foundations`
+- [*Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations*](http://www.masfoundations.org/) (2009) by Yoav Shoham, Kevin Leyton-Brown
+  Core reference connecting MAS with game theory, mechanism design, and computational foundations; also supported by a freely accessible "rough version" linked from a canonical course page. `game-theory`, `mechanism-design`, `foundations`
 
-- *Multi-Agent Systems: A Modern Approach to Distributed Artificial Intelligence* (1999) by Gerhard Weiss (editor)
-  Classic edited volume spanning early MAS themes (coordination, communication, architectures) from distributed AI roots; useful for historical depth and breadth. [MIT Press page](https://mitpress.mit.edu/9780262731317/multi-agent-systems/) · `distributed-ai`, `foundations`, `architectures`
+- [*Multi-Agent Systems: A Modern Approach to Distributed Artificial Intelligence*](https://mitpress.mit.edu/9780262731317/multi-agent-systems/) (1999) by Gerhard Weiss (editor)
+  Classic edited volume spanning early MAS themes (coordination, communication, architectures) from distributed AI roots; useful for historical depth and breadth. `distributed-ai`, `foundations`, `architectures`
 
 
 ### Recent books (2024–)
 
-- *Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies* (2026) by R. Collier, V. Mascardi, A. Ricci (editors)
-  A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." [Springer](https://link.springer.com/book/10.1007/978-3-032-01082-7) · `MAS-engineering`, `platforms`, `toolkits`
+- [*Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies*](https://link.springer.com/book/10.1007/978-3-032-01082-7) (2026) by R. Collier, V. Mascardi, A. Ricci (editors)
+  A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." `MAS-engineering`, `platforms`, `toolkits`
 
-- *Design Multi-Agent AI Systems Using MCP and A2A* (2026) by Gigi Sayfan
-  Hands-on guide to building a production-ready multi-agent AI framework from scratch in Python; covers tool use, memory via MCP, collaborative agent workflows with A2A, observability, and human-in-the-loop patterns. Companion code on GitHub. [Packt](https://www.packtpub.com/en-sg/product/design-multi-agent-ai-systems-using-mcp-and-a2a-9781806116461) · `LLM-agents`, `MCP`, `A2A`, `practice`
+- [*Design Multi-Agent AI Systems Using MCP and A2A*](https://www.packtpub.com/en-sg/product/design-multi-agent-ai-systems-using-mcp-and-a2a-9781806116461) (2026) by Gigi Sayfan
+  Hands-on guide to building a production-ready multi-agent AI framework from scratch in Python; covers tool use, memory via MCP, collaborative agent workflows with A2A, observability, and human-in-the-loop patterns. Companion code on GitHub. `LLM-agents`, `MCP`, `A2A`, `practice`
 
-- *Agentic AI: Theories and Practices* (2025) by Ken Huang (editor)
-  Analyses the rise of generative AI agents (agentic AI) across industries, covering development, applications, and implications from finance to healthcare. [Springer](https://link.springer.com/book/10.1007/978-3-031-90026-6) · `agentic-ai`, `LLM-agents`, `applications`
+- [*Agentic AI: Theories and Practices*](https://link.springer.com/book/10.1007/978-3-031-90026-6) (2025) by Ken Huang (editor)
+  Analyses the rise of generative AI agents (agentic AI) across industries, covering development, applications, and implications from finance to healthcare. `agentic-ai`, `LLM-agents`, `applications`
 
-- *AI Agents in Action* (2025) by Micheal Lanham
-  Practitioner guide to building multi-agent AI systems using modern frameworks (LangChain, AutoGen, CrewAI); covers knowledge management, memory systems, and collaborative multi-agent architectures. [Manning](https://www.manning.com/books/ai-agents-in-action) · `LLM-agents`, `multi-agent`, `practice`
+- [*AI Agents in Action*](https://www.manning.com/books/ai-agents-in-action) (2025) by Micheal Lanham
+  Practitioner guide to building multi-agent AI systems using modern frameworks (LangChain, AutoGen, CrewAI); covers knowledge management, memory systems, and collaborative multi-agent architectures. `LLM-agents`, `multi-agent`, `practice`
 
-- *Building Applications with AI Agents* (2025) by Michael Albada
-  A practical, research-based approach to designing and implementing single- and multi-agent systems, covering coordination techniques and communication methods for agent systems. [O'Reilly](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) · `LLM-agents`, `multi-agent`, `practice`
+- [*Building Applications with AI Agents*](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) (2025) by Michael Albada
+  A practical, research-based approach to designing and implementing single- and multi-agent systems, covering coordination techniques and communication methods for agent systems. `LLM-agents`, `multi-agent`, `practice`
 
-- *Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents* (2025) by Victor Dibia
-  A first-principles guide to designing multi-agent applications, walking through building a feature-complete framework from scratch; by a core AutoGen contributor at Microsoft Research. Companion code on GitHub. [Book site](https://multiagentbook.com/) · `LLM-agents`, `multi-agent`, `practice`
+- [*Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents*](https://multiagentbook.com/) (2025) by Victor Dibia
+  A first-principles guide to designing multi-agent applications, walking through building a feature-complete framework from scratch; by a core AutoGen contributor at Microsoft Research. Companion code on GitHub. `LLM-agents`, `multi-agent`, `practice`
 
-- *Multi-Agent Reinforcement Learning: Foundations and Modern Approaches* (2024) by Stefano V. Albrecht, Filippos Christianos, Lukas Schäfer
-  A modern MARL textbook focusing on models, solution concepts, algorithms, and practical challenges; associated with a companion website and learning materials (slides/code). [Book site](https://www.marl-book.com/) · `MARL`, `RL`, `game-theory`, `reproducibility`, `code`
+- [*Multi-Agent Reinforcement Learning: Foundations and Modern Approaches*](https://www.marl-book.com/) (2024) by Stefano V. Albrecht, Filippos Christianos, Lukas Schäfer
+  A modern MARL textbook focusing on models, solution concepts, algorithms, and practical challenges; associated with a companion website and learning materials (slides/code). `MARL`, `RL`, `game-theory`, `reproducibility`, `code`
 
 
 ### Tutorials and courses
 
-- **European Agent Systems Summer School (EASSS)** (2025) by EURAMAS community
-  Long-running summer school (since 1999) offering introductory and advanced courses across autonomous agents and MAS, aimed at researchers and students. [EASSS 2025](https://easss.upb.ro/) · `community`, `tutorials`, `foundations`
+- [**European Agent Systems Summer School (EASSS)**](https://easss.upb.ro/) (2025) by EURAMAS community
+  Long-running summer school (since 1999) offering introductory and advanced courses across autonomous agents and MAS, aimed at researchers and students. `community`, `tutorials`, `foundations`
 
-- **AAMAS tutorials programme** (2025) by AAMAS organisers
-  Tutorials highlight evolving MAS topics; the official programme page provides titles/abstracts and can seed curated "learning pathways" each year. [AAMAS 2025 tutorials](https://aamas2025.org/index.php/conference/program/tutorials/) · `community`, `tutorials`, `MAS`
+- [**AAMAS tutorials programme**](https://aamas2025.org/index.php/conference/program/tutorials/) (2025) by AAMAS organisers
+  Tutorials highlight evolving MAS topics; the official programme page provides titles/abstracts and can seed curated "learning pathways" each year. `community`, `tutorials`, `MAS`
 
-- **Cooperative AI Summer School** (2025) by Cooperative AI community
-  A summer school aimed at grounding participants in cooperative AI (overlapping with MAS/MARL, incentives, and human/agent cooperation). [Summer School 2025](https://www.cooperativeai.com/summer-school/summer-school-2025) · `cooperative-ai`, `MARL`, `incentives`
+- [**Cooperative AI Summer School**](https://www.cooperativeai.com/summer-school/summer-school-2025) (2025) by Cooperative AI community
+  A summer school aimed at grounding participants in cooperative AI (overlapping with MAS/MARL, incentives, and human/agent cooperation). `cooperative-ai`, `MARL`, `incentives`
 
-- AAMAS 2025 tutorial: **RL in Automated Negotiation (T1)** (2025) by Yasser Farouk
-  A concrete tutorial artefact (slides/code) framing negotiation as a multi-agent RL problem; useful for bridging MAS negotiation and learning-based approaches. [GitHub repo](https://github.com/yasserfarouk/aamas2025rlneg) · `negotiation`, `MARL`, `tutorial`
+- [AAMAS 2025 tutorial: **RL in Automated Negotiation (T1)**](https://github.com/yasserfarouk/aamas2025rlneg) (2025) by Yasser Farouk
+  A concrete tutorial artefact (slides/code) framing negotiation as a multi-agent RL problem; useful for bridging MAS negotiation and learning-based approaches. `negotiation`, `MARL`, `tutorial`
 
-- Stanford **CS 224M: Multi Agent Systems** (2014) by Stanford course staff; Instructor: Yoav Shoham
-  A game-theory-and-mechanism-design-heavy MAS course page with structured readings, lecture materials via edX links, and a direct tie-in to the Shoham & Leyton-Brown textbook. [Course page](https://web.stanford.edu/class/cs224m/) · `game-theory`, `mechanism-design`, `foundations`
+- [Stanford **CS 224M: Multi Agent Systems**](https://web.stanford.edu/class/cs224m/) (2014) by Stanford course staff; Instructor: Yoav Shoham
+  A game-theory-and-mechanism-design-heavy MAS course page with structured readings, lecture materials via edX links, and a direct tie-in to the Shoham & Leyton-Brown textbook. `game-theory`, `mechanism-design`, `foundations`
 
 
 ### Tutorials and how-to guides
 
-- **LangGraph documentation pointers** (2026) by LangChain/LangGraph maintainers
-  README positions LangGraph for durable execution, memory, and human-in-the-loop agent workflows—useful for building multi-agent graphs. [GitHub](https://github.com/langchain-ai/langgraph) · `LLM-agents`, `orchestration`, `graphs`
+- [**LangGraph documentation pointers**](https://github.com/langchain-ai/langgraph) (2026) by LangChain/LangGraph maintainers
+  README positions LangGraph for durable execution, memory, and human-in-the-loop agent workflows—useful for building multi-agent graphs. `LLM-agents`, `orchestration`, `graphs`
 
-- **NegMAS tutorials** (2026) by NegMAS maintainers
-  The repo links to tutorials and API references; also documents an ecosystem of competition frameworks and agents. [Tutorials](https://negmas.readthedocs.io/en/latest/tutorials.html) · `negotiation`, `how-to`, `simulation`
+- [**NegMAS tutorials**](https://negmas.readthedocs.io/en/latest/tutorials.html) (2026) by NegMAS maintainers
+  The repo links to tutorials and API references; also documents an ecosystem of competition frameworks and agents. `negotiation`, `how-to`, `simulation`
 
-- **AutoGen README (multi-agent orchestration examples)** (2025) by Microsoft
-  Includes code examples for multi-agent orchestration and notes on maintenance mode considerations for new users. [GitHub](https://github.com/microsoft/autogen) · `LLM-agents`, `orchestration`, `framework`
+- [**AutoGen README (multi-agent orchestration examples)**](https://github.com/microsoft/autogen) (2025) by Microsoft
+  Includes code examples for multi-agent orchestration and notes on maintenance mode considerations for new users. `LLM-agents`, `orchestration`, `framework`
 
-- **pyDCOP documentation** (2022) by Orange Open Source (archived)
-  Despite archival status, the repo points to hosted documentation and provides a practical entry to DCOP modelling and algorithm experimentation. [Docs](https://pydcop.readthedocs.io/) · `DCOP`, `coordination`, `how-to`
+- [**pyDCOP documentation**](https://pydcop.readthedocs.io/) (2022) by Orange Open Source (archived)
+  Despite archival status, the repo points to hosted documentation and provides a practical entry to DCOP modelling and algorithm experimentation. `DCOP`, `coordination`, `how-to`
 
-- **Swarm README and examples** (unspecified) by OpenAI
-  The README describes the two primitives (agents + handoffs), provides examples, and frames Swarm as a lightweight, testable educational resource for multi-agent orchestration. [GitHub](https://github.com/openai/swarm) · `LLM-agents`, `orchestration`, `tutorial`
+- [**Swarm README and examples**](https://github.com/openai/swarm) (unspecified) by OpenAI
+  The README describes the two primitives (agents + handoffs), provides examples, and frames Swarm as a lightweight, testable educational resource for multi-agent orchestration. `LLM-agents`, `orchestration`, `tutorial`
 
 
 ### Seminal papers and milestone work
 
-- **Decentralised Coordination of Continuously Valued Control Parameters using the Max-Sum Algorithm** (2009) by Stranders et al.
-  Demonstrates the Max-Sum message-passing approach for decentralised coordination via factor-graph representations, influential in MAS coordination and resource allocation formulations. [PDF (Southampton ePrints)](https://eprints.soton.ac.uk/267314/1/main-maxsumcont.pdf) · `DCOP`, `message-passing`, `coordination`
+- [**Decentralised Coordination of Continuously Valued Control Parameters using the Max-Sum Algorithm**](https://eprints.soton.ac.uk/267314/1/main-maxsumcont.pdf) (2009) by Stranders et al.
+  Demonstrates the Max-Sum message-passing approach for decentralised coordination via factor-graph representations, influential in MAS coordination and resource allocation formulations. `DCOP`, `message-passing`, `coordination`
 
-- **ADOPT: Asynchronous Distributed Constraint Optimization with Quality Guarantees** (2005) by Modi et al.
-  A key DCOP algorithm: asynchronous, parallel execution with guarantees on solution quality (optimality), strongly influencing DCOP as a MAS coordination formalism. [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0004370204001511) · `DCOP`, `coordination`, `optimization`
+- [**ADOPT: Asynchronous Distributed Constraint Optimization with Quality Guarantees**](https://www.sciencedirect.com/science/article/pii/S0004370204001511) (2005) by Modi et al.
+  A key DCOP algorithm: asynchronous, parallel execution with guarantees on solution quality (optimality), strongly influencing DCOP as a MAS coordination formalism. `DCOP`, `coordination`, `optimization`
 
-- **The Complexity of Decentralized Control of Markov Decision Processes** (2002) by Bernstein et al.
-  Formalises decentralised decision-making models and proves strong complexity results, grounding Dec-POMDP/DEC-MDP research in computational limits. [INFORMS DOI](https://pubsonline.informs.org/doi/abs/10.1287/moor.27.4.819.297) · `Dec-POMDP`, `planning`, `theory`
+- [**The Complexity of Decentralized Control of Markov Decision Processes**](https://pubsonline.informs.org/doi/abs/10.1287/moor.27.4.819.297) (2002) by Bernstein et al.
+  Formalises decentralised decision-making models and proves strong complexity results, grounding Dec-POMDP/DEC-MDP research in computational limits. `Dec-POMDP`, `planning`, `theory`
 
-- **An agent-based approach for building complex software systems** (2001) by Nicholas R. Jennings
-  A landmark argument for agent-based decomposition in complex software systems (autonomy, interaction, emergent system behaviour), shaping MAS engineering practice. [ACM DOI](https://dl.acm.org/doi/10.1145/367211.367250) · `agent-oriented-software`, `engineering`
+- [**An agent-based approach for building complex software systems**](https://dl.acm.org/doi/10.1145/367211.367250) (2001) by Nicholas R. Jennings
+  A landmark argument for agent-based decomposition in complex software systems (autonomy, interaction, emergent system behaviour), shaping MAS engineering practice. `agent-oriented-software`, `engineering`
 
-- **BDI Agents: From Theory to Practice** (1995) by Anand S. Rao, Michael P. Georgeff
-  A classic bridge from formal BDI logics to implemented agent systems; foundational to deliberative agent architectures and practical rational agency discussions. [AAAI PDF](https://cdn.aaai.org/ICMAS/1995/ICMAS95-042.pdf) · `BDI`, `agent-architectures`, `foundations`
+- [**BDI Agents: From Theory to Practice**](https://cdn.aaai.org/ICMAS/1995/ICMAS95-042.pdf) (1995) by Anand S. Rao, Michael P. Georgeff
+  A classic bridge from formal BDI logics to implemented agent systems; foundational to deliberative agent architectures and practical rational agency discussions. `BDI`, `agent-architectures`, `foundations`
 
-- **Agent-oriented programming** (1993) by Yoav Shoham
-  Establishes "agent-oriented programming" as a computational paradigm and helped catalyse agent-based approaches and mental-state abstractions in AI. [ScienceDirect](https://www.sciencedirect.com/science/article/pii/0004370293900349) · `agent-architectures`, `foundations`
+- [**Agent-oriented programming**](https://www.sciencedirect.com/science/article/pii/0004370293900349) (1993) by Yoav Shoham
+  Establishes "agent-oriented programming" as a computational paradigm and helped catalyse agent-based approaches and mental-state abstractions in AI. `agent-architectures`, `foundations`
 
-- **The Contract Net Protocol: High-Level Communication and Control in a Distributed Problem Solver** (1980) by Reid G. Smith
-  Introduces a negotiation-inspired protocol for distributed task allocation—one of the earliest and most influential coordination mechanisms in distributed AI/MAS. [ACM DOI](https://dl.acm.org/doi/10.1109/TC.1980.1675516) · `coordination`, `task-allocation`, `distributed-ai`
+- [**The Contract Net Protocol: High-Level Communication and Control in a Distributed Problem Solver**](https://dl.acm.org/doi/10.1109/TC.1980.1675516) (1980) by Reid G. Smith
+  Introduces a negotiation-inspired protocol for distributed task allocation—one of the earliest and most influential coordination mechanisms in distributed AI/MAS. `coordination`, `task-allocation`, `distributed-ai`
 
 
 ### Recent high-impact papers and surveys
 
 Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/evaluation influence, or (c) representing a major new direction (e.g., LLM-based multi-agent systems).
 
-- **General AgentBench** (2026) by —
-  Introduces a unified benchmark framework for evaluating general LLM agents across search/coding/reasoning/tool-use; relevant for assessing generality claims. [arXiv](https://arxiv.org/html/2602.18998v1) · `LLM-agents`, `benchmark`, `evaluation`
+- [**General AgentBench**](https://arxiv.org/html/2602.18998v1) (2026) by —
+  Introduces a unified benchmark framework for evaluating general LLM agents across search/coding/reasoning/tool-use; relevant for assessing generality claims. `LLM-agents`, `benchmark`, `evaluation`
 
-- **The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption** (2026) by —
-  Discusses MCP and A2A as emerging standards for structured, interoperable multi-agent communication in enterprise settings. [arXiv](https://arxiv.org/abs/2601.13671) · `protocols`, `orchestration`, `survey`
+- [**The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption**](https://arxiv.org/abs/2601.13671) (2026) by —
+  Discusses MCP and A2A as emerging standards for structured, interoperable multi-agent communication in enterprise settings. `protocols`, `orchestration`, `survey`
 
-- **Evaluation and Benchmarking of LLM Agents: A Survey** (2025) by Mohammadi et al.
-  A survey aiming to clarify the evaluation landscape for LLM agents; useful when designing benchmarks, metrics, and reporting practices. [ACM DOI](https://dl.acm.org/doi/10.1145/3711896.3736570) · `LLM-agents`, `survey`, `evaluation`
+- [**Evaluation and Benchmarking of LLM Agents: A Survey**](https://dl.acm.org/doi/10.1145/3711896.3736570) (2025) by Mohammadi et al.
+  A survey aiming to clarify the evaluation landscape for LLM agents; useful when designing benchmarks, metrics, and reporting practices. `LLM-agents`, `survey`, `evaluation`
 
-- **LLM Multi-Agent Systems: Challenges and Open Problems** (2025) by Tran et al.
-  Explicitly focuses on challenges/open problems for LLM multi-agent systems, helping turn "framework hacking" into research questions. [arXiv](https://arxiv.org/abs/2502.12668) · `LLM-agents`, `multi-agent`, `survey`
+- [**LLM Multi-Agent Systems: Challenges and Open Problems**](https://arxiv.org/abs/2502.12668) (2025) by Tran et al.
+  Explicitly focuses on challenges/open problems for LLM multi-agent systems, helping turn "framework hacking" into research questions. `LLM-agents`, `multi-agent`, `survey`
 
-- **A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP** (2025) by Ehtesham et al.
-  Comparative survey of four emerging agent communication/interoperability protocols across architecture, transport, security, and deployment dimensions. [arXiv](https://arxiv.org/abs/2505.02279) · `protocols`, `interoperability`, `survey`
+- [**A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP**](https://arxiv.org/abs/2505.02279) (2025) by Ehtesham et al.
+  Comparative survey of four emerging agent communication/interoperability protocols across architecture, transport, security, and deployment dimensions. `protocols`, `interoperability`, `survey`
 
-- **Advancing Multi-Agent Systems Through Model Context Protocol** (2025) by —
-  Examines MCP's role in MAS with case studies in enterprise knowledge management, collaborative research, and distributed problem-solving. [arXiv](https://arxiv.org/abs/2504.21030) · `MCP`, `multi-agent`, `protocols`
+- [**Advancing Multi-Agent Systems Through Model Context Protocol**](https://arxiv.org/abs/2504.21030) (2025) by —
+  Examines MCP's role in MAS with case studies in enterprise knowledge management, collaborative research, and distributed problem-solving. `MCP`, `multi-agent`, `protocols`
 
-- **BenchMARL: Benchmarking Multi-Agent Reinforcement Learning** (2024) by Bettini, Prorok, Moens
-  A benchmarking/training pipeline focused on **standardised configuration and reproducible comparisons** across algorithms, environments, and models (TorchRL backend). [GitHub repo](https://github.com/facebookresearch/BenchMARL) · `MARL`, `benchmarking`, `reproducibility`
+- [**BenchMARL: Benchmarking Multi-Agent Reinforcement Learning**](https://github.com/facebookresearch/BenchMARL) (2024) by Bettini, Prorok, Moens
+  A benchmarking/training pipeline focused on **standardised configuration and reproducible comparisons** across algorithms, environments, and models (TorchRL backend). `MARL`, `benchmarking`, `reproducibility`
 
-- **MLE-bench: Evaluating Machine Learning Agents on ML Engineering** (2024) by Chan et al.
-  Curates ML engineering tasks (from Kaggle competitions) to measure agent performance on real-world ML engineering workflows. [arXiv](https://arxiv.org/abs/2410.07095) · `LLM-agents`, `benchmark`, `ML-engineering`
+- [**MLE-bench: Evaluating Machine Learning Agents on ML Engineering**](https://arxiv.org/abs/2410.07095) (2024) by Chan et al.
+  Curates ML engineering tasks (from Kaggle competitions) to measure agent performance on real-world ML engineering workflows. `LLM-agents`, `benchmark`, `ML-engineering`
 
-- **Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks** (2024) by Fourney et al.
-  A generalist multi-agent architecture with an Orchestrator coordinating specialised agents (web/file/code) to complete complex tasks; a representative "agentic systems" direction. [arXiv](https://arxiv.org/abs/2411.04468) · `LLM-agents`, `multi-agent`, `tool-use`
+- [**Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks**](https://arxiv.org/abs/2411.04468) (2024) by Fourney et al.
+  A generalist multi-agent architecture with an Orchestrator coordinating specialised agents (web/file/code) to complete complex tasks; a representative "agentic systems" direction. `LLM-agents`, `multi-agent`, `tool-use`
 
-- **Large Language Model based Multi-Agents: A Survey of Progress and Challenges** (2024) by Guo et al.
-  Aggregates methods, patterns, and open problems for LLM-based multi-agent systems; a practical map of a fast-moving space. [arXiv](https://arxiv.org/abs/2402.01680) · `LLM-agents`, `multi-agent`, `survey`
+- [**Large Language Model based Multi-Agents: A Survey of Progress and Challenges**](https://arxiv.org/abs/2402.01680) (2024) by Guo et al.
+  Aggregates methods, patterns, and open problems for LLM-based multi-agent systems; a practical map of a fast-moving space. `LLM-agents`, `multi-agent`, `survey`
 
-- **MLAgentBench: Evaluating Language Agents on ML Experimentation** (2023–2024) by Huang et al.
-  Focuses evaluation on agents performing end-to-end ML experimentation tasks; useful for connecting agentic systems to scientific workflows. [arXiv](https://arxiv.org/abs/2310.03302) · `LLM-agents`, `benchmark`, `ML-engineering`
+- [**MLAgentBench: Evaluating Language Agents on ML Experimentation**](https://arxiv.org/abs/2310.03302) (2023–2024) by Huang et al.
+  Focuses evaluation on agents performing end-to-end ML experimentation tasks; useful for connecting agentic systems to scientific workflows. `LLM-agents`, `benchmark`, `ML-engineering`
 
-- **AgentBench: Evaluating LLMs as Agents** (2023) by Liu et al.
-  A multi-dimensional benchmark of interactive environments to evaluate "LLM-as-agent" behaviour, helping structure evaluation beyond static QA. [arXiv](https://arxiv.org/abs/2308.03688) · `LLM-agents`, `benchmark`, `evaluation`
+- [**AgentBench: Evaluating LLMs as Agents**](https://arxiv.org/abs/2308.03688) (2023) by Liu et al.
+  A multi-dimensional benchmark of interactive environments to evaluate "LLM-as-agent" behaviour, helping structure evaluation beyond static QA. `LLM-agents`, `benchmark`, `evaluation`
 
-- **Multi-Agent Reinforcement Learning: Foundations and Modern Approaches** (2023) by Wang et al.
-  A broad MARL survey spanning foundations, algorithms, and challenges; good for "state of the field" grounding alongside textbooks. [arXiv](https://arxiv.org/abs/2306.08502) · `MARL`, `survey`, `foundations`
+- [**Multi-Agent Reinforcement Learning: Foundations and Modern Approaches**](https://arxiv.org/abs/2306.08502) (2023) by Wang et al.
+  A broad MARL survey spanning foundations, algorithms, and challenges; good for "state of the field" grounding alongside textbooks. `MARL`, `survey`, `foundations`
 
-- **MARLlib: A Scalable and Efficient Multi-agent RL Library** (2022–2023) by Hu et al.
-  Standardises MARL training across tasks/algorithms via wrappers + policy mapping; positioned as a scalable library building on Ray/RLlib infrastructure. [JMLR PDF](https://www.jmlr.org/papers/volume24/23-0378/23-0378.pdf) · `MARL`, `library`, `reproducibility`
+- [**MARLlib: A Scalable and Efficient Multi-agent RL Library**](https://www.jmlr.org/papers/volume24/23-0378/23-0378.pdf) (2022–2023) by Hu et al.
+  Standardises MARL training across tasks/algorithms via wrappers + policy mapping; positioned as a scalable library building on Ray/RLlib infrastructure. `MARL`, `library`, `reproducibility`
 
-- **Melting Pot 2.0** (2022) by Agapiou et al.
-  Expands and revises Melting Pot, including more scenarios and details intended as a sustained reference for future work using the Melting Pot protocol. [arXiv](https://arxiv.org/abs/2211.13746) · `MARL`, `evaluation`, `social`
+- [**Melting Pot 2.0**](https://arxiv.org/abs/2211.13746) (2022) by Agapiou et al.
+  Expands and revises Melting Pot, including more scenarios and details intended as a sustained reference for future work using the Melting Pot protocol. `MARL`, `evaluation`, `social`
 
-- **SMACv2: A New Benchmark for Cooperative Multi-Agent RL** (2022) by Ellis et al.
-  Updates the StarCraft cooperative benchmark to address "solved" aspects of SMAC via added randomisation and diversity; widely used for evaluating cooperative MARL scalability and robustness. [arXiv](https://arxiv.org/abs/2212.07489) · `MARL`, `benchmark`, `StarCraft`
+- [**SMACv2: A New Benchmark for Cooperative Multi-Agent RL**](https://arxiv.org/abs/2212.07489) (2022) by Ellis et al.
+  Updates the StarCraft cooperative benchmark to address "solved" aspects of SMAC via added randomisation and diversity; widely used for evaluating cooperative MARL scalability and robustness. `MARL`, `benchmark`, `StarCraft`
 
-- **VMAS: A Vectorized Multi-Agent Simulator for Collective Robot Learning** (2022) by Bettini et al.
-  Provides a vectorised, differentiable multi-agent simulator for scalable multi-robot MARL benchmarking; targets high-throughput training and multi-robot scenarios. [arXiv](https://arxiv.org/abs/2207.03530) · `robotics`, `simulation`, `MARL`
+- [**VMAS: A Vectorized Multi-Agent Simulator for Collective Robot Learning**](https://arxiv.org/abs/2207.03530) (2022) by Bettini et al.
+  Provides a vectorised, differentiable multi-agent simulator for scalable multi-robot MARL benchmarking; targets high-throughput training and multi-robot scenarios. `robotics`, `simulation`, `MARL`
 
-- **Problem Compilation for Multi-Agent Path Finding: a Survey** (2022) by Pavel Surynek
-  A survey view of MAPF research directions and problem formulations; useful for MAS planning/coordination beyond learning-based methods. [IJCAI survey](https://www.ijcai.org/proceedings/2022/0783) · `planning`, `MAPF`, `survey`
+- [**Problem Compilation for Multi-Agent Path Finding: a Survey**](https://www.ijcai.org/proceedings/2022/0783) (2022) by Pavel Surynek
+  A survey view of MAPF research directions and problem formulations; useful for MAS planning/coordination beyond learning-based methods. `planning`, `MAPF`, `survey`
 
-- **The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games** (2021) by Yu et al.
-  Reassesses on-policy PPO in cooperative MARL and popularises MAPPO-style baselines; widely used as a strong, practical reference point for cooperative MARL comparisons. [arXiv](https://arxiv.org/abs/2103.01955) · `MARL`, `CTDE`, `baselines`
+- [**The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games**](https://arxiv.org/abs/2103.01955) (2021) by Yu et al.
+  Reassesses on-policy PPO in cooperative MARL and popularises MAPPO-style baselines; widely used as a strong, practical reference point for cooperative MARL comparisons. `MARL`, `CTDE`, `baselines`
 
-- **Scalable Evaluation of Multi-Agent Reinforcement Learning with Melting Pot** (2021) by Leibo et al.
-  Proposes **Melting Pot** as an evaluation suite emphasising generalisation to new social partners and social scenarios, broadening MARL evaluation beyond narrow task overfitting. [arXiv](https://arxiv.org/abs/2107.06857) · `MARL`, `evaluation`, `social`
+- [**Scalable Evaluation of Multi-Agent Reinforcement Learning with Melting Pot**](https://arxiv.org/abs/2107.06857) (2021) by Leibo et al.
+  Proposes **Melting Pot** as an evaluation suite emphasising generalisation to new social partners and social scenarios, broadening MARL evaluation beyond narrow task overfitting. `MARL`, `evaluation`, `social`
 
 
 ### Datasets and benchmarks
 
-- **OpenSpiel** (2019–) by DeepMind
-  A widely used suite of games for reinforcement learning and game-theoretic research (C++/Python). [GitHub](https://github.com/google-deepmind/open_spiel) · `game-theory`, `RL`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/open_spiel.svg?style=social&label=Star)
+- [**OpenSpiel**](https://github.com/google-deepmind/open_spiel) (2019–) by DeepMind
+  A widely used suite of games for reinforcement learning and game-theoretic research (C++/Python). `game-theory`, `RL`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/open_spiel.svg?style=social&label=Star)
 
-- **PettingZoo** (2020–) by Farama Foundation
-  A standardised Python API + environment collection for MARL; paired with an academic paper describing the API model (AEC) and design choices. [GitHub](https://github.com/Farama-Foundation/PettingZoo) · `MARL`, `benchmarks`, `simulation` · ![Stars](https://img.shields.io/github/stars/Farama-Foundation/PettingZoo.svg?style=social&label=Star)
+- [**PettingZoo**](https://github.com/Farama-Foundation/PettingZoo) (2020–) by Farama Foundation
+  A standardised Python API + environment collection for MARL; paired with an academic paper describing the API model (AEC) and design choices. `MARL`, `benchmarks`, `simulation` · ![Stars](https://img.shields.io/github/stars/Farama-Foundation/PettingZoo.svg?style=social&label=Star)
 
-- **Multi-Agent Particle Environment (MPE)** (2017) by OpenAI (archived)
-  Classic particle-world MARL environment used in multiple seminal MARL/communication papers; archived "as-is" and the repo points to maintained variants in PettingZoo. [GitHub (archived)](https://github.com/openai/multiagent-particle-envs) · `MARL`, `continuous`, `benchmark` · ![Stars](https://img.shields.io/github/stars/openai/multiagent-particle-envs.svg?style=social&label=Star)
+- [**Multi-Agent Particle Environment (MPE)**](https://github.com/openai/multiagent-particle-envs) (2017) by OpenAI (archived)
+  Classic particle-world MARL environment used in multiple seminal MARL/communication papers; archived "as-is" and the repo points to maintained variants in PettingZoo. `MARL`, `continuous`, `benchmark` · ![Stars](https://img.shields.io/github/stars/openai/multiagent-particle-envs.svg?style=social&label=Star)
 
-- **Overcooked-AI** (2019–) by HumanCompatibleAI
-  Benchmark environment for cooperative coordination (human-AI and AI-AI); includes data links and references to research using the environment. [GitHub](https://github.com/HumanCompatibleAI/overcooked_ai) · `cooperation`, `human-ai`, `coordination` · ![Stars](https://img.shields.io/github/stars/HumanCompatibleAI/overcooked_ai.svg?style=social&label=Star)
+- [**Overcooked-AI**](https://github.com/HumanCompatibleAI/overcooked_ai) (2019–) by HumanCompatibleAI
+  Benchmark environment for cooperative coordination (human-AI and AI-AI); includes data links and references to research using the environment. `cooperation`, `human-ai`, `coordination` · ![Stars](https://img.shields.io/github/stars/HumanCompatibleAI/overcooked_ai.svg?style=social&label=Star)
 
-- **Melting Pot** (2021–) by DeepMind
-  Multi-agent evaluation suite focused on social interactions and generalisation; repo includes evaluation tooling and documentation. [GitHub](https://github.com/google-deepmind/meltingpot) · `MARL`, `social`, `evaluation` · ![Stars](https://img.shields.io/github/stars/google-deepmind/meltingpot.svg?style=social&label=Star)
+- [**Melting Pot**](https://github.com/google-deepmind/meltingpot) (2021–) by DeepMind
+  Multi-agent evaluation suite focused on social interactions and generalisation; repo includes evaluation tooling and documentation. `MARL`, `social`, `evaluation` · ![Stars](https://img.shields.io/github/stars/google-deepmind/meltingpot.svg?style=social&label=Star)
 
-- **Hanabi Learning Environment** (2018–2024) by DeepMind (archived)
-  Research platform implementing the cooperative game Hanabi as an RL environment; repo is archived (read-only) as of 2024-04-18. [GitHub (archived)](https://github.com/google-deepmind/hanabi-learning-environment) · `cooperative`, `partial-obs`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/hanabi-learning-environment.svg?style=social&label=Star)
+- [**Hanabi Learning Environment**](https://github.com/google-deepmind/hanabi-learning-environment) (2018–2024) by DeepMind (archived)
+  Research platform implementing the cooperative game Hanabi as an RL environment; repo is archived (read-only) as of 2024-04-18. `cooperative`, `partial-obs`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/hanabi-learning-environment.svg?style=social&label=Star)
 
-- **VMAS environments** (2022–) by Prorok Lab
-  A simulator plus a set of multi-robot scenarios; supports vectorised execution for throughput. [GitHub](https://github.com/proroklab/VectorizedMultiAgentSimulator) · `robotics`, `simulation`, `MARL` · ![Stars](https://img.shields.io/github/stars/proroklab/VectorizedMultiAgentSimulator.svg?style=social&label=Star)
+- [**VMAS environments**](https://github.com/proroklab/VectorizedMultiAgentSimulator) (2022–) by Prorok Lab
+  A simulator plus a set of multi-robot scenarios; supports vectorised execution for throughput. `robotics`, `simulation`, `MARL` · ![Stars](https://img.shields.io/github/stars/proroklab/VectorizedMultiAgentSimulator.svg?style=social&label=Star)
 
-- **MAgent2** (2020–) by Farama Foundation
-  Engine for gridworld-like many-agent environments; positioned as maintained fork + separate home for earlier PettingZoo environments. [GitHub](https://github.com/Farama-Foundation/MAgent2) · `many-agents`, `simulation`, `MARL` · ![Stars](https://img.shields.io/github/stars/Farama-Foundation/MAgent2.svg?style=social&label=Star)
+- [**MAgent2**](https://github.com/Farama-Foundation/MAgent2) (2020–) by Farama Foundation
+  Engine for gridworld-like many-agent environments; positioned as maintained fork + separate home for earlier PettingZoo environments. `many-agents`, `simulation`, `MARL` · ![Stars](https://img.shields.io/github/stars/Farama-Foundation/MAgent2.svg?style=social&label=Star)
 
-- **SMACv2** (2019–) by WhiRL / Oxford
-  Cooperative MARL benchmark in StarCraft II micromanagement scenarios; designed to be API-compatible with SMAC while adding more challenging diversity. [GitHub](https://github.com/oxwhirl/smacv2) · `MARL`, `StarCraft`, `benchmark` · ![Stars](https://img.shields.io/github/stars/oxwhirl/smacv2.svg?style=social&label=Star)
+- [**SMACv2**](https://github.com/oxwhirl/smacv2) (2019–) by WhiRL / Oxford
+  Cooperative MARL benchmark in StarCraft II micromanagement scenarios; designed to be API-compatible with SMAC while adding more challenging diversity. `MARL`, `StarCraft`, `benchmark` · ![Stars](https://img.shields.io/github/stars/oxwhirl/smacv2.svg?style=social&label=Star)
 
-- **SMAC (original)** (unspecified) by WhiRL / Oxford
-  Predecessor benchmark; useful for historical consistency with older baselines and for papers reporting SMAC results. [GitHub](https://github.com/oxwhirl/smac) · `MARL`, `StarCraft`, `benchmark`
+- [**SMAC (original)**](https://github.com/oxwhirl/smac) (unspecified) by WhiRL / Oxford
+  Predecessor benchmark; useful for historical consistency with older baselines and for papers reporting SMAC results. `MARL`, `StarCraft`, `benchmark`
 
-- **Hanabi Challenge paper** (2020) by Bard et al.
-  Introduces Hanabi as an AI challenge domain and a learning environment/framework for research evaluation. [Google Research](https://research.google/pubs/the-hanabi-challenge-a-new-frontier-for-ai-research/) · `cooperative`, `communication`, `benchmark`
+- [**Hanabi Challenge paper**](https://research.google/pubs/the-hanabi-challenge-a-new-frontier-for-ai-research/) (2020) by Bard et al.
+  Introduces Hanabi as an AI challenge domain and a learning environment/framework for research evaluation. `cooperative`, `communication`, `benchmark`
 
-- **MAPF community + resources** (unspecified) by MAPF community
-  Central community hub for Multi-Agent Path Finding (definitions, materials, publications). [mapf.info](https://mapf.info/) · `MAPF`, `planning`, `community`
+- [**MAPF community + resources**](https://mapf.info/) (unspecified) by MAPF community
+  Central community hub for Multi-Agent Path Finding (definitions, materials, publications). `MAPF`, `planning`, `community`
 
-- **League of Robot Runners / MAPF code archive** (unspecified) by MAPF-Competition
-  A code archive of competition solutions, explicitly intended to reduce barriers of entry and improve reproducibility for MAPF. [GitHub](https://github.com/MAPF-Competition/Code-Archive) · `MAPF`, `competition`, `reproducibility`
+- [**League of Robot Runners / MAPF code archive**](https://github.com/MAPF-Competition/Code-Archive) (unspecified) by MAPF-Competition
+  A code archive of competition solutions, explicitly intended to reduce barriers of entry and improve reproducibility for MAPF. `MAPF`, `competition`, `reproducibility`
 
 
 ### Frameworks, libraries, and tools
@@ -399,29 +399,29 @@ Framework selection is often the biggest "time sink" decision in MAS work. The l
 
 ### Competitions and challenges
 
-- **ANAC leagues listing (ANL, SCML)** (2026) by Brown University site
-  Shows the league structure (Automated Negotiation League; Supply Chain Management League) for ANAC 2026. [ANAC (leagues)](https://scml.cs.brown.edu/) · `negotiation`, `benchmark`
+- [**ANAC leagues listing (ANL, SCML)**](https://scml.cs.brown.edu/) (2026) by Brown University site
+  Shows the league structure (Automated Negotiation League; Supply Chain Management League) for ANAC 2026. `negotiation`, `benchmark`
 
-- **Hanabi Challenge** (2020–) by Google Research / community
-  A cooperative imperfect-information game used as an AI challenge; the paper introduces an open-source learning environment and evaluation framing. [Paper](https://research.google/pubs/the-hanabi-challenge-a-new-frontier-for-ai-research/) · `cooperation`, `communication`, `benchmark`
+- [**Hanabi Challenge**](https://research.google/pubs/the-hanabi-challenge-a-new-frontier-for-ai-research/) (2020–) by Google Research / community
+  A cooperative imperfect-information game used as an AI challenge; the paper introduces an open-source learning environment and evaluation framing. `cooperation`, `communication`, `benchmark`
 
-- **Automated Negotiating Agents Competition (ANAC)** (2010–) by ANAC organisers
-  Tournament series for benchmarking automated negotiation strategies; ANAC 2025 page summarises aims and positioning as a practical benchmark. [ANAC 2025](https://scml.cs.brown.edu/anac2025) · `negotiation`, `competition`, `benchmark`
+- [**Automated Negotiating Agents Competition (ANAC)**](https://scml.cs.brown.edu/anac2025) (2010–) by ANAC organisers
+  Tournament series for benchmarking automated negotiation strategies; ANAC 2025 page summarises aims and positioning as a practical benchmark. `negotiation`, `competition`, `benchmark`
 
-- **RoboCup Soccer Simulation League** (ongoing) by RoboCup
-  Multi-agent team strategy competition in a simulated soccer environment; official page highlights "independently moving software players (agents)". [RoboCup Simulation League](https://www.robocup.org/leagues/23) · `robotics`, `multi-agent`, `competition`
+- [**RoboCup Soccer Simulation League**](https://www.robocup.org/leagues/23) (ongoing) by RoboCup
+  Multi-agent team strategy competition in a simulated soccer environment; official page highlights "independently moving software players (agents)". `robotics`, `multi-agent`, `competition`
 
-- **League of Robot Runners (MAPF competition)** (ongoing) by MAPF-Competition
-  Competition solution archive intended to lower barrier of entry and support reproducibility for MAPF. [Code archive](https://github.com/MAPF-Competition/Code-Archive) · `MAPF`, `planning`, `competition`
+- [**League of Robot Runners (MAPF competition)**](https://github.com/MAPF-Competition/Code-Archive) (ongoing) by MAPF-Competition
+  Competition solution archive intended to lower barrier of entry and support reproducibility for MAPF. `MAPF`, `planning`, `competition`
 
-- **RoboCup Rescue Simulation "Agent Simulation"** (ongoing) by RoboCup Rescue Simulation
-  "Agent Simulation" competition track with publications list curated by organisers; useful for multi-agent disaster response and coordination research context. [Agent Simulation](https://rescuesim.robocup.org/research/publications/agent-competition/) · `robotics`, `simulation`, `coordination`
+- [**RoboCup Rescue Simulation "Agent Simulation"**](https://rescuesim.robocup.org/research/publications/agent-competition/) (ongoing) by RoboCup Rescue Simulation
+  "Agent Simulation" competition track with publications list curated by organisers; useful for multi-agent disaster response and coordination research context. `robotics`, `simulation`, `coordination`
 
-- **Supply Chain Management League (SCML)** (unspecified) by SCML organisers
-  A negotiation-centric simulation: build an agent negotiating trades for a factory manager in a supply chain setting. [SCML](https://scml.cs.brown.edu/scml) · `negotiation`, `simulation`, `markets`
+- [**Supply Chain Management League (SCML)**](https://scml.cs.brown.edu/scml) (unspecified) by SCML organisers
+  A negotiation-centric simulation: build an agent negotiating trades for a factory manager in a supply chain setting. `negotiation`, `simulation`, `markets`
 
-- **Multi-Agent Programming Contest (MAPC)** (unspecified) by MAPC organisers
-  Long-running contest emphasising engineering of MAS that coordinate in a shared environment (often used in agent programming education/research). [MAPC site](https://multiagentcontest.org/) · `MAS-engineering`, `coordination`, `competition`
+- [**Multi-Agent Programming Contest (MAPC)**](https://multiagentcontest.org/) (unspecified) by MAPC organisers
+  Long-running contest emphasising engineering of MAS that coordinate in a shared environment (often used in agent programming education/research). `MAS-engineering`, `coordination`, `competition`
 
 
 ### Agent interoperability protocols
@@ -448,53 +448,53 @@ A fast-emerging layer in LLM-based multi-agent systems: open protocols standardi
 
 ### Reproducibility resources and code
 
-- **NeurIPS Paper Checklist (reproducibility + transparency)** (2025) by NeurIPS
-  The checklist is explicitly described as encouraging best practices for reproducibility, transparency, ethics, and societal impact, and is part of submission requirements. [Guidelines](https://neurips.cc/public/guides/PaperChecklist) · `reproducibility`, `reporting`, `community`
+- [**NeurIPS Paper Checklist (reproducibility + transparency)**](https://neurips.cc/public/guides/PaperChecklist) (2025) by NeurIPS
+  The checklist is explicitly described as encouraging best practices for reproducibility, transparency, ethics, and societal impact, and is part of submission requirements. `reproducibility`, `reporting`, `community`
 
-- **BenchMARL** (2024) by Facebook Research
-  Explicitly designed around reproducibility and standardisation of MARL experiments; includes configuration discipline and benchmarking abstractions. [GitHub](https://github.com/facebookresearch/BenchMARL) · `MARL`, `reproducibility`, `benchmarking`
+- [**BenchMARL**](https://github.com/facebookresearch/BenchMARL) (2024) by Facebook Research
+  Explicitly designed around reproducibility and standardisation of MARL experiments; includes configuration discipline and benchmarking abstractions. `MARL`, `reproducibility`, `benchmarking`
 
-- **MARLlib** (2022–2023) by Replicable-MARL
-  Emphasises standardised wrappers and policy mapping to reduce compatibility friction; provides a codebase associated with both arXiv and JMLR versions. [GitHub](https://github.com/Replicable-MARL/MARLlib) · `MARL`, `reproducibility`, `library`
+- [**MARLlib**](https://github.com/Replicable-MARL/MARLlib) (2022–2023) by Replicable-MARL
+  Emphasises standardised wrappers and policy mapping to reduce compatibility friction; provides a codebase associated with both arXiv and JMLR versions. `MARL`, `reproducibility`, `library`
 
-- **MAPF competition code archive** (ongoing) by MAPF-Competition
-  Reproducibility mechanism in a competition context (collects top implementations yearly) to help newcomers and facilitate comparisons. [GitHub](https://github.com/MAPF-Competition/Code-Archive) · `MAPF`, `reproducibility`, `competition`
+- [**MAPF competition code archive**](https://github.com/MAPF-Competition/Code-Archive) (ongoing) by MAPF-Competition
+  Reproducibility mechanism in a competition context (collects top implementations yearly) to help newcomers and facilitate comparisons. `MAPF`, `reproducibility`, `competition`
 
-- **OpenReview** (ongoing) by OpenReview (nonprofit)
-  A peer review + publishing infrastructure used by major ML venues; useful for reading reviews, comparing revisions, and tracking reproducibility discussions. [About OpenReview](https://openreview.net/about) · `peer-review`, `reproducibility`, `community`
+- [**OpenReview**](https://openreview.net/about) (ongoing) by OpenReview (nonprofit)
+  A peer review + publishing infrastructure used by major ML venues; useful for reading reviews, comparing revisions, and tracking reproducibility discussions. `peer-review`, `reproducibility`, `community`
 
-- **MARL papers with code (curated)** (unspecified) by TimeBreaker (community)
-  A community-maintained catalogue of MARL papers with code; useful as a quick "code exists?" discovery layer (not a primary source for claims). [GitHub](https://github.com/TimeBreaker/MARL-papers-with-code) · `MARL`, `code`, `index`
+- [**MARL papers with code (curated)**](https://github.com/TimeBreaker/MARL-papers-with-code) (unspecified) by TimeBreaker (community)
+  A community-maintained catalogue of MARL papers with code; useful as a quick "code exists?" discovery layer (not a primary source for claims). `MARL`, `code`, `index`
 
 
 ### Community resources
 
-- **AAMAS conference** (2026) by AAMAS organisers
-  Flagship MAS venue; AAMAS 2026 dates are 25–29 May 2026 in Paphos, Cyprus. [AAMAS 2026](https://cyprusconferences.org/aamas2026/) · `conference`, `MAS`, `community`
+- [**AAMAS conference**](https://cyprusconferences.org/aamas2026/) (2026) by AAMAS organisers
+  Flagship MAS venue; AAMAS 2026 dates are 25–29 May 2026 in Paphos, Cyprus. `conference`, `MAS`, `community`
 
-- **Agentic AI Foundation (AAIF)** (2025) by Linux Foundation
-  Industry governance body for open agentic standards (stewards MCP, A2A, AGENTS.md); platinum members include AWS, Anthropic, Block, Google, Microsoft, and OpenAI. [AAIF](https://aaif.io/) · `standards`, `governance`, `LLM-agents`
+- [**Agentic AI Foundation (AAIF)**](https://aaif.io/) (2025) by Linux Foundation
+  Industry governance body for open agentic standards (stewards MCP, A2A, AGENTS.md); platinum members include AWS, Anthropic, Block, Google, Microsoft, and OpenAI. `standards`, `governance`, `LLM-agents`
 
-- **EUMAS (European Conference on MAS)** (2025) by EUMAS organisers
-  European venue specifically focused on MAS research, complementary to broader AI conferences. [EUMAS 2025](https://euramas.github.io/eumas2025/) · `conference`, `MAS`
+- [**EUMAS (European Conference on MAS)**](https://euramas.github.io/eumas2025/) (2025) by EUMAS organisers
+  European venue specifically focused on MAS research, complementary to broader AI conferences. `conference`, `MAS`
 
-- **AAMAS workshops** (2025) by AAMAS organisers
-  Workshops pages are useful for tracking subcommunity focus areas (emerging topics, nascent benchmarks). [AAMAS 2025 workshops](https://aamas2025.org/index.php/conference/program/accepted-workshops/) · `workshops`, `community`
+- [**AAMAS workshops**](https://aamas2025.org/index.php/conference/program/accepted-workshops/) (2025) by AAMAS organisers
+  Workshops pages are useful for tracking subcommunity focus areas (emerging topics, nascent benchmarks). `workshops`, `community`
 
-- **IFAAMAS (organising association)** (ongoing) by IFAAMAS
-  Association representing autonomous agents and MAS, distributing knowledge through conferences and related activities. [IFAAMAS](https://www.ifaamas.org/) · `community`, `MAS`
+- [**IFAAMAS (organising association)**](https://www.ifaamas.org/) (ongoing) by IFAAMAS
+  Association representing autonomous agents and MAS, distributing knowledge through conferences and related activities. `community`, `MAS`
 
-- **EURAMAS** (ongoing) by European Association for Multi-Agent Systems
-  Community hub for European MAS activities (EASSS, EUMAS, etc.). [EURAMAS](https://sites.google.com/view/euramas/) · `community`, `Europe`, `MAS`
+- [**EURAMAS**](https://sites.google.com/view/euramas/) (ongoing) by European Association for Multi-Agent Systems
+  Community hub for European MAS activities (EASSS, EUMAS, etc.). `community`, `Europe`, `MAS`
 
-- **RoboCup Soccer Simulation League + mailing list** (ongoing) by RoboCup
-  Official league page describes the simulation league and points to an official mailing list. [League page](https://www.robocup.org/leagues/23) · `robotics`, `simulation`, `community`
+- [**RoboCup Soccer Simulation League + mailing list**](https://www.robocup.org/leagues/23) (ongoing) by RoboCup
+  Official league page describes the simulation league and points to an official mailing list. `robotics`, `simulation`, `community`
 
-- **NetLogo community channels** (ongoing) by NetLogo maintainers
-  The NetLogo repo points to a user group, forum, and a developer list (`netlogo-devel`), supporting community troubleshooting and extension. [GitHub](https://github.com/NetLogo/NetLogo) · `ABM`, `simulation`, `community`
+- [**NetLogo community channels**](https://github.com/NetLogo/NetLogo) (ongoing) by NetLogo maintainers
+  The NetLogo repo points to a user group, forum, and a developer list (`netlogo-devel`), supporting community troubleshooting and extension. `ABM`, `simulation`, `community`
 
-- **MAPF community portal** (unspecified) by MAPF community
-  Centralised MAPF info and materials; useful for MAS planning researchers and competition participants. [mapf.info](https://mapf.info/) · `MAPF`, `planning`, `community`
+- [**MAPF community portal**](https://mapf.info/) (unspecified) by MAPF community
+  Centralised MAPF info and materials; useful for MAS planning researchers and competition participants. `MAPF`, `planning`, `community`
 
 
 ## Contribution guidelines and curation criteria

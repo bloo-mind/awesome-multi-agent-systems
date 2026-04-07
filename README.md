@@ -428,20 +428,20 @@ Framework selection is often the biggest "time sink" decision in MAS work. The l
 
 A fast-emerging layer in LLM-based multi-agent systems: open protocols standardising how agents connect to tools, communicate with each other, and interact with users. Governance is converging under the **Agentic AI Foundation (AAIF)**, a Linux Foundation directed fund co-founded by Anthropic, Block, Google, Microsoft, and OpenAI (formed December 2025).
 
-- **Model Context Protocol (MCP)** — Tool/context access · Anthropic / AAIF (2024) · MIT
-  An open standard providing a universal JSON-RPC interface for AI applications to connect to external tools, data sources, and services — "USB-C for AI." Adopted by OpenAI, Google, Microsoft, and 10,000+ production servers. Donated to the Linux Foundation (AAIF) in Dec 2025. [Spec](https://modelcontextprotocol.io) · [GitHub](https://github.com/modelcontextprotocol) · ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers.svg?style=social&label=Star)
+- [**Model Context Protocol (MCP)**](https://modelcontextprotocol.io) — Tool/context access · Anthropic / AAIF (2024) · MIT
+  An open standard providing a universal JSON-RPC interface for AI applications to connect to external tools, data sources, and services — "USB-C for AI." Adopted by OpenAI, Google, Microsoft, and 10,000+ production servers. Donated to the Linux Foundation (AAIF) in Dec 2025. [GitHub](https://github.com/modelcontextprotocol) · ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers.svg?style=social&label=Star)
 
-- **Agent2Agent Protocol (A2A)** — Agent-to-agent · Google / AAIF (2025) · Apache-2.0
-  An open protocol for cross-framework agent-to-agent communication: discovery via Agent Cards, task negotiation, and multimodal collaboration without exposing internal logic. 150+ partner organisations; donated to Linux Foundation in June 2025. Absorbed IBM's ACP. [Spec](https://a2a-protocol.org/latest/) · [GitHub](https://github.com/a2aproject/A2A) · ![Stars](https://img.shields.io/github/stars/a2aproject/A2A.svg?style=social&label=Star)
+- [**Agent2Agent Protocol (A2A)**](https://a2a-protocol.org/latest/) — Agent-to-agent · Google / AAIF (2025) · Apache-2.0
+  An open protocol for cross-framework agent-to-agent communication: discovery via Agent Cards, task negotiation, and multimodal collaboration without exposing internal logic. 150+ partner organisations; donated to Linux Foundation in June 2025. Absorbed IBM's ACP. [GitHub](https://github.com/a2aproject/A2A) · ![Stars](https://img.shields.io/github/stars/a2aproject/A2A.svg?style=social&label=Star)
 
-- **AGENTS.md** — Agent instructions · OpenAI / AAIF (2025) · MIT
-  A simple, open markdown convention providing AI coding agents with project-specific instructions (build commands, code style, testing rules); adopted by 60,000+ repositories and supported by all major AI coding tools. [GitHub](https://github.com/agentsmd/agents.md) · ![Stars](https://img.shields.io/github/stars/agentsmd/agents.md.svg?style=social&label=Star)
+- [**AGENTS.md**](https://github.com/agentsmd/agents.md) — Agent instructions · OpenAI / AAIF (2025) · MIT
+  A simple, open markdown convention providing AI coding agents with project-specific instructions (build commands, code style, testing rules); adopted by 60,000+ repositories and supported by all major AI coding tools. ![Stars](https://img.shields.io/github/stars/agentsmd/agents.md.svg?style=social&label=Star)
 
-- **AG-UI (Agent-User Interaction Protocol)** — Agent-to-user · CopilotKit (2025) · MIT
-  An open, event-based protocol standardising real-time bidirectional communication between AI agent backends and frontend applications; enables generative UI, state synchronisation, and human-in-the-loop collaboration. [GitHub](https://github.com/ag-ui-protocol/ag-ui) · ![Stars](https://img.shields.io/github/stars/ag-ui-protocol/ag-ui.svg?style=social&label=Star)
+- [**AG-UI (Agent-User Interaction Protocol)**](https://github.com/ag-ui-protocol/ag-ui) — Agent-to-user · CopilotKit (2025) · MIT
+  An open, event-based protocol standardising real-time bidirectional communication between AI agent backends and frontend applications; enables generative UI, state synchronisation, and human-in-the-loop collaboration. ![Stars](https://img.shields.io/github/stars/ag-ui-protocol/ag-ui.svg?style=social&label=Star)
 
-- **Agent Network Protocol (ANP)** — Decentralised networking · ANP community (2024) · MIT
-  A W3C-aligned protocol for decentralised agent identity, discovery, and communication using a three-layer architecture built on DIDs and Verifiable Credentials; aims to be the networking layer for the "Agentic Web." [GitHub](https://github.com/agent-network-protocol/AgentNetworkProtocol) · ![Stars](https://img.shields.io/github/stars/agent-network-protocol/AgentNetworkProtocol.svg?style=social&label=Star)
+- [**Agent Network Protocol (ANP)**](https://github.com/agent-network-protocol/AgentNetworkProtocol) — Decentralised networking · ANP community (2024) · MIT
+  A W3C-aligned protocol for decentralised agent identity, discovery, and communication using a three-layer architecture built on DIDs and Verifiable Credentials; aims to be the networking layer for the "Agentic Web." ![Stars](https://img.shields.io/github/stars/agent-network-protocol/AgentNetworkProtocol.svg?style=social&label=Star)
 
 
 ## Reproducibility and community

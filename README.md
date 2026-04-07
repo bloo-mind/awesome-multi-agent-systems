@@ -119,34 +119,34 @@ timeline
 - [*An Introduction to MultiAgent Systems* (2nd ed.)](https://www.wiley.com/en-us/An+Introduction+to+MultiAgent+Systems%2C+2nd+Edition-p-9780470519462) (2009) by Michael Wooldridge
   A widely used MAS textbook covering agent concepts, interaction, coordination, and foundational theory; a solid "first principles" entry point for the broader MAS canon beyond MARL. `foundations`, `agents`, `coordination`
 
-- [*Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations*](http://www.masfoundations.org/) (2009) by Yoav Shoham, Kevin Leyton-Brown
+- [**Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations**](http://www.masfoundations.org/) (2009) by Yoav Shoham, Kevin Leyton-Brown
   Core reference connecting MAS with game theory, mechanism design, and computational foundations; also supported by a freely accessible "rough version" linked from a canonical course page. `game-theory`, `mechanism-design`, `foundations`
 
-- [*Multi-Agent Systems: A Modern Approach to Distributed Artificial Intelligence*](https://mitpress.mit.edu/9780262731317/multi-agent-systems/) (1999) by Gerhard Weiss (editor)
+- [**Multi-Agent Systems: A Modern Approach to Distributed Artificial Intelligence**](https://mitpress.mit.edu/9780262731317/multi-agent-systems/) (1999) by Gerhard Weiss (editor)
   Classic edited volume spanning early MAS themes (coordination, communication, architectures) from distributed AI roots; useful for historical depth and breadth. `distributed-ai`, `foundations`, `architectures`
 
 
 ### Recent books (2024–)
 
-- [*Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies*](https://link.springer.com/book/10.1007/978-3-032-01082-7) (2026) by R. Collier, V. Mascardi, A. Ricci (editors)
+- [**Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies**](https://link.springer.com/book/10.1007/978-3-032-01082-7) (2026) by R. Collier, V. Mascardi, A. Ricci (editors)
   A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." `MAS-engineering`, `platforms`, `toolkits`
 
-- [*Design Multi-Agent AI Systems Using MCP and A2A*](https://www.packtpub.com/en-sg/product/design-multi-agent-ai-systems-using-mcp-and-a2a-9781806116461) (2026) by Gigi Sayfan
+- [**Design Multi-Agent AI Systems Using MCP and A2A**](https://www.packtpub.com/en-sg/product/design-multi-agent-ai-systems-using-mcp-and-a2a-9781806116461) (2026) by Gigi Sayfan
   Hands-on guide to building a production-ready multi-agent AI framework from scratch in Python; covers tool use, memory via MCP, collaborative agent workflows with A2A, observability, and human-in-the-loop patterns. Companion code on GitHub. `LLM-agents`, `MCP`, `A2A`, `practice`
 
-- [*Agentic AI: Theories and Practices*](https://link.springer.com/book/10.1007/978-3-031-90026-6) (2025) by Ken Huang (editor)
+- [**Agentic AI: Theories and Practices**](https://link.springer.com/book/10.1007/978-3-031-90026-6) (2025) by Ken Huang (editor)
   Analyses the rise of generative AI agents (agentic AI) across industries, covering development, applications, and implications from finance to healthcare. `agentic-ai`, `LLM-agents`, `applications`
 
-- [*AI Agents in Action*](https://www.manning.com/books/ai-agents-in-action) (2025) by Micheal Lanham
+- [**AI Agents in Action**](https://www.manning.com/books/ai-agents-in-action) (2025) by Micheal Lanham
   Practitioner guide to building multi-agent AI systems using modern frameworks (LangChain, AutoGen, CrewAI); covers knowledge management, memory systems, and collaborative multi-agent architectures. `LLM-agents`, `multi-agent`, `practice`
 
-- [*Building Applications with AI Agents*](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) (2025) by Michael Albada
+- [**Building Applications with AI Agents**](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) (2025) by Michael Albada
   A practical, research-based approach to designing and implementing single- and multi-agent systems, covering coordination techniques and communication methods for agent systems. `LLM-agents`, `multi-agent`, `practice`
 
-- [*Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents*](https://multiagentbook.com/) (2025) by Victor Dibia
+- [**Designing Multi-Agent Systems: Principles, Patterns, and Implementation for AI Agents**](https://multiagentbook.com/) (2025) by Victor Dibia
   A first-principles guide to designing multi-agent applications, walking through building a feature-complete framework from scratch; by a core AutoGen contributor at Microsoft Research. Companion code on GitHub. `LLM-agents`, `multi-agent`, `practice`
 
-- [*Multi-Agent Reinforcement Learning: Foundations and Modern Approaches*](https://www.marl-book.com/) (2024) by Stefano V. Albrecht, Filippos Christianos, Lukas Schäfer
+- [**Multi-Agent Reinforcement Learning: Foundations and Modern Approaches**](https://www.marl-book.com/) (2024) by Stefano V. Albrecht, Filippos Christianos, Lukas Schäfer
   A modern MARL textbook focusing on models, solution concepts, algorithms, and practical challenges; associated with a companion website and learning materials (slides/code). `MARL`, `RL`, `game-theory`, `reproducibility`, `code`
 
 

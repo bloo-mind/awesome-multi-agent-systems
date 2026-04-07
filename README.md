@@ -6,8 +6,6 @@
 
 A curated, **annotated** list of resources for the Multi-Agent Systems (MAS) research community—spanning **classic milestone work** and **recent advances (2021–2026)** across coordination, game theory, negotiation, planning, multi-agent learning, robotics, and simulation.
 
-*Star counts below are **live badges** pulled from GitHub in real time via [shields.io](https://shields.io/).*
-
 ## Executive summary
 
 Multi-Agent Systems research sits at the intersection of **(i) decision-making**, **(ii) interaction** (cooperation/competition/negotiation), and **(iii) evaluation** in realistic multi-entity environments (games, markets, robots, social settings). This README is designed to help you:

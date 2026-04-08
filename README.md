@@ -319,9 +319,12 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 
 Framework selection is often the biggest "time sink" decision in MAS work. The list below emphasises language, license, adoption (stars), and maturity signals (active vs archived, release cadence, explicit "beta" disclaimers).
 
-- [**AutoGen**](https://github.com/microsoft/autogen) — Python · MIT (code) + CC-BY-4.0 (docs) · Maintenance mode (succeeded by Agent Framework)
+- [**AutoGen**](https://github.com/microsoft/autogen) — Python · MIT (code) + CC-BY-4.0 (docs) · Maintenance mode (succeeded by Microsoft Agent Framework)
   Multi-agent LLM application framework. ![Stars](https://img.shields.io/github/stars/microsoft/autogen.svg?style=social&label=Star)
-
+  
+  * [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) — Python/.NET · MIT · Active
+    Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. ![Stars](https://img.shields.io/github/stars/microsoft/agent-framework.svg?style=social&label=Star)
+    
 - [**CrewAI**](https://github.com/crewAIInc/crewAI) — Python · MIT · Mature/active (industry-oriented)
   Multi-agent workflow orchestration; native MCP and A2A support. ![Stars](https://img.shields.io/github/stars/crewAIInc/crewAI.svg?style=social&label=Star)
 
@@ -339,9 +342,6 @@ Framework selection is often the biggest "time sink" decision in MAS work. The l
 
 - [**Google ADK**](https://github.com/google/adk-python) — Python/Go/TS/Java · Apache-2.0 · Active
   Code-first toolkit for building, evaluating, and deploying AI agents; MCP tool support. ![Stars](https://img.shields.io/github/stars/google/adk-python.svg?style=social&label=Star)
-
-- [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) — Python/.NET · MIT · Active
-  Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. ![Stars](https://img.shields.io/github/stars/microsoft/agent-framework.svg?style=social&label=Star)
 
 - [**OpenSpiel**](https://github.com/google-deepmind/open_spiel) — C++/Python · Apache-2.0 · Mature/active
   Games for RL + game theory research. ![Stars](https://img.shields.io/github/stars/google-deepmind/open_spiel.svg?style=social&label=Star)

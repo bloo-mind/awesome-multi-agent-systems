@@ -1,7 +1,7 @@
 # Awesome Multi-Agent Systems [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-[![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Link Check](https://github.com/bloo-mind/awesome-multi-agent-systems/actions/workflows/link-check.yml/badge.svg)](https://github.com/bloo-mind/awesome-multi-agent-systems/actions/workflows/link-check.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/bloo-mind/awesome-multi-agent-systems)
 

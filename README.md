@@ -1,10 +1,14 @@
 # Awesome Multi-Agent Systems
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Link Check](https://github.com/bloo-mind/awesome-multi-agent-systems/actions/workflows/link-check.yml/badge.svg)](https://github.com/bloo-mind/awesome-multi-agent-systems/actions/workflows/link-check.yml)
+![Last Commit](https://img.shields.io/github/last-commit/bloo-mind/awesome-multi-agent-systems)
 
-A curated, **annotated** list of resources for the Multi-Agent Systems (MAS) research community—spanning **classic milestone work** and **recent advances (2021–2026)** across coordination, game theory, negotiation, planning, multi-agent learning, robotics, and simulation.
+A curated, **annotated** list of resources for the Multi-Agent Systems (MAS) research community—spanning **classic milestone work** and **recent advances (2021–2026)** across coordination, game theory, negotiation, planning, multi-agent learning, LLM-based agent teams, robotics, and simulation.
+
+*Star counts below are **live badges** pulled from GitHub in real time via [shields.io](https://shields.io/).*
 
 ## Executive summary
 
@@ -15,25 +19,39 @@ Multi-Agent Systems research sits at the intersection of **(i) decision-making**
 
 If any detail below is not reliably available from primary/official sources at authoring time, it is explicitly marked **unspecified**.
 
-## Table of contents
+## Contents
 
+- [Getting started: three pathways](#getting-started-three-pathways)
 - [How this repo is organised](#how-this-repo-is-organised)
 - [MAS taxonomy and milestone timeline](#mas-taxonomy-and-milestone-timeline)
 - [Curated resources](#curated-resources)
   - [Classic books (pre-2024)](#classic-books-pre-2024)
   - [Recent books (2024–)](#recent-books-2024)
   - [Tutorials and courses](#tutorials-and-courses)
-  - [Tutorials and how-to guides](#tutorials-and-how-to-guides)
+  - [How-to guides and framework docs](#how-to-guides-and-framework-docs)
   - [Seminal papers and milestone work](#seminal-papers-and-milestone-work)
   - [Recent high-impact papers and surveys](#recent-high-impact-papers-and-surveys)
   - [Datasets and benchmarks](#datasets-and-benchmarks)
   - [Frameworks, libraries, and tools](#frameworks-libraries-and-tools)
+    - [LLM-based multi-agent frameworks](#llm-based-multi-agent-frameworks)
+    - [MARL, simulation, and classic MAS platforms](#marl-simulation-and-classic-mas-platforms)
   - [Competitions and challenges](#competitions-and-challenges)
   - [Agent interoperability protocols](#agent-interoperability-protocols)
 - [Reproducibility and community](#reproducibility-and-community)
   - [Reproducibility resources and code](#reproducibility-resources-and-code)
   - [Community resources](#community-resources)
+- [Related awesome lists](#related-awesome-lists)
 - [Contribution guidelines and curation criteria](#contribution-guidelines-and-curation-criteria)
+
+## Getting started: three pathways
+
+Different readers need different entry points. Pick the pathway that matches you:
+
+**🎓 New to MAS research** — start with Wooldridge's [*An Introduction to MultiAgent Systems*](#classic-books-pre-2024), then the [seminal papers](#seminal-papers-and-milestone-work) (Contract Net → BDI → Dec-POMDP complexity), and browse the [taxonomy](#mas-taxonomy-and-milestone-timeline) to find your subfield.
+
+**🤖 MARL practitioner** — the [MARL book](#recent-books-2024) (free online) for foundations; [PettingZoo](#datasets-and-benchmarks) + [BenchMARL](#marl-simulation-and-classic-mas-platforms) to run reproducible experiments; [SMACv2](#datasets-and-benchmarks) and [Melting Pot](#datasets-and-benchmarks) as benchmarks; MAPPO as the baseline to beat.
+
+**🧠 LLM-agent builder** — start with the [Guo et al. survey](#recent-high-impact-papers-and-surveys) for the map, pick an orchestration framework from [LLM-based multi-agent frameworks](#llm-based-multi-agent-frameworks), wire up tools/communication via [MCP and A2A](#agent-interoperability-protocols), and read *Why Do Multi-Agent LLM Systems Fail?* before shipping.
 
 ## How this repo is organised
 
@@ -100,6 +118,8 @@ timeline
   2021 : Melting Pot (social/generalisation evaluation)
   2022 : VMAS (vectorised multi-robot MARL sim)
   2022 : SMACv2 (harder cooperative MARL benchmark)
+  2023 : Generative Agents (LLM agent societies)
+  2023 : CAMEL / AutoGen / MetaGPT (LLM multi-agent frameworks)
   2023 : MARLlib (standardised MARL training library)
   2024 : BenchMARL (reproducible benchmarking pipeline)
   2024 : Magentic-One (generalist multi-agent LLM system)
@@ -166,7 +186,10 @@ timeline
   A game-theory-and-mechanism-design-heavy MAS course page with structured readings, lecture materials via edX links, and a direct tie-in to the Shoham & Leyton-Brown textbook. `game-theory`, `mechanism-design`, `foundations`
 
 
-### Tutorials and how-to guides
+### How-to guides and framework docs
+
+- [**How we built our multi-agent research system**](https://www.anthropic.com/engineering/built-multi-agent-research-system) (2025) by Anthropic
+  A widely read engineering retrospective on building a production orchestrator–worker multi-agent system: when multi-agent beats single-agent, prompt/tool design for delegation, and evaluation lessons. `LLM-agents`, `orchestration`, `engineering`
 
 - [**LangGraph documentation pointers**](https://github.com/langchain-ai/langgraph) (2026) by LangChain/LangGraph maintainers
   README positions LangGraph for durable execution, memory, and human-in-the-loop agent workflows—useful for building multi-agent graphs. `LLM-agents`, `orchestration`, `graphs`
@@ -212,10 +235,10 @@ timeline
 
 Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/evaluation influence, or (c) representing a major new direction (e.g., LLM-based multi-agent systems).
 
-- [**General AgentBench**](https://arxiv.org/html/2602.18998v1) (2026) by —
+- [**General AgentBench**](https://arxiv.org/html/2602.18998v1) (2026) by Li et al.
   Introduces a unified benchmark framework for evaluating general LLM agents across search/coding/reasoning/tool-use; relevant for assessing generality claims. `LLM-agents`, `benchmark`, `evaluation`
 
-- [**The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption**](https://arxiv.org/abs/2601.13671) (2026) by —
+- [**The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption**](https://arxiv.org/abs/2601.13671) (2026) by Adimulam, Gupta, Kumar
   Discusses MCP and A2A as emerging standards for structured, interoperable multi-agent communication in enterprise settings. `protocols`, `orchestration`, `survey`
 
 - [**Evaluation and Benchmarking of LLM Agents: A Survey**](https://dl.acm.org/doi/10.1145/3711896.3736570) (2025) by Mohammadi et al.
@@ -224,10 +247,13 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 - [**LLM Multi-Agent Systems: Challenges and Open Problems**](https://arxiv.org/abs/2502.12668) (2025) by Tran et al.
   Explicitly focuses on challenges/open problems for LLM multi-agent systems, helping turn "framework hacking" into research questions. `LLM-agents`, `multi-agent`, `survey`
 
+- [**Why Do Multi-Agent LLM Systems Fail?**](https://arxiv.org/abs/2503.13657) (2025) by Cemri et al.
+  Empirical taxonomy (MAST) of failure modes across popular multi-agent LLM frameworks—specification, inter-agent misalignment, and verification failures; essential reading before attributing gains to "more agents." `LLM-agents`, `failure-analysis`, `evaluation`
+
 - [**A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP**](https://arxiv.org/abs/2505.02279) (2025) by Ehtesham et al.
   Comparative survey of four emerging agent communication/interoperability protocols across architecture, transport, security, and deployment dimensions. `protocols`, `interoperability`, `survey`
 
-- [**Advancing Multi-Agent Systems Through Model Context Protocol**](https://arxiv.org/abs/2504.21030) (2025) by —
+- [**Advancing Multi-Agent Systems Through Model Context Protocol**](https://arxiv.org/abs/2504.21030) (2025) by Naveen Krishnan
   Examines MCP's role in MAS with case studies in enterprise knowledge management, collaborative research, and distributed problem-solving. `MCP`, `multi-agent`, `protocols`
 
 - [**BenchMARL: Benchmarking Multi-Agent Reinforcement Learning**](https://github.com/facebookresearch/BenchMARL) (2024) by Bettini, Prorok, Moens
@@ -241,6 +267,21 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 
 - [**Large Language Model based Multi-Agents: A Survey of Progress and Challenges**](https://arxiv.org/abs/2402.01680) (2024) by Guo et al.
   Aggregates methods, patterns, and open problems for LLM-based multi-agent systems; a practical map of a fast-moving space. `LLM-agents`, `multi-agent`, `survey`
+
+- [**Mixture-of-Agents Enhances Large Language Model Capabilities**](https://arxiv.org/abs/2406.04692) (2024) by Wang et al.
+  Shows layered ensembles of heterogeneous LLM agents iteratively refining each other's outputs can outperform single frontier models; a clean datapoint in the "do more agents help?" debate. `LLM-agents`, `ensembles`, `inference`
+
+- [**Generative Agents: Interactive Simulacra of Human Behavior**](https://arxiv.org/abs/2304.03442) (2023) by Park et al.
+  The "Smallville" paper: 25 LLM agents with memory, reflection, and planning produce believable emergent social behaviour; catalysed LLM-based agent simulation as a research direction. [Code](https://github.com/joonspk-research/generative_agents). `LLM-agents`, `simulation`, `social`
+
+- [**AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation**](https://arxiv.org/abs/2308.08155) (2023) by Wu et al.
+  Frames multi-agent LLM applications as customisable conversations among agents (human, tool-using, LLM-backed); the paper behind the AutoGen framework. `LLM-agents`, `multi-agent`, `framework`
+
+- [**MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework**](https://arxiv.org/abs/2308.00352) (2023) by Hong et al.
+  Encodes human SOPs (e.g., a software company's roles and artefacts) into LLM agent pipelines—"Code = SOP(Team)"; ICLR 2024 oral and one of the most-starred multi-agent projects. `LLM-agents`, `SOP`, `software-engineering`
+
+- [**CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society**](https://arxiv.org/abs/2303.17760) (2023) by Li et al.
+  Introduces role-playing between cooperating LLM agents to study agent societies at scale and generate conversational data; seeded the CAMEL-AI ecosystem. `LLM-agents`, `role-playing`, `agent-societies`
 
 - [**MLAgentBench: Evaluating Language Agents on ML Experimentation**](https://arxiv.org/abs/2310.03302) (2023–2024) by Huang et al.
   Focuses evaluation on agents performing end-to-end ML experimentation tasks; useful for connecting agentic systems to scientific workflows. `LLM-agents`, `benchmark`, `ML-engineering`
@@ -319,20 +360,28 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 
 Framework selection is often the biggest "time sink" decision in MAS work. The list below emphasises language, license, adoption (stars), and maturity signals (active vs archived, release cadence, explicit "beta" disclaimers).
 
+#### LLM-based multi-agent frameworks
+
 - [**AutoGen**](https://github.com/microsoft/autogen) — Python · MIT (code) + CC-BY-4.0 (docs) · Maintenance mode (succeeded by Microsoft Agent Framework)
   Multi-agent LLM application framework. ![Stars](https://img.shields.io/github/stars/microsoft/autogen.svg?style=social&label=Star)
-  
-  * [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) — Python/.NET · MIT · Active
-    Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. ![Stars](https://img.shields.io/github/stars/microsoft/agent-framework.svg?style=social&label=Star)
-    
+
+- [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) — Python/.NET · MIT · Active
+  Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. ![Stars](https://img.shields.io/github/stars/microsoft/agent-framework.svg?style=social&label=Star)
+
+- [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) — Python · MIT · Active
+  Multi-agent framework encoding software-company SOPs into role-based LLM agent pipelines; among the most-starred multi-agent projects. ![Stars](https://img.shields.io/github/stars/FoundationAgents/MetaGPT.svg?style=social&label=Star)
+
 - [**CrewAI**](https://github.com/crewAIInc/crewAI) — Python · MIT · Mature/active (industry-oriented)
   Multi-agent workflow orchestration; native MCP and A2A support. ![Stars](https://img.shields.io/github/stars/crewAIInc/crewAI.svg?style=social&label=Star)
 
-- [**Ray**](https://github.com/ray-project/ray) (incl. RLlib) — Python/C++ · Apache-2.0 · Production/active
-  Distributed RL training; practical multi-agent RL at scale. ![Stars](https://img.shields.io/github/stars/ray-project/ray.svg?style=social&label=Star)
-
 - [**LangGraph**](https://github.com/langchain-ai/langgraph) — Python · MIT · Mature/active
   Graph-based orchestration for long-running/stateful agents. ![Stars](https://img.shields.io/github/stars/langchain-ai/langgraph.svg?style=social&label=Star)
+
+- [**CAMEL**](https://github.com/camel-ai/camel) — Python · Apache-2.0 · Active (research)
+  Framework for building and studying agent societies (role-playing, communication, synthetic data generation); anchors the CAMEL-AI research community. ![Stars](https://img.shields.io/github/stars/camel-ai/camel.svg?style=social&label=Star)
+
+- [**ChatDev**](https://github.com/OpenBMB/ChatDev) — Python · Apache-2.0 · Active (research)
+  "Virtual software company" of communicative agents collaborating via chat chains; a widely cited LLM multi-agent collaboration testbed. ![Stars](https://img.shields.io/github/stars/OpenBMB/ChatDev.svg?style=social&label=Star)
 
 - [**Swarm**](https://github.com/openai/swarm) — Python · MIT · Experimental/educational
   Lightweight educational framework for multi-agent orchestration (handoffs/tools). ![Stars](https://img.shields.io/github/stars/openai/swarm.svg?style=social&label=Star)
@@ -342,6 +391,26 @@ Framework selection is often the biggest "time sink" decision in MAS work. The l
 
 - [**Google ADK**](https://github.com/google/adk-python) — Python/Go/TS/Java · Apache-2.0 · Active
   Code-first toolkit for building, evaluating, and deploying AI agents; MCP tool support. ![Stars](https://img.shields.io/github/stars/google/adk-python.svg?style=social&label=Star)
+
+- [**Claude Agent SDK**](https://github.com/anthropics/claude-agent-sdk-python) — Python · MIT · Active
+  SDK exposing the agent harness behind Claude Code (tools, subagents, hooks, MCP) for building custom agents. ![Stars](https://img.shields.io/github/stars/anthropics/claude-agent-sdk-python.svg?style=social&label=Star)
+
+- [**smolagents**](https://github.com/huggingface/smolagents) — Python · Apache-2.0 · Active
+  Minimal, code-first agent library from Hugging Face; supports hierarchical multi-agent setups with managed agents. ![Stars](https://img.shields.io/github/stars/huggingface/smolagents.svg?style=social&label=Star)
+
+- [**AgentScope**](https://github.com/agentscope-ai/agentscope) — Python · Apache-2.0 · Active
+  Message-passing multi-agent framework (from Alibaba) with distributed execution and visual studio tooling. ![Stars](https://img.shields.io/github/stars/agentscope-ai/agentscope.svg?style=social&label=Star)
+
+- [**AgentVerse**](https://github.com/OpenBMB/AgentVerse) — Python · Apache-2.0 · Research
+  Framework for both task-solving and social-simulation multi-agent environments (classroom, prisoner's dilemma, software design). ![Stars](https://img.shields.io/github/stars/OpenBMB/AgentVerse.svg?style=social&label=Star)
+
+- [**Concordia**](https://github.com/google-deepmind/concordia) — Python · Apache-2.0 · Active (research)
+  DeepMind library for generative agent-based modelling of social interaction—bridges LLM agents and the ABM tradition. ![Stars](https://img.shields.io/github/stars/google-deepmind/concordia.svg?style=social&label=Star)
+
+#### MARL, simulation, and classic MAS platforms
+
+- [**Ray**](https://github.com/ray-project/ray) (incl. RLlib) — Python/C++ · Apache-2.0 · Production/active
+  Distributed RL training; practical multi-agent RL at scale. ![Stars](https://img.shields.io/github/stars/ray-project/ray.svg?style=social&label=Star)
 
 - [**OpenSpiel**](https://github.com/google-deepmind/open_spiel) — C++/Python · Apache-2.0 · Mature/active
   Games for RL + game theory research. ![Stars](https://img.shields.io/github/stars/google-deepmind/open_spiel.svg?style=social&label=Star)
@@ -495,11 +564,21 @@ A fast-emerging layer in LLM-based multi-agent systems: open protocols standardi
   Centralised MAPF info and materials; useful for MAS planning researchers and competition participants. `MAPF`, `planning`, `community`
 
 
+## Related awesome lists
+
+Complementary curated lists for adjacent communities:
+
+- [**awesome-ai-agents**](https://github.com/e2b-dev/awesome-ai-agents) by E2B — broad catalogue of AI agent products and projects (single- and multi-agent). ![Stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents.svg?style=social&label=Star)
+- [**LLM-Agent-Paper-List**](https://github.com/WooooDyy/LLM-Agent-Paper-List) — paper list accompanying *The Rise and Potential of LLM-Based Agents* survey. ![Stars](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List.svg?style=social&label=Star)
+- [**LLM_MultiAgents_Survey_Papers**](https://github.com/taichengguo/LLM_MultiAgents_Survey_Papers) — companion paper list to the Guo et al. LLM multi-agent survey. ![Stars](https://img.shields.io/github/stars/taichengguo/LLM_MultiAgents_Survey_Papers.svg?style=social&label=Star)
+- [**MARL-Papers**](https://github.com/LantaoYu/MARL-Papers) — long-running list of multi-agent reinforcement learning papers. ![Stars](https://img.shields.io/github/stars/LantaoYu/MARL-Papers.svg?style=social&label=Star)
+- [**MARL-papers-with-code**](https://github.com/TimeBreaker/MARL-papers-with-code) — MARL papers filtered for available code. ![Stars](https://img.shields.io/github/stars/TimeBreaker/MARL-papers-with-code.svg?style=social&label=Star)
+
 ## Contribution guidelines and curation criteria
 
 ### Contribution guidelines
 
-Contributions are welcome via pull requests. Aim to keep entries **curated, not exhaustive**.
+Contributions are welcome via pull requests — see [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and checklist. Aim to keep entries **curated, not exhaustive**.
 
 Recommended workflow:
 1. Add a single item to the appropriate list (or propose a new subcategory if clearly necessary).

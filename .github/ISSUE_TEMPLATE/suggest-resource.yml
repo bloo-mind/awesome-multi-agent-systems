@@ -1,0 +1,56 @@
+name: Suggest a resource
+description: Propose a paper, book, tool, benchmark, or community resource for the list
+title: "[Suggestion]: "
+labels: ["suggestion"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Resource title
+      placeholder: e.g. BenchMARL
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Primary link
+      description: Official repo, arXiv/DOI, or organisation page (not a blog post about it)
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Books
+        - Tutorials / courses / how-to guides
+        - Seminal papers
+        - Recent papers and surveys
+        - Datasets and benchmarks
+        - LLM-based multi-agent frameworks
+        - MARL / simulation / classic MAS platforms
+        - Competitions and challenges
+        - Agent interoperability protocols
+        - Reproducibility / community
+        - Other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: annotation
+    attributes:
+      label: Why does it belong here?
+      description: 1–3 sentences — significance, impact evidence (citations/adoption), and when someone would use it
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked it is not already in the list
+          required: true
+        - label: The link is a primary/official source
+          required: true
+        - label: I am not affiliated with this resource, or I have disclosed my affiliation above
+          required: true

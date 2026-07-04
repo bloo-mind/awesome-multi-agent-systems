@@ -144,6 +144,9 @@ timeline
 
 ### Recent books (2024–)
 
+- [**Multi-Agent Systems: A Contemporary Treatment**](https://books.bloo-mind.ai/masact/) - (2026) by Dell Zhang, Benjamin Chang
+  A textbook teaching the concepts and techniques of multi-agent systems in the era of LLMs; freely readable online. `textbook`, `LLM-agents`, `foundations`.
+
 - [**Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies**](https://link.springer.com/book/10.1007/978-3-032-01082-7) - (2026) by R. Collier, V. Mascardi, A. Ricci (editors)
   A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." `MAS-engineering`, `platforms`, `toolkits`.
 

@@ -13,26 +13,37 @@ Autonomous agents that cooperate, compete, negotiate, and learn — a curated, *
 
 ## Contents
 
-- [Start here: the essential dozen](#start-here-the-essential-dozen)
-- [Getting started: three pathways](#getting-started-three-pathways)
-- [Explore by topic](#explore-by-topic)
-- [Curated resources](#curated-resources)
-  - [Classic books (pre-2024)](#classic-books-pre-2024)
-  - [Recent books (2024–)](#recent-books-2024)
-  - [Tutorials and courses](#tutorials-and-courses)
-  - [How-to guides and framework docs](#how-to-guides-and-framework-docs)
-  - [Seminal papers and milestone work](#seminal-papers-and-milestone-work)
-  - [Recent high-impact papers and surveys](#recent-high-impact-papers-and-surveys)
-  - [Datasets and benchmarks](#datasets-and-benchmarks)
-  - [Frameworks, libraries, and tools](#frameworks-libraries-and-tools)
-  - [Competitions and challenges](#competitions-and-challenges)
-  - [Agent interoperability protocols](#agent-interoperability-protocols)
-- [Reproducibility and community](#reproducibility-and-community)
-- [Field guide: taxonomy and milestone timeline](#field-guide-taxonomy-and-milestone-timeline)
-- [Recently added](#recently-added)
-- [Editorial policy](#editorial-policy)
-- [Related awesome lists](#related-awesome-lists)
-- [Contribution guidelines and curation criteria](#contribution-guidelines-and-curation-criteria)
+- [Awesome Multi-Agent Systems ](#awesome-multi-agent-systems-)
+  - [Contents](#contents)
+  - [Start here: the essential dozen](#start-here-the-essential-dozen)
+  - [Getting started: three pathways](#getting-started-three-pathways)
+  - [Explore by topic](#explore-by-topic)
+  - [Curated resources](#curated-resources)
+    - [Classic books (pre-2024)](#classic-books-pre-2024)
+    - [Recent books (2024–)](#recent-books-2024)
+    - [Tutorials and courses](#tutorials-and-courses)
+    - [How-to guides and framework docs](#how-to-guides-and-framework-docs)
+    - [Seminal papers and milestone work](#seminal-papers-and-milestone-work)
+    - [Recent high-impact papers and surveys](#recent-high-impact-papers-and-surveys)
+    - [Datasets and benchmarks](#datasets-and-benchmarks)
+    - [Frameworks, libraries, and tools](#frameworks-libraries-and-tools)
+      - [Which framework should I use?](#which-framework-should-i-use)
+      - [LLM-based multi-agent frameworks](#llm-based-multi-agent-frameworks)
+      - [MARL, simulation, and classic MAS platforms](#marl-simulation-and-classic-mas-platforms)
+    - [Competitions and challenges](#competitions-and-challenges)
+    - [Agent interoperability protocols](#agent-interoperability-protocols)
+  - [Reproducibility and community](#reproducibility-and-community)
+    - [Reproducibility resources and code](#reproducibility-resources-and-code)
+    - [Community resources](#community-resources)
+  - [Field guide: taxonomy and milestone timeline](#field-guide-taxonomy-and-milestone-timeline)
+    - [MAS topic taxonomy](#mas-topic-taxonomy)
+    - [Milestone timeline](#milestone-timeline)
+  - [Recently added](#recently-added)
+  - [Editorial policy](#editorial-policy)
+  - [Related awesome lists](#related-awesome-lists)
+  - [Contribution guidelines and curation criteria](#contribution-guidelines-and-curation-criteria)
+    - [Contribution guidelines](#contribution-guidelines)
+    - [Curation criteria](#curation-criteria)
 
 ## Start here: the essential dozen
 
@@ -627,3 +638,15 @@ An entry is likely to be accepted if it satisfies most of:
 - Demonstrated impact: strong citations, adoption, or clear "milestone" status (historical shaping).
 - Reproducibility: code, data, benchmarks, or explicit evaluation methodology where applicable.
 - Clarity and neutrality: annotation states what it is good for, limitations, and typical use contexts.
+
+<div align="center">
+
+**If you find this page helpful, please give it a ⭐️ — starring also keeps updates in your GitHub feed.**
+
+Made with ❤️ by [Bloo-Mind AI Ltd](https://www.bloo-mind.ai/).
+
+</div>
+
+<div align="center" style="margin-top: 10px;">
+    <a href="https://www.bloo-mind.ai/"><img src="assets/bloo-mind.png" alt="Bloo-Mind Logo" width="120px" /></a>
+</div> 

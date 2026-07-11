@@ -44,7 +44,7 @@ Autonomous agents that cooperate, compete, negotiate, and learn — a curated, *
   - [Contribution guidelines and curation criteria](#contribution-guidelines-and-curation-criteria)
     - [Contribution guidelines](#contribution-guidelines)
     - [Curation criteria](#curation-criteria)
-  - [Star History](#star-history)
+  - [📑 Citation](#-citation)
 
 ## Start here: the essential dozen
 
@@ -642,9 +642,20 @@ An entry is likely to be accepted if it satisfies most of:
 
 ---
 
-## Star History
+## 📑 Citation
 
-[![Star History Chart](https://api.star-history.com/chart?repos=bloo-mind/awesome-multi-agent-systems&type=date&legend=bottom-right&sealed_token=HndhpfcgmQQTZzykPTJnhTRiM7VTBcvQ8x1cmjkLDjqmPAXnhQlj8KJCwGZQDy3FL90JNnLOlvRMZ0S2RmzOE1p-Q-mot3_dvaxkvM_7mznGaYL9KoDkVYPs5gWv8Ga8Qw9-7USKNYYp_VHvjPloysMz_0Q9DZiL0UGs0d2LK26AaMRfGygbYU9nG85O)](https://www.star-history.com/?repos=bloo-mind%2Fawesome-multi-agent-systems&type=date&legend=bottom-right)
+To cite this collection itself, use the metadata in [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button), or:
+
+```bibtex
+@misc{zhang2026awesomemas,
+  author       = {Zhang, Dell and Chang, Benjamin},
+  title        = {Awesome Multi-Agent Systems: A Curated, Annotated List of
+                  Resources for Multi-Agent Systems Research},
+  year         = {2026},
+  howpublished = {\url{https://github.com/bloo-mind/awesome-multi-agent-systems}},
+  note         = {Accessed: 2026-07-11}
+}
+```
 
 ---
 

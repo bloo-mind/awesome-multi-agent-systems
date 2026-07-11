@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use or reference this collection, please cite it as below."
+title: "Awesome Multi-Agent Systems: A Curated, Annotated List of Resources for Multi-Agent Systems Research"
+type: dataset
+authors:
+  - family-names: Zhang
+    given-names: Dell
+  - family-names: Chang
+    given-names: Benjamin
+repository-code: "https://github.com/bloo-mind/awesome-multi-agent-systems"
+url: "https://github.com/bloo-mind/awesome-multi-agent-systems"
+license: MIT
+date-released: 2026-07-11
+abstract: >-
+  A curated, annotated list of resources for multi-agent systems (MAS)
+  research and engineering — spanning classical coordination theory,
+  game theory and negotiation, multi-agent reinforcement learning (MARL),
+  LLM-based agent teams, benchmarks, frameworks, and agent
+  interoperability protocols (MCP, A2A).
+keywords:
+  - multi-agent systems
+  - multi-agent reinforcement learning
+  - LLM agents
+  - agent orchestration
+  - agent interoperability protocols
+  - awesome list

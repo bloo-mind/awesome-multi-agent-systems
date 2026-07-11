@@ -652,8 +652,7 @@ To cite this collection itself, use the metadata in [`CITATION.cff`](CITATION.cf
   title        = {Awesome Multi-Agent Systems: A Curated, Annotated List of
                   Resources for Multi-Agent Systems Research},
   year         = {2026},
-  howpublished = {\url{https://github.com/bloo-mind/awesome-multi-agent-systems}},
-  note         = {Accessed: 2026-07-11}
+  howpublished = {\url{https://github.com/bloo-mind/awesome-multi-agent-systems}}
 }
 ```
 

@@ -25,11 +25,14 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
+          # sciencedirect.com intermittently bot-blocks lychee with 400s
+          # (false positives) — its links are verified manually instead
           args: >-
             --no-progress
             --cache
             --max-cache-age 1d
             --accept 200..=206,403,429
+            --exclude '^https://www\.sciencedirect\.com'
             --exclude-path .github
             README.md CONTRIBUTING.md
           fail: true

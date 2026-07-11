@@ -2,6 +2,8 @@
 
 Thanks for helping keep this list useful! The goal is a **curated, annotated** list — quality over quantity. One strong primary source beats five blog posts.
 
+**No time for a PR?** Suggest a resource via the [issue form](https://github.com/bloo-mind/awesome-multi-agent-systems/issues/new/choose) — maintainers verify and incorporate accepted suggestions, with credit to the suggester.
+
 ## How to add an entry
 
 1. Open a pull request adding **one item per PR** (or a small, closely related set) to the appropriate section.
@@ -38,6 +40,10 @@ An entry is likely to be accepted if it satisfies most of:
 - **Demonstrated impact**: strong citations, adoption, or clear milestone status.
 - **Reproducibility**: code, data, benchmarks, or explicit evaluation methodology where applicable.
 - **Clarity and neutrality**: the annotation states what it's good for and its limitations — no marketing copy.
+
+## Affiliation disclosure
+
+If you author, maintain, or are otherwise affiliated with the resource you're proposing, say so in the PR or issue. Affiliated entries are held to the same criteria as everything else and are marked *maintainer-affiliated* (or *contributor-affiliated*) in the list — disclosure is never a reason for rejection, but hiding it is.
 
 ## What gets declined
 

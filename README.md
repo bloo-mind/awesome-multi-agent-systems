@@ -5,16 +5,17 @@
 [![Link Check](https://github.com/bloo-mind/awesome-multi-agent-systems/actions/workflows/link-check.yml/badge.svg)](https://github.com/bloo-mind/awesome-multi-agent-systems/actions/workflows/link-check.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/bloo-mind/awesome-multi-agent-systems)
 
-A curated, **annotated** list of resources for the Multi-Agent Systems (MAS) research community—spanning **classic milestone work** and **recent advances (2021–2026)** across coordination, game theory, negotiation, planning, multi-agent learning, LLM-based agent teams, robotics, and simulation.
+Autonomous agents that cooperate, compete, negotiate, and learn — a curated, **annotated** guide to Multi-Agent Systems (MAS), from classical coordination theory and multi-agent reinforcement learning (MARL) to LLM-based agent teams. Every entry says what it is, why it matters, and when to use it.
 
-*Star counts below are **live badges** pulled from GitHub in real time via [shields.io](https://shields.io/).*
+**Start here:** [The essential dozen](#start-here-the-essential-dozen) · [Which framework should I use?](#which-framework-should-i-use) · [Find a benchmark](#datasets-and-benchmarks) · [Understand failure modes](#recent-high-impact-papers-and-surveys) · [Wire up agent protocols](#agent-interoperability-protocols)
+
+**Something missing?** [Suggest a resource in two minutes](https://github.com/bloo-mind/awesome-multi-agent-systems/issues/new/choose) — or grab a [help-wanted task](https://github.com/bloo-mind/awesome-multi-agent-systems/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
 ## Contents
 
-- [Executive summary](#executive-summary)
+- [Start here: the essential dozen](#start-here-the-essential-dozen)
 - [Getting started: three pathways](#getting-started-three-pathways)
-- [How this repo is organised](#how-this-repo-is-organised)
-- [MAS taxonomy and milestone timeline](#mas-taxonomy-and-milestone-timeline)
+- [Explore by topic](#explore-by-topic)
 - [Curated resources](#curated-resources)
   - [Classic books (pre-2024)](#classic-books-pre-2024)
   - [Recent books (2024–)](#recent-books-2024)
@@ -27,108 +28,57 @@ A curated, **annotated** list of resources for the Multi-Agent Systems (MAS) res
   - [Competitions and challenges](#competitions-and-challenges)
   - [Agent interoperability protocols](#agent-interoperability-protocols)
 - [Reproducibility and community](#reproducibility-and-community)
-  - [Reproducibility resources and code](#reproducibility-resources-and-code)
-  - [Community resources](#community-resources)
+- [Field guide: taxonomy and milestone timeline](#field-guide-taxonomy-and-milestone-timeline)
+- [Recently added](#recently-added)
+- [Editorial policy](#editorial-policy)
 - [Related awesome lists](#related-awesome-lists)
 - [Contribution guidelines and curation criteria](#contribution-guidelines-and-curation-criteria)
 
-## Executive summary
+## Start here: the essential dozen
 
-Multi-Agent Systems research sits at the intersection of **(i) decision-making**, **(ii) interaction** (cooperation/competition/negotiation), and **(iii) evaluation** in realistic multi-entity environments (games, markets, robots, social settings). This README is designed to help you:
-- Build **foundational literacy** (agent models, architectures, coordination, decentralised decision-making, DCOPs, negotiation).
-- Track **high-impact modern directions** (benchmarking + reproducibility in MARL; scalable simulators; and LLM-based multi-agent "agentic systems" and evaluation).
-- Choose **tools responsibly** (licensing, maturity signals like release activity/archival status, community adoption).
+If you only look at twelve things, make it these:
 
-If any detail below is not reliably available from primary/official sources at authoring time, it is explicitly marked **unspecified**.
+| If you want to… | Start with | Why |
+|---|---|---|
+| Understand agents from first principles | [An Introduction to MultiAgent Systems](#classic-books-pre-2024) | The canonical MAS textbook |
+| Connect MAS to game theory | [Shoham & Leyton-Brown](#classic-books-pre-2024) | Free online; the algorithmic/game-theoretic foundations |
+| Learn MARL properly | [MARL: Foundations and Modern Approaches](#recent-books-2024) | Free modern textbook with code and slides |
+| Run reproducible MARL experiments | [PettingZoo](#marl-simulation-and-classic-mas-platforms) + [BenchMARL](#marl-simulation-and-classic-mas-platforms) | Standard environment API + standardised benchmarking pipeline |
+| Beat a hard cooperative benchmark | [SMACv2](#datasets-and-benchmarks) | The de-facto cooperative MARL challenge, randomised to resist overfitting |
+| Evaluate social generalisation | [Melting Pot](#datasets-and-benchmarks) | Tests generalisation to new co-players, not just new tasks |
+| Map the LLM multi-agent space | [Guo et al. survey](#recent-high-impact-papers-and-surveys) | The most practical overview of methods and open problems |
+| Build an LLM agent team | [Framework comparison](#which-framework-should-i-use) | Pick by use case, not by star count |
+| Learn from a production system | [Anthropic's multi-agent research system](#how-to-guides-and-framework-docs) | Candid engineering retrospective: when multi-agent beats single-agent |
+| Know why agent teams fail | [Why Do Multi-Agent LLM Systems Fail?](#recent-high-impact-papers-and-surveys) | Empirical failure taxonomy — read before shipping |
+| Connect agents to tools and data | [Model Context Protocol (MCP)](#agent-interoperability-protocols) | The industry-standard tool/context interface |
+| Make agents talk across frameworks | [Agent2Agent Protocol (A2A)](#agent-interoperability-protocols) | Cross-framework agent-to-agent communication |
 
 ## Getting started: three pathways
 
 Different readers need different entry points. Pick the pathway that matches you:
 
-**🎓 New to MAS research** — start with Wooldridge's **An Introduction to MultiAgent Systems** (see Classic books), then the seminal papers (Contract Net → BDI → Dec-POMDP complexity), and browse the taxonomy below to find your subfield.
+**🎓 New to MAS research** — start with Wooldridge's [An Introduction to MultiAgent Systems](#classic-books-pre-2024), then the [seminal papers](#seminal-papers-and-milestone-work) (Contract Net → BDI → Dec-POMDP complexity), and browse the [taxonomy](#field-guide-taxonomy-and-milestone-timeline) to find your subfield.
 
-**🤖 MARL practitioner** — the **MARL book** (free online, see Recent books) for foundations; **PettingZoo** + **BenchMARL** to run reproducible experiments; **SMACv2** and **Melting Pot** as benchmarks; MAPPO as the baseline to beat.
+**🤖 MARL practitioner** — the [MARL book](#recent-books-2024) (free online) for foundations; [PettingZoo + BenchMARL](#marl-simulation-and-classic-mas-platforms) to run reproducible experiments; [SMACv2 and Melting Pot](#datasets-and-benchmarks) as benchmarks; MAPPO as the baseline to beat.
 
-**🧠 LLM-agent builder** — start with the **Guo et al. survey** (see Recent papers) for the map, pick an orchestration framework from the LLM-based multi-agent frameworks section, wire up tools/communication via the MCP and A2A protocols, and read **Why Do Multi-Agent LLM Systems Fail?** before shipping.
+**🧠 LLM-agent builder** — start with the [Guo et al. survey](#recent-high-impact-papers-and-surveys) for the map, pick an orchestration framework from the [comparison table](#which-framework-should-i-use), wire up tools/communication via the [MCP and A2A protocols](#agent-interoperability-protocols), and read [Why Do Multi-Agent LLM Systems Fail?](#recent-high-impact-papers-and-surveys) before shipping.
 
-## How this repo is organised
+## Explore by topic
 
-This repository treats MAS as a **family of research problems** rather than a single subfield. Resources are navigable via:
-- Topic tags (e.g., `MARL`, `game-theory`, `negotiation`, `planning`, `robotics`, `simulation`, `DCOP`, `LLM-agents`).
-- Two-tier curation:
-  - Milestones: conceptual foundations and widely-cited "shape-of-the-field" work (often older).
-  - Recent: last 5 years (2021–2026) emphasising robust benchmarks, reproducibility, and new agent paradigms (including LLM-based multi-agent evaluation and orchestration).
+The collection is organised by resource type below, but most readers arrive with a problem. Jump by topic:
 
-Entry format used below:
-
-```
-- [**Title**](Link) - (Year) by Authors/Maintainers
-  Annotation. `tag1`, `tag2`.
-```
-
-## MAS taxonomy and milestone timeline
-
-### MAS topic taxonomy
-
-```mermaid
-graph TD
-  MAS[Multi-Agent Systems] --> Models[Agent Models & Architectures]
-  MAS --> Interaction[Interaction & Coordination]
-  MAS --> Learning[Learning in Multi-Agent Settings]
-  MAS --> Eval[Benchmarks, Evaluation, Reproducibility]
-  MAS --> Simulation[Agent-Based Modelling & Simulation]
-
-  Models --> BDI[BDI / deliberative agents]
-  Models --> DecDP[Decentralised decision processes - Dec-POMDP/DEC-MDP]
-  Interaction --> GameTheory[Game theory & mechanism design]
-  Interaction --> Negotiation[Automated negotiation]
-  Interaction --> DCOP[Distributed constraint optimisation - DCOP]
-  Interaction --> MAPF[Multi-agent path finding]
-
-  Learning --> MARL[Multi-Agent Reinforcement Learning]
-  Learning --> Comm[Emergent communication / coordination learning]
-  Learning --> LLM[LLM-based agents & multi-agent teams]
-
-  MAS --> Protocols[Agent Interoperability Protocols]
-  Protocols --> ToolProto[Tool/context protocols - MCP]
-  Protocols --> A2AProto[Agent-to-agent protocols - A2A]
-  Protocols --> UIProto[Agent-to-user protocols - AG-UI]
-
-  Eval --> Bench[Benchmarks & task suites]
-  Eval --> Artifacts[Artifacts, checklists, code release norms]
-  Simulation --> ABM[ABM toolchains - social/eco/epi]
-  Simulation --> RoboticsSim[Robotics-focused multi-agent simulation]
-```
-
-### Milestone timeline
-
-```mermaid
-timeline
-  title MAS milestones (selected)
-  1980 : Contract Net Protocol (task allocation/coordination)
-  1993 : Agent-Oriented Programming
-  1995 : BDI Agents (theory to practice)
-  2001 : Agent-based software engineering (agent paradigm)
-  2002 : Decentralised control complexity (Dec-POMDP/DEC-MDP)
-  2005 : ADOPT (DCOP optimality + async execution)
-  2009 : Max-Sum in decentralised coordination (factor graphs)
-  2021 : MAPPO (strong cooperative MARL baseline)
-  2021 : Melting Pot (social/generalisation evaluation)
-  2022 : VMAS (vectorised multi-robot MARL sim)
-  2022 : SMACv2 (harder cooperative MARL benchmark)
-  2023 : Generative Agents (LLM agent societies)
-  2023 : CAMEL / AutoGen / MetaGPT (LLM multi-agent frameworks)
-  2023 : MARLlib (standardised MARL training library)
-  2024 : BenchMARL (reproducible benchmarking pipeline)
-  2024 : Magentic-One (generalist multi-agent LLM system)
-  2024 : MCP - Model Context Protocol (tool/context interop standard)
-  2025 : A2A - Agent2Agent Protocol (agent-to-agent interop standard)
-  2025 : OpenAI Agents SDK / Google ADK (production multi-agent frameworks)
-  2025 : Survey on evaluating/benchmarking LLM agents
-  2026 : General AgentBench (unified LLM-agent evaluation)
-```
+- **Coordination and negotiation** — [seminal papers](#seminal-papers-and-milestone-work) (Contract Net, ADOPT, Max-Sum), [NegMAS](#marl-simulation-and-classic-mas-platforms), [ANAC/SCML competitions](#competitions-and-challenges).
+- **Multi-agent reinforcement learning (MARL)** — [recent papers](#recent-high-impact-papers-and-surveys) (MAPPO, SMACv2, BenchMARL), [benchmarks](#datasets-and-benchmarks), [MARL platforms](#marl-simulation-and-classic-mas-platforms), the [MARL book](#recent-books-2024).
+- **LLM agent teams and orchestration** — [framework comparison](#which-framework-should-i-use), [how-to guides](#how-to-guides-and-framework-docs), [recent papers](#recent-high-impact-papers-and-surveys) (AutoGen, MetaGPT, CAMEL, Generative Agents, Magentic-One).
+- **Evaluation and failure modes** — [AgentBench and successors](#recent-high-impact-papers-and-surveys), [Why Do Multi-Agent LLM Systems Fail?](#recent-high-impact-papers-and-surveys), [reproducibility resources](#reproducibility-resources-and-code).
+- **Simulation and robotics** — [VMAS](#marl-simulation-and-classic-mas-platforms), [Mesa/NetLogo/GAMA (ABM)](#marl-simulation-and-classic-mas-platforms), [RoboCup leagues](#competitions-and-challenges).
+- **Planning and path finding (MAPF)** — [MAPF survey](#recent-high-impact-papers-and-surveys), [League of Robot Runners](#competitions-and-challenges), [MAPF community portal](#community-resources).
+- **Interoperability protocols** — [MCP, A2A, AG-UI, ANP](#agent-interoperability-protocols) and the [protocol surveys](#recent-high-impact-papers-and-surveys).
+- **Game theory and mechanism design** — [Shoham & Leyton-Brown](#classic-books-pre-2024), [Stanford CS 224M](#tutorials-and-courses), [OpenSpiel](#marl-simulation-and-classic-mas-platforms).
 
 ## Curated resources
+
+Two-tier curation: **milestones** (foundational, field-shaping work) and **recent** (2021–2026, emphasising benchmarks, reproducibility, and LLM-based multi-agent systems). Entries follow the format `Title — (Year) Authors · annotation · tags`; anything not verifiable from a primary source is marked **unspecified**. Star counts are live badges via [shields.io](https://shields.io/).
 
 ### Classic books (pre-2024)
 
@@ -145,7 +95,7 @@ timeline
 ### Recent books (2024–)
 
 - [**Multi-Agent Systems: A Contemporary Treatment**](https://books.bloo-mind.ai/masact/) - (2026) by Dell Zhang, Benjamin Chang
-  A textbook teaching the concepts and techniques of multi-agent systems in the era of LLMs; freely readable online. `textbook`, `LLM-agents`, `foundations`.
+  A textbook teaching the concepts and techniques of multi-agent systems in the era of LLMs; freely readable online. *Maintainer-affiliated* — see the [editorial policy](#editorial-policy). `textbook`, `LLM-agents`, `foundations`.
 
 - [**Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies**](https://link.springer.com/book/10.1007/978-3-032-01082-7) - (2026) by R. Collier, V. Mascardi, A. Ricci (editors)
   A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." `MAS-engineering`, `platforms`, `toolkits`.
@@ -344,7 +294,24 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 
 ### Frameworks, libraries, and tools
 
-Framework selection is often the biggest "time sink" decision in MAS work. The list below emphasises language, license, adoption (stars), and maturity signals (active vs archived, release cadence, explicit "beta" disclaimers).
+Framework selection is often the biggest "time sink" decision in MAS work. Start with the comparison below, then use the full lists for language, license, adoption, and maturity signals.
+
+#### Which framework should I use?
+
+An opinionated shortlist of the eight most consequential LLM multi-agent frameworks (verified July 2026). Adoption is one signal; "best for" and "caveat" matter more.
+
+| Framework | Best for | Coordination model | Language | MCP / A2A | Caveat |
+|---|---|---|---|---|---|
+| [LangGraph](https://github.com/langchain-ai/langgraph) | Stateful, long-running production workflows | Graph / state machine | Python, JS | MCP (adapters) | General orchestration tool, not a MAS research platform |
+| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | Production agent workflows on Python/.NET/Azure | Graph workflows + group chat | Python, .NET | MCP + A2A | Young — APIs still stabilising after the AutoGen/Semantic Kernel merger |
+| [AutoGen](https://github.com/microsoft/autogen) | Conversational multi-agent research | Event-driven agent conversations | Python, .NET | MCP | Maintenance mode; new projects are pointed to Agent Framework |
+| [CrewAI](https://github.com/crewAIInc/crewAI) | Role-based business process automation | Crews (roles/tasks) + Flows | Python | MCP + A2A (native) | High-level abstractions can constrain fine-grained control |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Lightweight production handoff pipelines | Handoffs + guardrails | Python | MCP | OpenAI-centric defaults; other model providers via LiteLLM |
+| [Google ADK](https://github.com/google/adk-python) | Code-first agents in the Google ecosystem | Hierarchical / workflow agents | Python, Go, TS, Java | MCP + A2A | Strongest inside the Gemini/Vertex AI ecosystem |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | SOP-driven software-team simulation | Role pipeline ("Code = SOP(Team)") | Python | unspecified | Research-oriented; less general beyond software-engineering tasks |
+| [CAMEL](https://github.com/camel-ai/camel) | Studying agent societies and synthetic data | Role-playing dialogue | Python | MCP | Research-first; not a production orchestration layer |
+
+For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMAS, …), see the [second list](#marl-simulation-and-classic-mas-platforms).
 
 #### LLM-based multi-agent frameworks
 
@@ -541,6 +508,85 @@ A fast-emerging layer in LLM-based multi-agent systems: open protocols standardi
   Centralised MAPF info and materials; useful for MAS planning researchers and competition participants. `MAPF`, `planning`, `community`.
 
 
+## Field guide: taxonomy and milestone timeline
+
+### MAS topic taxonomy
+
+```mermaid
+graph TD
+  MAS[Multi-Agent Systems] --> Models[Agent Models & Architectures]
+  MAS --> Interaction[Interaction & Coordination]
+  MAS --> Learning[Learning in Multi-Agent Settings]
+  MAS --> Eval[Benchmarks, Evaluation, Reproducibility]
+  MAS --> Simulation[Agent-Based Modelling & Simulation]
+
+  Models --> BDI[BDI / deliberative agents]
+  Models --> DecDP[Decentralised decision processes - Dec-POMDP/DEC-MDP]
+  Interaction --> GameTheory[Game theory & mechanism design]
+  Interaction --> Negotiation[Automated negotiation]
+  Interaction --> DCOP[Distributed constraint optimisation - DCOP]
+  Interaction --> MAPF[Multi-agent path finding]
+
+  Learning --> MARL[Multi-Agent Reinforcement Learning]
+  Learning --> Comm[Emergent communication / coordination learning]
+  Learning --> LLM[LLM-based agents & multi-agent teams]
+
+  MAS --> Protocols[Agent Interoperability Protocols]
+  Protocols --> ToolProto[Tool/context protocols - MCP]
+  Protocols --> A2AProto[Agent-to-agent protocols - A2A]
+  Protocols --> UIProto[Agent-to-user protocols - AG-UI]
+
+  Eval --> Bench[Benchmarks & task suites]
+  Eval --> Artifacts[Artifacts, checklists, code release norms]
+  Simulation --> ABM[ABM toolchains - social/eco/epi]
+  Simulation --> RoboticsSim[Robotics-focused multi-agent simulation]
+```
+
+### Milestone timeline
+
+```mermaid
+timeline
+  title MAS milestones (selected)
+  1980 : Contract Net Protocol (task allocation/coordination)
+  1993 : Agent-Oriented Programming
+  1995 : BDI Agents (theory to practice)
+  2001 : Agent-based software engineering (agent paradigm)
+  2002 : Decentralised control complexity (Dec-POMDP/DEC-MDP)
+  2005 : ADOPT (DCOP optimality + async execution)
+  2009 : Max-Sum in decentralised coordination (factor graphs)
+  2021 : MAPPO (strong cooperative MARL baseline)
+  2021 : Melting Pot (social/generalisation evaluation)
+  2022 : VMAS (vectorised multi-robot MARL sim)
+  2022 : SMACv2 (harder cooperative MARL benchmark)
+  2023 : Generative Agents (LLM agent societies)
+  2023 : CAMEL / AutoGen / MetaGPT (LLM multi-agent frameworks)
+  2023 : MARLlib (standardised MARL training library)
+  2024 : BenchMARL (reproducible benchmarking pipeline)
+  2024 : Magentic-One (generalist multi-agent LLM system)
+  2024 : MCP - Model Context Protocol (tool/context interop standard)
+  2025 : A2A - Agent2Agent Protocol (agent-to-agent interop standard)
+  2025 : OpenAI Agents SDK / Google ADK (production multi-agent frameworks)
+  2025 : Survey on evaluating/benchmarking LLM agents
+  2026 : General AgentBench (unified LLM-agent evaluation)
+```
+
+## Recently added
+
+Latest additions to the list — watch or star the repo to follow updates.
+
+- *Jul 2026* — [Multi-Agent Systems: A Contemporary Treatment](#recent-books-2024) (textbook), the [framework comparison table](#which-framework-should-i-use), and this navigation refresh.
+- *Jun 2026* — [Microsoft Agent Framework](#llm-based-multi-agent-frameworks), [How we built our multi-agent research system](#how-to-guides-and-framework-docs) (Anthropic), [General AgentBench](#recent-high-impact-papers-and-surveys), and five foundational LLM-agent papers (Generative Agents, AutoGen, MetaGPT, CAMEL, Mixture-of-Agents).
+
+## Editorial policy
+
+Curation quality depends on transparency. This list operates under the following rules:
+
+- **Same bar for everyone.** Every entry — including maintainer-affiliated ones — must meet the [curation criteria](#curation-criteria): primary source, demonstrated impact or clear milestone status, and a neutral annotation.
+- **Affiliations are disclosed.** Entries authored by or affiliated with list maintainers are explicitly marked *maintainer-affiliated* (currently one: [Multi-Agent Systems: A Contemporary Treatment](#recent-books-2024)). Independent challenges to any affiliated entry are welcome via issue or PR.
+- **Removal is part of curation.** Entries are removed or flagged when links die without an official mirror, projects are archived without historical significance, or a resource is clearly superseded. Archived-but-historically-important resources (e.g., MPE, Hanabi Learning Environment, pyDCOP) stay listed with their archival status stated.
+- **Maintainers:** [bloo-mind](https://github.com/bloo-mind) (lead: Dell Zhang). External co-maintainers from the classical MAS, MARL, and LLM-agent communities are actively welcomed — open an issue to volunteer.
+- **Last full review:** July 2026. Framework metadata (language, license, maturity) is re-verified at each full review; dead links are caught weekly by CI.
+
 ## Related awesome lists
 
 Complementary curated lists for adjacent communities:
@@ -555,9 +601,13 @@ Complementary curated lists for adjacent communities:
 
 ### Contribution guidelines
 
-Contributions are welcome via pull requests — see [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and checklist. Aim to keep entries **curated, not exhaustive**.
+Three ways to contribute, from lightest to heaviest:
 
-Recommended workflow:
+1. **Suggest a resource in two minutes** — fill in the [issue form](https://github.com/bloo-mind/awesome-multi-agent-systems/issues/new/choose); maintainers will verify and incorporate accepted suggestions, with credit.
+2. **Verify or fix an entry** — dead links, changed maintenance status, wrong metadata; see [open tasks](https://github.com/bloo-mind/awesome-multi-agent-systems/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+3. **Open a pull request** — see [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and checklist. Aim to keep entries **curated, not exhaustive**.
+
+Recommended PR workflow:
 1. Add a single item to the appropriate list (or propose a new subcategory if clearly necessary).
 2. Ensure each entry includes all required metadata:
    - Title

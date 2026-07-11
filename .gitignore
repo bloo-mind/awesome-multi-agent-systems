@@ -1,4 +1,2 @@
-
-*.json
-# claude-mem plugin generates this session-context file locally
-AGENTS.md
+.claude/
+__pycache__/

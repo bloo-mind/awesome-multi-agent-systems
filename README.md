@@ -656,6 +656,18 @@ To cite this collection itself, use the metadata in [`CITATION.cff`](CITATION.cf
 }
 ```
 
+This list is curated alongside the maintainers' textbook [*Multi-Agent Systems: A Contemporary Treatment* (MASACT)](https://books.bloo-mind.ai/masact/), which you can cite as the related publication:
+
+```bibtex
+@book{zhang2026masact,
+  title  = {Multi-Agent Systems: A Contemporary Treatment},
+  author = {Zhang, Dell and Chang, Benjamin},
+  year   = {2026},
+  note   = {Manuscript in progress, written in public},
+  url    = {https://books.bloo-mind.ai/masact/}
+}
+```
+
 ---
 
 <div align="center">

@@ -24,3 +24,14 @@ keywords:
   - agent orchestration
   - agent interoperability protocols
   - awesome list
+references:
+  - type: book
+    title: "Multi-Agent Systems: A Contemporary Treatment"
+    authors:
+      - family-names: Zhang
+        given-names: Dell
+      - family-names: Chang
+        given-names: Benjamin
+    year: 2026
+    url: "https://books.bloo-mind.ai/masact/"
+    notes: "Manuscript in progress, written in public. Related publication for this collection."

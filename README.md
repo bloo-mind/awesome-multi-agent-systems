@@ -320,8 +320,10 @@ An opinionated shortlist of the eight most consequential LLM multi-agent framewo
 | [CrewAI](https://github.com/crewAIInc/crewAI) | Role-based business process automation | Crews (roles/tasks) + Flows | Python | MCP + A2A (native) | High-level abstractions can constrain fine-grained control |
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Lightweight production handoff pipelines | Handoffs + guardrails | Python | MCP | OpenAI-centric defaults; other model providers via LiteLLM |
 | [Google ADK](https://github.com/google/adk-python) | Code-first agents in the Google ecosystem | Hierarchical / workflow agents | Python, Go, TS, Java | MCP + A2A | Strongest inside the Gemini/Vertex AI ecosystem |
-| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | SOP-driven software-team simulation | Role pipeline ("Code = SOP(Team)") | Python | unspecified | Research-oriented; less general beyond software-engineering tasks |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | SOP-driven software-team simulation | Role pipeline ("Code = SOP(Team)") | Python | unspecified[^metagpt-protocols] | Research-oriented; less general beyond software-engineering tasks |
 | [CAMEL](https://github.com/camel-ai/camel) | Studying agent societies and synthetic data | Role-playing dialogue | Python | MCP | Research-first; not a production orchestration layer |
+
+[^metagpt-protocols]: No MCP or A2A integration is documented in MetaGPT's [official repository](https://github.com/FoundationAgents/MetaGPT) or [official documentation](https://docs.deepwisdom.ai/) as of 19 July 2026, so the protocol field remains conservatively unspecified.
 
 For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMAS, …), see the [second list](#marl-simulation-and-classic-mas-platforms).
 

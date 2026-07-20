@@ -27,10 +27,15 @@ jobs:
         with:
           # sciencedirect.com intermittently bot-blocks lychee with 400s
           # (false positives) — its links are verified manually instead
+          # generous timeout + retries: slow hosts (e.g. easss.upb.ro) and
+          # transient runner network blips otherwise fail runs on live links
           args: >-
             --no-progress
             --cache
             --max-cache-age 1d
+            --timeout 45
+            --max-retries 4
+            --retry-wait-time 5
             --accept 200..=206,403,429
             --exclude '^https://www\.sciencedirect\.com'
             --exclude-path .github

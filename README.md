@@ -374,6 +374,9 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**Concordia**](https://github.com/google-deepmind/concordia) - Python · Apache-2.0 · Active (research)
   DeepMind library for generative agent-based modelling of social interaction—bridges LLM agents and the ABM tradition. ![Stars](https://img.shields.io/github/stars/google-deepmind/concordia.svg?style=social&label=Star)
 
+- [**Hivekeep**](https://github.com/MarlBurroW/hivekeep) - TypeScript (Bun) · MIT · Active
+  Self-hosted platform running a team of specialized agents with persistent memory that collaborate, delegate, and build their own tools/plugins; reachable over Telegram, Slack, Discord, and Matrix. ![Stars](https://img.shields.io/github/stars/MarlBurroW/hivekeep.svg?style=social&label=Star)
+
 #### MARL, simulation, and classic MAS platforms
 
 - [**Ray**](https://github.com/ray-project/ray) - (incl. RLlib) — Python/C++ · Apache-2.0 · Production/active

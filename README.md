@@ -106,8 +106,8 @@ Two-tier curation: **milestones** (foundational, field-shaping work) and **recen
 
 ### Recent books (2024–)
 
-- [**Multi-Agent Systems: A Contemporary Treatment**](https://books.bloo-mind.ai/masact/) - (2026) by Dell Zhang, Benjamin Chang
-  A textbook teaching the concepts and techniques of multi-agent systems in the era of LLMs; freely readable online. *Maintainer-affiliated* — see the [editorial policy](#editorial-policy). `textbook`, `LLM-agents`, `foundations`.
+- [**Multi-Agent Systems: A Contemporary Treatment**](https://books.bloo-mind.ai/masact/) - (2026) by Dell Zhang, Jun Wang, Benjamin Chang
+  A working draft textbook teaching the concepts and techniques of multi-agent systems in the era of LLMs; freely readable online. *Maintainer-affiliated* — see the [editorial policy](#editorial-policy). `textbook`, `LLM-agents`, `foundations`.
 
 - [**Agents and Multi-Agent Systems Development: Platforms, Toolkits, Technologies**](https://link.springer.com/book/10.1007/978-3-032-01082-7) - (2026) by R. Collier, V. Mascardi, A. Ricci (editors)
   A snapshot of the current state of the art in tools, frameworks, and techniques for designing and implementing multi-agent systems; includes a chapter on "Agent Toolkits Anno 2025." `MAS-engineering`, `platforms`, `toolkits`.
@@ -663,7 +663,7 @@ This list is curated alongside the maintainers' textbook [*Multi-Agent Systems: 
 ```bibtex
 @book{zhang2026masact,
   title  = {Multi-Agent Systems: A Contemporary Treatment},
-  author = {Zhang, Dell and Chang, Benjamin},
+  author = {Zhang, Dell and Wang, Jun and Chang, Benjamin},
   year   = {2026},
   note   = {Manuscript in progress, written in public},
   url    = {https://books.bloo-mind.ai/masact/}

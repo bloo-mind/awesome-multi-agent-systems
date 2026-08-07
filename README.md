@@ -672,7 +672,7 @@ This list is curated alongside the maintainers' textbook [*Multi-Agent Systems: 
 
 ---
 
-## Star History
+<!-- ## Star History
 
 <a href="https://github.com/bloo-mind/awesome-multi-agent-systems/stargazers"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg">
@@ -681,7 +681,7 @@ This list is curated alongside the maintainers' textbook [*Multi-Agent Systems: 
 
 <sub>Regenerated weekly by [a scheduled workflow](.github/workflows/star-history.yml).</sub>
 
----
+--- -->
 
 <div align="center">
 

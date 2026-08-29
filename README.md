@@ -333,20 +333,20 @@ Framework selection is often the biggest "time sink" decision in MAS work. Start
 
 #### Which framework should I use?
 
-An opinionated shortlist of the eight most consequential LLM multi-agent frameworks (verified July 2026). Adoption is one signal; "best for" and "caveat" matter more.
+An opinionated shortlist of the eight most consequential LLM multi-agent frameworks (verified August 2026). Adoption is one signal; "best for" and "caveat" matter more.
 
 | Framework | Best for | Coordination model | Language | MCP / A2A | Caveat |
 |---|---|---|---|---|---|
 | [LangGraph](https://github.com/langchain-ai/langgraph) | Stateful, long-running production workflows | Graph / state machine | Python, JS | MCP (adapters) | General orchestration tool, not a MAS research platform |
-| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | Production agent workflows on Python/.NET/Azure | Graph workflows + group chat | Python, .NET | MCP + A2A | Young — APIs still stabilising after the AutoGen/Semantic Kernel merger |
+| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | Production agent workflows on Python/.NET/Azure | Graph workflows + group chat | Python, .NET (Go preview) | MCP + A2A | 1.0 GA'd Apr 2026; Go SDK still in preview |
 | [AutoGen](https://github.com/microsoft/autogen) | Conversational multi-agent research | Event-driven agent conversations | Python, .NET | MCP | Maintenance mode; new projects are pointed to Agent Framework |
 | [CrewAI](https://github.com/crewAIInc/crewAI) | Role-based business process automation | Crews (roles/tasks) + Flows | Python | MCP + A2A (native) | High-level abstractions can constrain fine-grained control |
-| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Lightweight production handoff pipelines | Handoffs + guardrails | Python | MCP | OpenAI-centric defaults; other model providers via LiteLLM |
-| [Google ADK](https://github.com/google/adk-python) | Code-first agents in the Google ecosystem | Hierarchical / workflow agents | Python, Go, TS, Java | MCP + A2A | Strongest inside the Gemini/Vertex AI ecosystem |
-| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | SOP-driven software-team simulation | Role pipeline ("Code = SOP(Team)") | Python | unspecified[^metagpt-protocols] | Research-oriented; less general beyond software-engineering tasks |
-| [CAMEL](https://github.com/camel-ai/camel) | Studying agent societies and synthetic data | Role-playing dialogue | Python | MCP | Research-first; not a production orchestration layer |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Lightweight production handoff pipelines | Handoffs + guardrails | Python, JS | MCP | OpenAI-centric defaults; other providers via built-in integrations or beta LiteLLM/any-llm adapters |
+| [Google ADK](https://github.com/google/adk-python) | Code-first agents in the Google ecosystem | Hierarchical / workflow agents | Python, Go, TS, Java, Kotlin | MCP + A2A | Strongest inside the Gemini/Vertex AI ecosystem |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | SOP-driven software-team simulation | Role pipeline ("Code = SOP(Team)") | Python | unspecified[^metagpt-protocols] | Research-oriented and software-engineering-centric; repo largely inactive since early 2026 |
+| [CAMEL](https://github.com/camel-ai/camel) | Studying agent societies and synthetic data | Role-playing dialogue + Workforce | Python | MCP | Research-first; not a production orchestration layer |
 
-[^metagpt-protocols]: No MCP or A2A integration is documented in MetaGPT's [official repository](https://github.com/FoundationAgents/MetaGPT) or [official documentation](https://docs.deepwisdom.ai/) as of 19 July 2026, so the protocol field remains conservatively unspecified.
+[^metagpt-protocols]: No MCP or A2A integration is documented in MetaGPT's [official repository](https://github.com/FoundationAgents/MetaGPT) or [official documentation](https://docs.deepwisdom.ai/) as of 29 August 2026 (the repository has had no commits since January 2026), so the protocol field remains conservatively unspecified.
 
 For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMAS, …), see the [second list](#marl-simulation-and-classic-mas-platforms).
 
@@ -358,7 +358,7 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) - Python/.NET · MIT · Active
   Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. ![Stars](https://img.shields.io/github/stars/microsoft/agent-framework.svg?style=social&label=Star)
 
-- [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) - Python · MIT · Active
+- [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) - Python · MIT · Dormant (last commit Jan 2026)
   Multi-agent framework encoding software-company SOPs into role-based LLM agent pipelines; among the most-starred multi-agent projects. ![Stars](https://img.shields.io/github/stars/FoundationAgents/MetaGPT.svg?style=social&label=Star)
 
 - [**CrewAI**](https://github.com/crewAIInc/crewAI) - Python · MIT · Mature/active (industry-oriented)
@@ -635,7 +635,7 @@ Curation quality depends on transparency. This list operates under the following
 - **Affiliations are disclosed.** Entries authored by or affiliated with list maintainers are explicitly marked *maintainer-affiliated* (currently one: [Multi-Agent Systems: A Contemporary Treatment](#recent-books-2024)). Independent challenges to any affiliated entry are welcome via issue or PR.
 - **Removal is part of curation.** Entries are removed or flagged when links die without an official mirror, projects are archived without historical significance, or a resource is clearly superseded. Archived-but-historically-important resources (e.g., MPE, Hanabi Learning Environment, pyDCOP) stay listed with their archival status stated.
 - **Maintainers:** [bloo-mind](https://github.com/bloo-mind) (lead: Dell Zhang). External co-maintainers from the classical MAS, MARL, and LLM-agent communities are actively welcomed — open an issue to volunteer.
-- **Last full review:** July 2026. Framework metadata (language, license, maturity) is re-verified at each full review; dead links are caught weekly by CI.
+- **Last full review:** July 2026; framework comparison table and benchmark maintenance statuses re-verified August 2026. Framework metadata (language, license, maturity) is re-verified at each full review; dead links are caught weekly by CI.
 
 ## Related awesome lists
 

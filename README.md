@@ -292,16 +292,16 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
   Multi-agent evaluation suite focused on social interactions and generalisation; repo includes evaluation tooling and documentation. `MARL`, `social`, `evaluation` · ![Stars](https://img.shields.io/github/stars/google-deepmind/meltingpot.svg?style=social&label=Star)
 
 - [**Hanabi Learning Environment**](https://github.com/google-deepmind/hanabi-learning-environment) - (2018–2024) by DeepMind (archived)
-  Research platform implementing the cooperative game Hanabi as an RL environment; repo is archived (read-only) as of 2024-04-18. `cooperative`, `partial-obs`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/hanabi-learning-environment.svg?style=social&label=Star)
+  Research platform implementing the cooperative game Hanabi as an RL environment; repo is archived (read-only) as of 2024-04-18. For current use, the actively maintained [OpenSpiel](#marl-simulation-and-classic-mas-platforms) includes Hanabi among its games. `cooperative`, `partial-obs`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/hanabi-learning-environment.svg?style=social&label=Star)
 
 - [**MAgent2**](https://github.com/Farama-Foundation/MAgent2) - (2020–) by Farama Foundation
   Engine for gridworld-like many-agent environments; positioned as maintained fork + separate home for earlier PettingZoo environments. `many-agents`, `simulation`, `MARL` · ![Stars](https://img.shields.io/github/stars/Farama-Foundation/MAgent2.svg?style=social&label=Star)
 
-- [**SMACv2**](https://github.com/oxwhirl/smacv2) - (2019–) by WhiRL / Oxford
-  Cooperative MARL benchmark in StarCraft II micromanagement scenarios; designed to be API-compatible with SMAC while adding more challenging diversity. `MARL`, `StarCraft`, `benchmark` · ![Stars](https://img.shields.io/github/stars/oxwhirl/smacv2.svg?style=social&label=Star)
+- [**SMACv2**](https://github.com/oxwhirl/smacv2) - (2022–) by WhiRL / Oxford
+  Cooperative MARL benchmark in StarCraft II micromanagement scenarios; designed to be API-compatible with SMAC while adding more challenging diversity. Code is stable but dormant (no commits since Feb 2024), while remaining the reference cooperative benchmark in the literature. `MARL`, `StarCraft`, `benchmark` · ![Stars](https://img.shields.io/github/stars/oxwhirl/smacv2.svg?style=social&label=Star)
 
-- [**SMAC (original)**](https://github.com/oxwhirl/smac) - (unspecified) by WhiRL / Oxford
-  Predecessor benchmark; useful for historical consistency with older baselines and for papers reporting SMAC results. `MARL`, `StarCraft`, `benchmark`.
+- [**SMAC (original)**](https://github.com/oxwhirl/smac) - (2019–) by WhiRL / Oxford
+  Predecessor benchmark, dormant since Feb 2024; useful for historical consistency with older baselines and for papers reporting SMAC results. `MARL`, `StarCraft`, `benchmark`.
 
 
 ### Frameworks, libraries, and tools

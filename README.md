@@ -81,8 +81,10 @@ The collection is organised by resource type below, but most readers arrive with
 
 - **Coordination and negotiation** — [seminal papers](#seminal-papers-and-milestone-work) (Contract Net, ADOPT, Max-Sum), [NegMAS](#marl-simulation-and-classic-mas-platforms), [ANAC/SCML competitions](#competitions-and-challenges).
 - **Multi-agent reinforcement learning (MARL)** — [recent papers](#recent-high-impact-papers-and-surveys) (MAPPO, SMACv2, BenchMARL), [benchmarks](#datasets-and-benchmarks), [MARL platforms](#marl-simulation-and-classic-mas-platforms), the [MARL book](#recent-books-2024).
+- **Emergent communication** — [DIAL and the field survey](#seminal-papers-and-milestone-work), the [EGG toolkit](#marl-simulation-and-classic-mas-platforms).
 - **LLM agent teams and orchestration** — [framework comparison](#which-framework-should-i-use), [how-to guides](#how-to-guides-and-framework-docs), [recent papers](#recent-high-impact-papers-and-surveys) (AutoGen, MetaGPT, CAMEL, Generative Agents, Magentic-One).
 - **Evaluation and failure modes** — [AgentBench and successors](#recent-high-impact-papers-and-surveys), [Why Do Multi-Agent LLM Systems Fail?](#recent-high-impact-papers-and-surveys), [reproducibility resources](#reproducibility-resources-and-code).
+- **Safety, security, and governance** — [risk taxonomy, collusion, infectious jailbreaks, agent visibility](#recent-high-impact-papers-and-surveys), the [OWASP threat-modeling guide](#how-to-guides-and-framework-docs).
 - **Simulation and robotics** — [VMAS](#marl-simulation-and-classic-mas-platforms), [Mesa/NetLogo/GAMA (ABM)](#marl-simulation-and-classic-mas-platforms), [RoboCup leagues](#competitions-and-challenges).
 - **Planning and path finding (MAPF)** — [MAPF survey](#recent-high-impact-papers-and-surveys), [League of Robot Runners](#competitions-and-challenges), [MAPF community portal](#community-resources).
 - **Interoperability protocols** — [MCP, A2A, AG-UI, ANP](#agent-interoperability-protocols) and the [protocol surveys](#recent-high-impact-papers-and-surveys).
@@ -154,6 +156,9 @@ Two-tier curation: **milestones** (foundational, field-shaping work) and **recen
 - [**How we built our multi-agent research system**](https://www.anthropic.com/engineering/built-multi-agent-research-system) - (2025) by Anthropic
   A widely read engineering retrospective on building a production orchestrator–worker multi-agent system: when multi-agent beats single-agent, prompt/tool design for delegation, and evaluation lessons. `LLM-agents`, `orchestration`, `engineering`.
 
+- [**Multi-Agentic System Threat Modeling Guide**](https://genai.owasp.org/resource/multi-agentic-system-threat-modeling-guide-v1-0/) - (2025) by OWASP Gen AI Security Project
+  Applies OWASP's agentic-AI threats-and-mitigations taxonomy to concrete multi-agent deployments through worked threat models; the current practitioner reference for securing multi-agent LLM systems. `security`, `threat-modeling`, `how-to`.
+
 - [**LangGraph documentation**](https://langchain-ai.github.io/langgraph/) - (2026) by LangChain/LangGraph maintainers
   README positions LangGraph for durable execution, memory, and human-in-the-loop agent workflows—useful for building multi-agent graphs. `LLM-agents`, `orchestration`, `graphs`.
 
@@ -168,6 +173,12 @@ Two-tier curation: **milestones** (foundational, field-shaping work) and **recen
 
 
 ### Seminal papers and milestone work
+
+- [**Emergent Multi-Agent Communication in the Deep Learning Era**](https://arxiv.org/abs/2006.02419) - (2020) by Angeliki Lazaridou, Marco Baroni
+  The standard survey of deep-learning-era emergent communication, organised around its scientific (language evolution) and applied (machine–machine interaction) goals; an arXiv-only 2020 snapshot that predates LLM-based agents. `emergent-communication`, `survey`, `foundations`.
+
+- [**Learning to Communicate with Deep Multi-Agent Reinforcement Learning**](https://arxiv.org/abs/1605.06676) - (2016) by Foerster et al.
+  Introduces RIAL and DIAL, the first end-to-end deep-RL methods for learning discrete inter-agent communication protocols, with DIAL backpropagating gradients through the channel under centralised training (NeurIPS 2016); founded deep-MARL emergent communication, albeit on small cooperative benchmarks. `emergent-communication`, `MARL`, `CTDE`.
 
 - [**Decentralised Coordination of Continuously Valued Control Parameters using the Max-Sum Algorithm**](https://eprints.soton.ac.uk/267314/1/main-maxsumcont.pdf) - (2009) by Stranders et al.
   Demonstrates the Max-Sum message-passing approach for decentralised coordination via factor-graph representations, influential in MAS coordination and resource allocation formulations. `DCOP`, `message-passing`, `coordination`.
@@ -210,6 +221,9 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 - [**Why Do Multi-Agent LLM Systems Fail?**](https://arxiv.org/abs/2503.13657) - (2025) by Cemri et al.
   Empirical taxonomy (MAST) of failure modes across popular multi-agent LLM frameworks—specification, inter-agent misalignment, and verification failures; essential reading before attributing gains to "more agents." `LLM-agents`, `failure-analysis`, `evaluation`.
 
+- [**Multi-Agent Risks from Advanced AI**](https://arxiv.org/abs/2502.14143) - (2025) by Hammond et al.
+  The Cooperative AI Foundation's technical report taxonomising risks specific to interactions among advanced AI agents — miscoordination, conflict, and collusion, driven by seven underlying risk factors; agenda-setting for multi-agent safety, though it offers analysis and examples rather than benchmarks or mitigations. `safety`, `multi-agent`, `survey`.
+
 - [**A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP**](https://arxiv.org/abs/2505.02279) - (2025) by Ehtesham et al.
   Comparative survey of four emerging agent communication/interoperability protocols across architecture, transport, security, and deployment dimensions. `protocols`, `interoperability`, `survey`.
 
@@ -230,6 +244,15 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 
 - [**Mixture-of-Agents Enhances Large Language Model Capabilities**](https://arxiv.org/abs/2406.04692) - (2024) by Wang et al.
   Shows layered ensembles of heterogeneous LLM agents iteratively refining each other's outputs can outperform single frontier models; a clean datapoint in the "do more agents help?" debate. `LLM-agents`, `ensembles`, `inference`.
+
+- [**Secret Collusion among AI Agents: Multi-Agent Deception via Steganography**](https://arxiv.org/abs/2402.07510) - (2024) by Motwani et al.
+  Formalises secret collusion — agents hiding the content of their coordination from oversight via steganography — with a threat model and evaluations showing steganographic capability rising with model scale (NeurIPS 2024); establishes the threat and its evaluation framework rather than a deployed mitigation. `security`, `collusion`, `LLM-agents`.
+
+- [**Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast**](https://arxiv.org/abs/2402.08567) - (2024) by Gu et al.
+  Demonstrates "infectious jailbreak": one adversarial image in a single agent's memory spreads through pairwise interactions to compromise almost an entire million-agent population in logarithmic time (ICML 2024); results are in simulated agent societies, with practical defences posed as an open problem. `security`, `jailbreak`, `multi-agent`.
+
+- [**Visibility into AI Agents**](https://arxiv.org/abs/2401.13138) - (2024) by Chan et al.
+  Governance analysis of three measures for tracking deployed AI agents — agent identifiers, real-time monitoring, and activity logging — across centralised and decentralised deployments (FAccT 2024); proposes and analyses measures rather than evaluating live implementations. `governance`, `LLM-agents`, `policy`.
 
 - [**Generative Agents: Interactive Simulacra of Human Behavior**](https://arxiv.org/abs/2304.03442) - (2023) by Park et al.
   The "Smallville" paper: 25 LLM agents with memory, reflection, and planning produce believable emergent social behaviour; catalysed LLM-based agent simulation as a research direction. [Code](https://github.com/joonspk-research/generative_agents). `LLM-agents`, `simulation`, `social`.
@@ -292,16 +315,16 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
   Multi-agent evaluation suite focused on social interactions and generalisation; repo includes evaluation tooling and documentation. `MARL`, `social`, `evaluation` · ![Stars](https://img.shields.io/github/stars/google-deepmind/meltingpot.svg?style=social&label=Star)
 
 - [**Hanabi Learning Environment**](https://github.com/google-deepmind/hanabi-learning-environment) - (2018–2024) by DeepMind (archived)
-  Research platform implementing the cooperative game Hanabi as an RL environment; repo is archived (read-only) as of 2024-04-18. `cooperative`, `partial-obs`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/hanabi-learning-environment.svg?style=social&label=Star)
+  Research platform implementing the cooperative game Hanabi as an RL environment; repo is archived (read-only) as of 2024-04-18. For current use, the actively maintained [OpenSpiel](#marl-simulation-and-classic-mas-platforms) includes Hanabi among its games. `cooperative`, `partial-obs`, `benchmark` · ![Stars](https://img.shields.io/github/stars/google-deepmind/hanabi-learning-environment.svg?style=social&label=Star)
 
 - [**MAgent2**](https://github.com/Farama-Foundation/MAgent2) - (2020–) by Farama Foundation
   Engine for gridworld-like many-agent environments; positioned as maintained fork + separate home for earlier PettingZoo environments. `many-agents`, `simulation`, `MARL` · ![Stars](https://img.shields.io/github/stars/Farama-Foundation/MAgent2.svg?style=social&label=Star)
 
-- [**SMACv2**](https://github.com/oxwhirl/smacv2) - (2019–) by WhiRL / Oxford
-  Cooperative MARL benchmark in StarCraft II micromanagement scenarios; designed to be API-compatible with SMAC while adding more challenging diversity. `MARL`, `StarCraft`, `benchmark` · ![Stars](https://img.shields.io/github/stars/oxwhirl/smacv2.svg?style=social&label=Star)
+- [**SMACv2**](https://github.com/oxwhirl/smacv2) - (2022–) by WhiRL / Oxford
+  Cooperative MARL benchmark in StarCraft II micromanagement scenarios; designed to be API-compatible with SMAC while adding more challenging diversity. Code is stable but dormant (no commits since Feb 2024), while remaining the reference cooperative benchmark in the literature. `MARL`, `StarCraft`, `benchmark` · ![Stars](https://img.shields.io/github/stars/oxwhirl/smacv2.svg?style=social&label=Star)
 
-- [**SMAC (original)**](https://github.com/oxwhirl/smac) - (unspecified) by WhiRL / Oxford
-  Predecessor benchmark; useful for historical consistency with older baselines and for papers reporting SMAC results. `MARL`, `StarCraft`, `benchmark`.
+- [**SMAC (original)**](https://github.com/oxwhirl/smac) - (2019–) by WhiRL / Oxford
+  Predecessor benchmark, dormant since Feb 2024; useful for historical consistency with older baselines and for papers reporting SMAC results. `MARL`, `StarCraft`, `benchmark`.
 
 
 ### Frameworks, libraries, and tools
@@ -310,20 +333,20 @@ Framework selection is often the biggest "time sink" decision in MAS work. Start
 
 #### Which framework should I use?
 
-An opinionated shortlist of the eight most consequential LLM multi-agent frameworks (verified July 2026). Adoption is one signal; "best for" and "caveat" matter more.
+An opinionated shortlist of the eight most consequential LLM multi-agent frameworks (verified August 2026). Adoption is one signal; "best for" and "caveat" matter more.
 
 | Framework | Best for | Coordination model | Language | MCP / A2A | Caveat |
 |---|---|---|---|---|---|
 | [LangGraph](https://github.com/langchain-ai/langgraph) | Stateful, long-running production workflows | Graph / state machine | Python, JS | MCP (adapters) | General orchestration tool, not a MAS research platform |
-| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | Production agent workflows on Python/.NET/Azure | Graph workflows + group chat | Python, .NET | MCP + A2A | Young — APIs still stabilising after the AutoGen/Semantic Kernel merger |
+| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | Production agent workflows on Python/.NET/Azure | Graph workflows + group chat | Python, .NET (Go preview) | MCP + A2A | 1.0 GA'd Apr 2026; Go SDK still in preview |
 | [AutoGen](https://github.com/microsoft/autogen) | Conversational multi-agent research | Event-driven agent conversations | Python, .NET | MCP | Maintenance mode; new projects are pointed to Agent Framework |
 | [CrewAI](https://github.com/crewAIInc/crewAI) | Role-based business process automation | Crews (roles/tasks) + Flows | Python | MCP + A2A (native) | High-level abstractions can constrain fine-grained control |
-| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Lightweight production handoff pipelines | Handoffs + guardrails | Python | MCP | OpenAI-centric defaults; other model providers via LiteLLM |
-| [Google ADK](https://github.com/google/adk-python) | Code-first agents in the Google ecosystem | Hierarchical / workflow agents | Python, Go, TS, Java | MCP + A2A | Strongest inside the Gemini/Vertex AI ecosystem |
-| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | SOP-driven software-team simulation | Role pipeline ("Code = SOP(Team)") | Python | unspecified[^metagpt-protocols] | Research-oriented; less general beyond software-engineering tasks |
-| [CAMEL](https://github.com/camel-ai/camel) | Studying agent societies and synthetic data | Role-playing dialogue | Python | MCP | Research-first; not a production orchestration layer |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Lightweight production handoff pipelines | Handoffs + guardrails | Python, JS | MCP | OpenAI-centric defaults; other providers via built-in integrations or beta LiteLLM/any-llm adapters |
+| [Google ADK](https://github.com/google/adk-python) | Code-first agents in the Google ecosystem | Hierarchical / workflow agents | Python, Go, TS, Java, Kotlin | MCP + A2A | Strongest inside the Gemini/Vertex AI ecosystem |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | SOP-driven software-team simulation | Role pipeline ("Code = SOP(Team)") | Python | unspecified[^metagpt-protocols] | Research-oriented and software-engineering-centric; repo largely inactive since early 2026 |
+| [CAMEL](https://github.com/camel-ai/camel) | Studying agent societies and synthetic data | Role-playing dialogue + Workforce | Python | MCP | Research-first; not a production orchestration layer |
 
-[^metagpt-protocols]: No MCP or A2A integration is documented in MetaGPT's [official repository](https://github.com/FoundationAgents/MetaGPT) or [official documentation](https://docs.deepwisdom.ai/) as of 19 July 2026, so the protocol field remains conservatively unspecified.
+[^metagpt-protocols]: No MCP or A2A integration is documented in MetaGPT's [official repository](https://github.com/FoundationAgents/MetaGPT) or [official documentation](https://docs.deepwisdom.ai/) as of 29 August 2026 (the repository has had no commits since January 2026), so the protocol field remains conservatively unspecified.
 
 For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMAS, …), see the [second list](#marl-simulation-and-classic-mas-platforms).
 
@@ -335,7 +358,7 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) - Python/.NET · MIT · Active
   Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. ![Stars](https://img.shields.io/github/stars/microsoft/agent-framework.svg?style=social&label=Star)
 
-- [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) - Python · MIT · Active
+- [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) - Python · MIT · Dormant (last commit Jan 2026)
   Multi-agent framework encoding software-company SOPs into role-based LLM agent pipelines; among the most-starred multi-agent projects. ![Stars](https://img.shields.io/github/stars/FoundationAgents/MetaGPT.svg?style=social&label=Star)
 
 - [**CrewAI**](https://github.com/crewAIInc/crewAI) - Python · MIT · Mature/active (industry-oriented)
@@ -426,6 +449,9 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 
 - [**Jadex**](https://github.com/actoron/jadex) - Java · GPL-3.0 · Niche/low activity
   BDI agent platform. ![Stars](https://img.shields.io/github/stars/actoron/jadex.svg?style=social&label=Star)
+
+- [**EGG**](https://github.com/facebookresearch/EGG) - Python · MIT · Archived (2026-08-10)
+  Toolkit for emergent-communication experiments ("Emergence of lanGuage in Games"; EMNLP 2019 demo); still the reference codebase for the field, now read-only with no maintained successor. ![Stars](https://img.shields.io/github/stars/facebookresearch/EGG.svg?style=social&label=Star)
 
 - [**pyDCOP**](https://github.com/Orange-OpenSource/pyDCOP) - Python · BSD-3-Clause · Archived (2022-10-20)
   DCOP algorithms + experimentation tooling. ![Stars](https://img.shields.io/github/stars/Orange-OpenSource/pyDCOP.svg?style=social&label=Star)
@@ -553,6 +579,10 @@ graph TD
   Protocols --> A2AProto[Agent-to-agent protocols - A2A]
   Protocols --> UIProto[Agent-to-user protocols - AG-UI]
 
+  MAS --> Safety[Safety, Security & Governance]
+  Safety --> Threats[Threats - collusion, infectious jailbreaks]
+  Safety --> Governance[Governance - visibility, identifiers, oversight]
+
   Eval --> Bench[Benchmarks & task suites]
   Eval --> Artifacts[Artifacts, checklists, code release norms]
   Simulation --> ABM[ABM toolchains - social/eco/epi]
@@ -571,6 +601,7 @@ timeline
   2002 : Decentralised control complexity (Dec-POMDP/DEC-MDP)
   2005 : ADOPT (DCOP optimality + async execution)
   2009 : Max-Sum in decentralised coordination (factor graphs)
+  2016 : Learning to communicate - DIAL (emergent communication)
   2021 : MAPPO (strong cooperative MARL baseline)
   2021 : Melting Pot (social/generalisation evaluation)
   2022 : VMAS (vectorised multi-robot MARL sim)
@@ -583,6 +614,7 @@ timeline
   2024 : MCP - Model Context Protocol (tool/context interop standard)
   2025 : A2A - Agent2Agent Protocol (agent-to-agent interop standard)
   2025 : OpenAI Agents SDK / Google ADK (production multi-agent frameworks)
+  2025 : Multi-Agent Risks from Advanced AI (CAIF safety report)
   2025 : Survey on evaluating/benchmarking LLM agents
   2026 : General AgentBench (unified LLM-agent evaluation)
 ```
@@ -591,6 +623,7 @@ timeline
 
 Latest additions to the list — watch or star the repo to follow updates.
 
+- *Aug 2026* — [Orkas](#llm-based-multi-agent-frameworks) (desktop multi-agent client, contributed by [@BlueSkyID666](https://github.com/BlueSkyID666)), emergent-communication milestones ([DIAL and the field survey](#seminal-papers-and-milestone-work), [EGG](#marl-simulation-and-classic-mas-platforms)), and a multi-agent safety/security/governance cluster ([CAIF risks report, Secret Collusion, Agent Smith, Visibility into AI Agents](#recent-high-impact-papers-and-surveys), [OWASP threat-modeling guide](#how-to-guides-and-framework-docs)).
 - *Jul 2026* — [Multi-Agent Systems: A Contemporary Treatment](#recent-books-2024) (textbook), the [framework comparison table](#which-framework-should-i-use), and this navigation refresh.
 - *Jun 2026* — [Microsoft Agent Framework](#llm-based-multi-agent-frameworks), [How we built our multi-agent research system](#how-to-guides-and-framework-docs) (Anthropic), [General AgentBench](#recent-high-impact-papers-and-surveys), and five foundational LLM-agent papers (Generative Agents, AutoGen, MetaGPT, CAMEL, Mixture-of-Agents).
 
@@ -602,7 +635,7 @@ Curation quality depends on transparency. This list operates under the following
 - **Affiliations are disclosed.** Entries authored by or affiliated with list maintainers are explicitly marked *maintainer-affiliated* (currently one: [Multi-Agent Systems: A Contemporary Treatment](#recent-books-2024)). Independent challenges to any affiliated entry are welcome via issue or PR.
 - **Removal is part of curation.** Entries are removed or flagged when links die without an official mirror, projects are archived without historical significance, or a resource is clearly superseded. Archived-but-historically-important resources (e.g., MPE, Hanabi Learning Environment, pyDCOP) stay listed with their archival status stated.
 - **Maintainers:** [bloo-mind](https://github.com/bloo-mind) (lead: Dell Zhang). External co-maintainers from the classical MAS, MARL, and LLM-agent communities are actively welcomed — open an issue to volunteer.
-- **Last full review:** July 2026. Framework metadata (language, license, maturity) is re-verified at each full review; dead links are caught weekly by CI.
+- **Last full review:** July 2026; framework comparison table and benchmark maintenance statuses re-verified August 2026. Framework metadata (language, license, maturity) is re-verified at each full review; dead links are caught weekly by CI.
 
 ## Related awesome lists
 

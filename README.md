@@ -368,6 +368,9 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**AgentScope**](https://github.com/agentscope-ai/agentscope) - Python · Apache-2.0 · Active
   Message-passing multi-agent framework (from Alibaba) with distributed execution and AgentScope Studio tooling. ![Stars](https://img.shields.io/github/stars/agentscope-ai/agentscope.svg?style=social&label=Star)
 
+- [**Orkas**](https://github.com/Orkas-AI/Orkas) - TypeScript · MIT · Active
+  Local-first desktop tool where a Commander coordinates specialist agents in parallel or sequence. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/Orkas-AI/Orkas.svg?style=social&label=Star)
+
 - [**AgentVerse**](https://github.com/OpenBMB/AgentVerse) - Python · Apache-2.0 · Research
   Framework for both task-solving and social-simulation multi-agent environments (classroom, prisoner's dilemma, software design). ![Stars](https://img.shields.io/github/stars/OpenBMB/AgentVerse.svg?style=social&label=Star)
 

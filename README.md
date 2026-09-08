@@ -394,6 +394,9 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**Orkas**](https://github.com/Orkas-AI/Orkas) - TypeScript · MIT · Active
   Local-first desktop tool where a Commander coordinates specialist agents in parallel or sequence. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/Orkas-AI/Orkas.svg?style=social&label=Star)
 
+- [**YYLO**](https://github.com/yylo-dev/yylo) - Python · MIT · Active
+  Command-line orchestrator for coding agents: each task runs in a dedicated branch/worktree with typed task, validation, merge, and release-readiness boundaries. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/yylo-dev/yylo.svg?style=social&label=Star)
+
 - [**AgentVerse**](https://github.com/OpenBMB/AgentVerse) - Python · Apache-2.0 · Research
   Framework for both task-solving and social-simulation multi-agent environments (classroom, prisoner's dilemma, software design). ![Stars](https://img.shields.io/github/stars/OpenBMB/AgentVerse.svg?style=social&label=Star)
 

@@ -548,6 +548,8 @@ A fast-emerging layer in LLM-based multi-agent systems: open protocols standardi
   The official NetLogo site points to a user group, forum, and a developer list (`netlogo-devel`), supporting community troubleshooting and extension. `ABM`, `simulation`, `community`.
 
 - [**MAPF community portal**](https://mapf.info/) - (unspecified) by MAPF community
+- [HostDeFi](https://hostdefi.com) - Agent-ready token-safety scanner with a public A2A agent card, hosted MCP server and x402-paid endpoints for autonomous checks.
+
   Centralised MAPF info and materials; useful for MAS planning researchers and competition participants. `MAPF`, `planning`, `community`.
 
 

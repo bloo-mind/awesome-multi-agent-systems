@@ -459,13 +459,13 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 
 ### Competitions and challenges
 
-- [**ANAC leagues listing (ANL, SCML)**](https://scml.cs.brown.edu/) - (2026) by Brown University site
-  Shows the league structure (Automated Negotiation League; Supply Chain Management League) for ANAC 2026. `negotiation`, `benchmark`.
+- [**ANAC leagues listing (ANL, SCML, HAN, HI)**](https://anac.cs.brown.edu/) - (2026) by Brown University site
+  Shows the league structure for the current edition (Automated Negotiation League; Supply Chain Management League; Human-Agent Negotiation League; Hybrid Intelligence League, new for ANAC 2027) and archives ANAC 2026 results. `negotiation`, `benchmark`.
 
 - [**Hanabi Challenge**](https://research.google/pubs/the-hanabi-challenge-a-new-frontier-for-ai-research/) - (2020–) by Google Research / community
   A cooperative imperfect-information game used as an AI challenge; the paper introduces an open-source learning environment and evaluation framing. `cooperation`, `communication`, `benchmark`.
 
-- [**Automated Negotiating Agents Competition (ANAC)**](https://scml.cs.brown.edu/anac2025) - (2010–) by ANAC organisers
+- [**Automated Negotiating Agents Competition (ANAC)**](https://anac.cs.brown.edu/anac2025) - (2010–) by ANAC organisers
   Tournament series for benchmarking automated negotiation strategies; ANAC 2025 page summarises aims and positioning as a practical benchmark. `negotiation`, `competition`, `benchmark`.
 
 - [**RoboCup Soccer Simulation League**](https://www.robocup.org/leagues/23) - (ongoing) by RoboCup
@@ -477,7 +477,7 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**RoboCup Rescue Simulation "Agent Simulation"**](https://rescuesim.robocup.org/research/publications/agent-competition/) - (ongoing) by RoboCup Rescue Simulation
   "Agent Simulation" competition track with publications list curated by organisers; useful for multi-agent disaster response and coordination research context. `robotics`, `simulation`, `coordination`.
 
-- [**Supply Chain Management League (SCML)**](https://scml.cs.brown.edu/scml) - (unspecified) by SCML organisers
+- [**Supply Chain Management League (SCML)**](https://anac.cs.brown.edu/scml) - (unspecified) by SCML organisers
   A negotiation-centric simulation: build an agent negotiating trades for a factory manager in a supply chain setting. `negotiation`, `simulation`, `markets`.
 
 - [**Multi-Agent Programming Contest (MAPC)**](https://multiagentcontest.org/) - (unspecified) by MAPC organisers

@@ -502,6 +502,7 @@ A fast-emerging layer in LLM-based multi-agent systems: open protocols standardi
 
 - [**Agent Network Protocol (ANP)**](https://github.com/agent-network-protocol/AgentNetworkProtocol) - Decentralised networking · ANP community (2024) · MIT
   A W3C-aligned protocol for decentralised agent identity, discovery, and communication using a three-layer architecture built on DIDs and Verifiable Credentials; aims to be the networking layer for the "Agentic Web." ![Stars](https://img.shields.io/github/stars/agent-network-protocol/AgentNetworkProtocol.svg?style=social&label=Star)
+  - [**ACP-lite (Agent Connect Personal)**](https://github.com/furoute/acp-lite) - (2026) by furoute. Minimal personal cross-host agent messaging over Syncthing file sync: Ed25519-signed envelopes, hash-chained audit, zero-token delivery. `LLM-agents`, `protocols`, `practice`.
 
 
 ## Reproducibility and community

@@ -642,6 +642,7 @@ Curation quality depends on transparency. This list operates under the following
 Complementary curated lists for adjacent communities:
 
 - [**awesome-ai-agents**](https://github.com/e2b-dev/awesome-ai-agents) - Broad catalogue of AI agent products and projects (single- and multi-agent), maintained by E2B. ![Stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents.svg?style=social&label=Star)
+- [**awesome-ai-agents (ianwieds)**](https://github.com/ianwieds/awesome-ai-agents) - Curated list of AI agent frameworks and tools, with a multi-agent and orchestration section alongside coding, browser, memory, sandbox, evaluation, and safety categories. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/ianwieds/awesome-ai-agents.svg?style=social&label=Star)
 - [**LLM-Agent-Paper-List**](https://github.com/WooooDyy/LLM-Agent-Paper-List) - Paper list accompanying *The Rise and Potential of LLM-Based Agents* survey. ![Stars](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List.svg?style=social&label=Star)
 - [**LLM_MultiAgents_Survey_Papers**](https://github.com/taichengguo/LLM_MultiAgents_Survey_Papers) - Companion paper list to the Guo et al. LLM multi-agent survey. ![Stars](https://img.shields.io/github/stars/taichengguo/LLM_MultiAgents_Survey_Papers.svg?style=social&label=Star)
 - [**MARL-Papers**](https://github.com/LantaoYu/MARL-Papers) - Long-running list of multi-agent reinforcement learning papers. ![Stars](https://img.shields.io/github/stars/LantaoYu/MARL-Papers.svg?style=social&label=Star)

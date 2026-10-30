@@ -287,7 +287,7 @@ Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/e
 - [**VMAS: A Vectorized Multi-Agent Simulator for Collective Robot Learning**](https://arxiv.org/abs/2207.03530) - (2022) by Bettini et al.
   Provides a vectorised, differentiable multi-agent simulator for scalable multi-robot MARL benchmarking; targets high-throughput training and multi-robot scenarios. `robotics`, `simulation`, `MARL`.
 
-- [**Problem Compilation for Multi-Agent Path Finding: a Survey**](https://www.ijcai.org/proceedings/2022/0783) - (2022) by Pavel Surynek
+- [**Problem Compilation for Multi-Agent Path Finding: a Survey**](https://ijcai.org/proceedings/2022/783) - (2022) by Pavel Surynek
   A survey view of MAPF research directions and problem formulations; useful for MAS planning/coordination beyond learning-based methods. `planning`, `MAPF`, `survey`.
 
 - [**The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games**](https://arxiv.org/abs/2103.01955) - (2021) by Yu et al.

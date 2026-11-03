@@ -206,6 +206,12 @@ Two-tier curation: **milestones** (foundational, field-shaping work) and **recen
 
 Items are chosen for (a) field-shaping benchmarks/tooling, (b) reproducibility/evaluation influence, or (c) representing a major new direction (e.g., LLM-based multi-agent systems).
 
+- [**SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents**](https://arxiv.org/abs/2610.21082) - (2026) by Sun et al.
+  A 248-item benchmark of PI-style judgments drawn from six months of human corrections on scientific auto-research agents across 26 projects and 6 fields. Frontier models often prefer the original LLM plan; 4 of 5 score below chance (max 63.5% vs 73.4% for new researchers). Code and data available. `LLM-agents`, `benchmark`, `scientific-AI`.
+
+- [**PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting**](https://arxiv.org/abs/2606.08878) - (2026) by Sun, Ren, et al.
+  PerspectiveGap is the first benchmark for multi-agent orchestration prompt writing. It covers 110 scenarios and 10 loop topologies; across 33 commercial models the mean combined pass is 17.2%. `LLM-agents`, `benchmark`, `orchestration`.
+
 - [**General AgentBench**](https://arxiv.org/html/2602.18998v1) - (2026) by Li et al.
   Introduces a unified benchmark framework for evaluating general LLM agents across search/coding/reasoning/tool-use; relevant for assessing generality claims. `LLM-agents`, `benchmark`, `evaluation`.
 

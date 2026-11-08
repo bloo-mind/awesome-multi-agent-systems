@@ -367,6 +367,9 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**LangGraph**](https://github.com/langchain-ai/langgraph) - Python · MIT · Mature/active
   Graph-based orchestration for long-running/stateful agents. ![Stars](https://img.shields.io/github/stars/langchain-ai/langgraph.svg?style=social&label=Star)
 
+- [**LightAgent**](https://github.com/wanxingai/LightAgent) - Python · Apache-2.0 · Active (pre-1.0)
+  By wanxingai (v0.11.0, 2026). Role-based multi-agent routing, checkpointed workflows, and opt-in persistent dynamic DAGs with bounded concurrent workers and application-owned artifact verification; the DAG runtime is single-host and SQLite-backed. `multi-agent`, `orchestration`, `durable-execution`. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/wanxingai/LightAgent.svg?style=social&label=Star)
+
 - [**CAMEL**](https://github.com/camel-ai/camel) - Python · Apache-2.0 · Active (research)
   Framework for building and studying agent societies (role-playing, communication, synthetic data generation); anchors the CAMEL-AI research community. ![Stars](https://img.shields.io/github/stars/camel-ai/camel.svg?style=social&label=Star)
 

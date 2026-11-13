@@ -180,7 +180,7 @@ Two-tier curation: **milestones** (foundational, field-shaping work) and **recen
 - [**Learning to Communicate with Deep Multi-Agent Reinforcement Learning**](https://arxiv.org/abs/1605.06676) - (2016) by Foerster et al.
   Introduces RIAL and DIAL, the first end-to-end deep-RL methods for learning discrete inter-agent communication protocols, with DIAL backpropagating gradients through the channel under centralised training (NeurIPS 2016); founded deep-MARL emergent communication, albeit on small cooperative benchmarks. `emergent-communication`, `MARL`, `CTDE`.
 
-- [**Decentralised Coordination of Continuously Valued Control Parameters using the Max-Sum Algorithm**](https://eprints.soton.ac.uk/267314/1/main-maxsumcont.pdf) - (2009) by Stranders et al.
+- [**Decentralised Coordination of Continuously Valued Control Parameters using the Max-Sum Algorithm**](https://www.ifaamas.org/Proceedings/aamas09/pdf/01_Full%20Papers/10_52_FP_0452.pdf) - (2009) by Stranders et al.
   Demonstrates the Max-Sum message-passing approach for decentralised coordination via factor-graph representations, influential in MAS coordination and resource allocation formulations. `DCOP`, `message-passing`, `coordination`.
 
 - [**ADOPT: Asynchronous Distributed Constraint Optimization with Quality Guarantees**](https://www.sciencedirect.com/science/article/pii/S0004370204001511) - (2005) by Modi et al.

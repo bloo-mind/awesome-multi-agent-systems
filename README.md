@@ -367,9 +367,6 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**LangGraph**](https://github.com/langchain-ai/langgraph) - Python · MIT · Mature/active
   Graph-based orchestration for long-running/stateful agents. ![Stars](https://img.shields.io/github/stars/langchain-ai/langgraph.svg?style=social&label=Star)
 
-- [**LightAgent**](https://github.com/wanxingai/LightAgent) - Python · Apache-2.0 · Active (pre-1.0)
-  By wanxingai (v0.11.0, 2026). Role-based multi-agent routing, checkpointed workflows, and opt-in persistent dynamic DAGs with bounded concurrent workers and application-owned artifact verification; the DAG runtime is single-host and SQLite-backed. `multi-agent`, `orchestration`, `durable-execution`. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/wanxingai/LightAgent.svg?style=social&label=Star)
-
 - [**CAMEL**](https://github.com/camel-ai/camel) - Python · Apache-2.0 · Active (research)
   Framework for building and studying agent societies (role-playing, communication, synthetic data generation); anchors the CAMEL-AI research community. ![Stars](https://img.shields.io/github/stars/camel-ai/camel.svg?style=social&label=Star)
 
@@ -396,6 +393,9 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 
 - [**Orkas**](https://github.com/Orkas-AI/Orkas) - TypeScript · MIT · Active
   Local-first desktop tool where a Commander coordinates specialist agents in parallel or sequence. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/Orkas-AI/Orkas.svg?style=social&label=Star)
+
+- [**LightAgent**](https://github.com/wanxingai/LightAgent) - Python · Apache-2.0 · Active (pre-1.0)
+  Lightweight agent framework with role-based multi-agent routing, checkpointed workflows, and an opt-in dynamic-DAG runtime for concurrent workers (single-host, SQLite-backed). *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/wanxingai/LightAgent.svg?style=social&label=Star)
 
 - [**AgentVerse**](https://github.com/OpenBMB/AgentVerse) - Python · Apache-2.0 · Research
   Framework for both task-solving and social-simulation multi-agent environments (classroom, prisoner's dilemma, software design). ![Stars](https://img.shields.io/github/stars/OpenBMB/AgentVerse.svg?style=social&label=Star)
@@ -626,6 +626,7 @@ timeline
 
 Latest additions to the list — watch or star the repo to follow updates.
 
+- *Nov 2026* — [LightAgent](#llm-based-multi-agent-frameworks) (lightweight multi-agent framework, contributed by [@wxai-space](https://github.com/wxai-space)).
 - *Aug 2026* — [Orkas](#llm-based-multi-agent-frameworks) (desktop multi-agent client, contributed by [@BlueSkyID666](https://github.com/BlueSkyID666)), emergent-communication milestones ([DIAL and the field survey](#seminal-papers-and-milestone-work), [EGG](#marl-simulation-and-classic-mas-platforms)), and a multi-agent safety/security/governance cluster ([CAIF risks report, Secret Collusion, Agent Smith, Visibility into AI Agents](#recent-high-impact-papers-and-surveys), [OWASP threat-modeling guide](#how-to-guides-and-framework-docs)).
 - *Jul 2026* — [Multi-Agent Systems: A Contemporary Treatment](#recent-books-2024) (textbook), the [framework comparison table](#which-framework-should-i-use), and this navigation refresh.
 - *Jun 2026* — [Microsoft Agent Framework](#llm-based-multi-agent-frameworks), [How we built our multi-agent research system](#how-to-guides-and-framework-docs) (Anthropic), [General AgentBench](#recent-high-impact-papers-and-surveys), and five foundational LLM-agent papers (Generative Agents, AutoGen, MetaGPT, CAMEL, Mixture-of-Agents).

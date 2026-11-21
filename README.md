@@ -397,6 +397,9 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**LightAgent**](https://github.com/wanxingai/LightAgent) - Python · Apache-2.0 · Active (pre-1.0)
   Lightweight agent framework with role-based multi-agent routing, checkpointed workflows, and an opt-in dynamic-DAG runtime for concurrent workers (single-host, SQLite-backed). *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/wanxingai/LightAgent.svg?style=social&label=Star)
 
+- [**OMK (Open Multi-Agent Kit)**](https://github.com/dmae97/omk) - TypeScript · MIT · Active
+  By Geunbin Yu (v2.0.1, 2026). Open-source multi-agent coding CLI for the terminal: switch providers and models within one session, add subagents only when configured, and complete a goal only when a user-chosen check command passes (`/goal verify`). A single-user coding tool rather than a MAS research platform. `coding-agents`, `subagents`, `verification`. *Contributor-affiliated.* ![Stars](https://img.shields.io/github/stars/dmae97/omk.svg?style=social&label=Star)
+
 - [**AgentVerse**](https://github.com/OpenBMB/AgentVerse) - Python · Apache-2.0 · Research
   Framework for both task-solving and social-simulation multi-agent environments (classroom, prisoner's dilemma, software design). ![Stars](https://img.shields.io/github/stars/OpenBMB/AgentVerse.svg?style=social&label=Star)
 

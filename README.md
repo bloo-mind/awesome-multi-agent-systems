@@ -526,6 +526,9 @@ A fast-emerging layer in LLM-based multi-agent systems: open protocols standardi
 - [**OpenReview**](https://openreview.net/about) - (ongoing) by OpenReview (nonprofit)
   A peer review + publishing infrastructure used by major ML venues; useful for reading reviews, comparing revisions, and tracking reproducibility discussions. `peer-review`, `reproducibility`, `community`.
 
+- [**PACE (Parity-Aware Compute Evaluation)**](https://github.com/mahmoudsajjadi/pace) - (2026) by Seyed Mahmoud Sajjadi Mohammadabadi
+  Audited contrast ledger (834 records across 9 studies), CLI, and [PACE Studio](https://huggingface.co/spaces/sajjadi/pace-studio) for compute-matched multi-agent LLM evaluation ([paper](https://huggingface.co/papers/2611.17610)). `multi-agent`, `reproducibility`, `evaluation`.
+
 
 ### Community resources
 

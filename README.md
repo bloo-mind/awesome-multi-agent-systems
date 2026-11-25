@@ -338,7 +338,7 @@ An opinionated shortlist of the eight most consequential LLM multi-agent framewo
 | Framework | Best for | Coordination model | Language | MCP / A2A | Caveat |
 |---|---|---|---|---|---|
 | [LangGraph](https://github.com/langchain-ai/langgraph) | Stateful, long-running production workflows | Graph / state machine | Python, JS | MCP (adapters) | General orchestration tool, not a MAS research platform |
-| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | Production agent workflows on Python/.NET/Azure | Graph workflows + group chat | Python, .NET (Go preview) | MCP + A2A | 1.0 GA'd Apr 2026; Go SDK still in preview |
+| [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/) | Production agent workflows on Python/.NET/Azure | Graph workflows + group chat | Python, .NET (Go preview) | MCP + A2A | 1.0 GA'd Apr 2026; Go SDK still in preview; main GitHub repo private since Nov 2026[^maf-repo] |
 | [AutoGen](https://github.com/microsoft/autogen) | Conversational multi-agent research | Event-driven agent conversations | Python, .NET | MCP | Maintenance mode; new projects are pointed to Agent Framework |
 | [CrewAI](https://github.com/crewAIInc/crewAI) | Role-based business process automation | Crews (roles/tasks) + Flows | Python | MCP + A2A (native) | High-level abstractions can constrain fine-grained control |
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Lightweight production handoff pipelines | Handoffs + guardrails | Python, JS | MCP | OpenAI-centric defaults; other providers via built-in integrations or beta LiteLLM/any-llm adapters |
@@ -348,6 +348,8 @@ An opinionated shortlist of the eight most consequential LLM multi-agent framewo
 
 [^metagpt-protocols]: No MCP or A2A integration is documented in MetaGPT's [official repository](https://github.com/FoundationAgents/MetaGPT) or [official documentation](https://docs.deepwisdom.ai/) as of 29 August 2026 (the repository has had no commits since January 2026), so the protocol field remains conservatively unspecified.
 
+[^maf-repo]: Microsoft took the main `microsoft/agent-framework` repository private around 18 November 2026 while it investigates malicious `agent-framework` releases on PyPI ([1.26.1 and 1.26.2](https://github.com/advisories/GHSA-764m-3ppc-5m73); 1.26.0 is the last clean release), as [confirmed by a Microsoft maintainer](https://github.com/microsoft/agent-framework-go/issues/1403#issuecomment-7032072867). Entries here link the [official documentation](https://learn.microsoft.com/en-us/agent-framework/) until the repository returns (status checked 25 November 2026).
+
 For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMAS, …), see the [second list](#marl-simulation-and-classic-mas-platforms).
 
 #### LLM-based multi-agent frameworks
@@ -355,8 +357,8 @@ For MARL training and classic MAS platforms (PettingZoo, BenchMARL, Jason, NegMA
 - [**AutoGen**](https://github.com/microsoft/autogen) - Python · MIT (code) + CC-BY-4.0 (docs) · Maintenance mode (succeeded by Microsoft Agent Framework)
   Multi-agent LLM application framework. ![Stars](https://img.shields.io/github/stars/microsoft/autogen.svg?style=social&label=Star)
 
-- [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) - Python/.NET · MIT · Active
-  Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. ![Stars](https://img.shields.io/github/stars/microsoft/agent-framework.svg?style=social&label=Star)
+- [**Microsoft Agent Framework**](https://learn.microsoft.com/en-us/agent-framework/) - Python/.NET · MIT · Active
+  Unified multi-agent framework merging AutoGen + Semantic Kernel; graph-based workflows, multi-LLM, OpenTelemetry. The main GitHub repository has been private since Nov 2026 pending a security investigation[^maf-repo]; the [Go SDK repository](https://github.com/microsoft/agent-framework-go) remains public.
 
 - [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) - Python · MIT · Dormant (last commit Jan 2026)
   Multi-agent framework encoding software-company SOPs into role-based LLM agent pipelines; among the most-starred multi-agent projects. ![Stars](https://img.shields.io/github/stars/FoundationAgents/MetaGPT.svg?style=social&label=Star)
